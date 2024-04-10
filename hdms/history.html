@@ -1,0 +1,293 @@
+<!DOCTYPE HTML>
+<!--
+	Theory by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>HDMS</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-138972724-1"></script>
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="assets/css/main_newest.css" />
+
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-138972724-1');
+		</script>
+		
+		  <style>
+  
+<style> 
+.bold{font-weight:bold;}
+.time{position:relative; float:left;}
+.timeline-wrapper {
+margin-left:auto;
+margin-right:auto;
+padding-left:80px;
+min-width: 400px;
+font-family: 'Arial';
+font-size: 14px;
+/*border: 1px solid #CCC;*/
+}
+.StepProgress {
+position: relative;
+padding-left: 45px;
+margin-left:auto;
+margin-right:auto;
+list-style: none;
+}
+.StepProgress::before {
+display: inline-block;
+content: '';
+position: absolute;
+top: 0;
+left: 15px;
+width: 10px;
+height: 100%;
+border-left: 2px solid white;
+}
+.StepProgress-item {
+position: relative;
+counter-increment: list;
+}
+.StepProgress-item:not(:last-child) {
+padding-bottom: 20px;
+}
+.StepProgress-item::before {
+display: inline-block;
+content: '';
+position: absolute;
+left: -30px;
+height: 100%;
+width: 10px;
+}
+.StepProgress-item::after {
+content: '';
+display: inline-block;
+position: absolute;
+top: 0;
+left: -37px;
+width: 12px;
+height: 12px;
+border: 2px solid white;
+border-radius: 50%;
+background-color: white;
+}
+.StepProgress-item.is-done::before {
+border-left: 2px solid white;
+}
+
+.StepProgress-item.is-done::after {
+/*content: "?";*/
+font-size: 10px;
+color: green;
+text-align: center;
+border: 2px solid white;
+background-color: white;
+}
+/*.StepProgress-item.current::before { 
+border-left: 2px solid green;
+}
+.StepProgress-item.current::after {
+content: counter(list);
+padding-top: 1px;
+width: 19px;
+height: 18px;
+top: -4px;
+left: -40px;
+font-size: 14px;
+text-align: center;
+color: green;
+border: 2px solid green;
+background-color: white;
+}*/
+.StepProgress strong {
+display: block;
+}
+
+</style>
+	</head>
+	<body>
+
+		<!-- Header -->
+			<header id="header">
+				<!-- <div class="inner">
+					<nav id="nav">
+						<a href="index.html">
+							<picture>
+							    <source media="(min-width: 1250px)" srcset="images/logo.png">
+							    <source media="(max-width: 1250px)" srcset="images/logo_mobile.png" width="170px;">
+							    <img id="logo" src="images/banner.jpg" alt="HDMS 2019" style="left: 37px;">
+							</picture>
+
+						<img src="images/logo.png" alt="HDMS" width="70px;" style="margin-top: 10px; left: 37px;" />
+						</a>
+						<div class="mobile_menu_divider"><img src="images/mobile_menu_divider.png" width="70px;"></div>
+						<div class="mobile_menu_divider"><img src="images/mobile_menu_divider.png" width="70px;"></div>
+						<a href="index_gr.html" style="position: absolute; right: 37px;"></a>
+					</nav>
+					<a href="#navPanel" class="navPanelToggle">
+						<img src="images/mobile_menu_icon.png" alt="Menu" width="60px;">
+					</a>
+				</div> -->
+			</header>
+
+		<!-- Banner -->
+			<!-- <section id="banner" style="background-image: url(images/banner2_new.jpg); padding: 6em 0em 4em 0em">
+				<h1>18<sup>th</sup> Hellenic Database Management Symposium</h1>
+				<h2 style="color:white;">July 1 - 2 2024, Athens, Greece<br/>Venue: Royal Olympic Hotel, Athens, Greece</h2>
+
+				<h2 style="color:white;">Submission Deadline: May 20, 2024</h2>
+			</section> -->
+			<!-- <section style="background-color: #015CAB;">
+				<div id="banner_wrapper">
+					<img src="images/banner.jpg" width="100%">
+					<picture>
+					    <source media="(min-width: 1250px)" srcset="images/banner_new.png">
+				    	<source media="(max-width: 750px)" srcset="images/banner_mobile2_new.png">
+				    	<img src="images/banner_mobile3_new.png" alt="HDMS banner"  width="100%">
+					</picture>
+				</div>
+			</section> -->
+
+
+			<section id="one" class="wrapper special style1" style="background-color:#FFF;  padding: 24px;">
+				<h2 class="font_stroke"></h2>
+			</section>
+	
+
+		<section id="history" class="wrapper special style1" style="background-color:#015CAB;  padding: 24px;">
+			<h2 class="font_stroke">History of the Hellenic Data Management Symposium</h2>
+		</section>
+	
+		<section id="history_c" class="wrapper special" >
+			<div class="inner" style="text-align: justify;">
+					<div class="12u 12u$(medium)" style ="text-align:justify;">
+						<p>The idea of the conference was conceived by Timos Sellis, Paris Kanellakis and Yannis Ioannidis at SIGMOD/PODS 1994. Many years followed, after Paris had passed away and Yannis returned to Greece and put the idea in motion with Timos. General chair for the first HDMS was Yannis Theodoridis, while Panos Chrysanthis was an enthusiastic and faithful supporter from the very beginning.</p> 
+
+				 		<h3>Record of Past Events:</h3>
+
+						 <div class="3u 3u$(medium) past-event">
+							<a href="https://acmsigmod.gr/hdms/2019/" target="_blank">HDMS 2019 - Athens, Greece</a>
+						</div>
+
+
+						<!-- <div class="row"> -->
+							<div class="3u 3u$(medium) past-event">
+								<a href="https://hdms18.cs.ucy.ac.cy" target="_blank">HDMS 2018 - Larnaca, Cyprus</a>
+							</div>
+							<div class="3u 3u$(medium) past-event">
+								<a href="https://web.archive.org/web/20170826072816/http://hdms17.aueb.gr/index.php/en/" target="_blank">HDMS 2017 - Athens, Greece</a>
+							</div>
+							<div class="3u 3u$(medium) past-event">
+								<a href="https://web.archive.org/web/20180411153209/http://hdms16.aueb.gr/index.php/en" target="_blank">HDMS 2016 - Athens, Greece</a>
+							</div>
+							<div class="3u 3u$(medium) past-event">
+								<a href="https://web.archive.org/web/20220505070004/http://hdms15.cs.aueb.gr/index.php/en/" target="_blank">HDMS 2015 - Athens, Greece</a>
+							</div>
+						<!-- </div> -->
+						<!-- <div class="row"> -->
+							<div class="3u 3u$(medium) past-event">
+								<a href="http://hdms14.di.uoa.gr/" target="_blank">HDMS 2014 - Athens, Greece</a>
+							</div>
+							<div class="3u 3u$(medium) past-event">
+								<a href="http://hdms2012.softnet.tuc.gr/" target="_blank">HDMS 2012 - Chania, Greece</a>
+							</div>
+
+							<div class="3u 3u$(medium) past-event">
+								<a href="http://hdms11.di.uoa.gr/" target="_blank">HDMS 2011 - Athens, Greece</a>
+							</div>
+							<div class="3u 3u$(medium) past-event">
+								<a href="https://web.archive.org/web/20120421104222/http://www.cs.ucy.ac.cy/~hdms2010/en" target="_blank">HDMS 2010 - Ayia Napa, Cyprus</a>
+							</div>
+
+						<!-- </div> -->
+						<!-- <div class="row"> -->
+							<div class="3u 3u$(medium) past-event">
+								<a href="http://hdms09.di.uoa.gr/" target="_blank">HDMS 2009 - Athens, Greece</a>
+							</div>
+							<div class="3u 3u$(medium) past-event">
+								<a href="https://web.archive.org/web/20090108082135/http://www.hdms08.gr/" target="_blank">HDMS 2008 - Heraklion, Greece</a>
+							</div>
+							<div class="3u 3u$(medium) past-event">
+								<a href="http://hdms07.di.uoa.gr/" target="_blank">HDMS 2007 - Athens, Greece</a>
+							</div>
+							<div class="3u 3u$(medium) past-event">
+								<a href="http://delab.csd.auth.gr/hdms2006/" target="_blank">HDMS 2006 - Thes/niki, Greece</a>
+							</div>
+						<!-- </div> -->
+						<!-- <div class="row"> -->
+							
+							<div class="3u 3u$(medium) past-event">
+								<a href="http://www.ics.forth.gr/hdms05/" target="_blank">HDMS 2005 - Athens, Greece</a>
+							</div>
+							<div class="3u 3u$(medium) past-event">
+								<a href="http://web.archive.org/web/20080201014427/http://www.cti.gr/hdms/2004.htm" target="_blank">HDMS 2004 - Athens, Greece</a>
+							</div>
+							<div class="3u 3u$(medium) past-event">
+								<a href="http://web.archive.org/web/20080203194322/http://www.cti.gr/HDMS_2003/2003.htm" target="_blank">HDMS 2003 - Athens, Greece</a>
+							</div>
+							<div class="3u 3u$(medium) past-event">
+								<a href="http://cgi.di.uoa.gr/~ad/AssortedURLS/HDMS02.html" target="_blank">HDMS 2002 - Athens, Greece</a>
+							</div>
+						</div>
+					</div>
+			</div>
+		</section>
+						
+	
+	<!-- <section id="dates" class="wrapper style1 special" style="padding:24px;">
+													
+			<h2 class = "font_stroke">#HDMS2024</h2>
+			
+			<b>Follow HDMS on Twitter to learn more about data management in Greece</b><br/>
+			<a href="https://twitter.com/hdmsymposium" class="icon fa-twitter fa-3x" style="text-decoration:none;color: white;" target="_blank"></a>
+
+	</section>
+	 -->
+	
+	<!-- Footer -->
+	<footer id="footer">
+		<div class="inner">
+			<div class="flex">
+				<div class="copyright" style="width: 100%; text-align: center;">
+					Copyright © 2024: <a href="https://www.athena-innovation.gr/" target="_blank">ACM SIGMOD Chapter Greece</a>
+				</div>
+				<!-- <ul class="icons">
+					<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+					<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="#" class="icon fa-linkedin"><span class="label">linkedIn</span></a></li>
+					<li><a href="#" class="icon fa-pinterest-p"><span class="label">Pinterest</span></a></li>
+					<li><a href="#" class="icon fa-vimeo"><span class="label">Vimeo</span></a></li>
+				</ul> -->
+			</div>
+		</div>
+	</footer>
+	<span onclick="topFunction()" id="top_button" title="Go to top"><img src="images/up-arrow.png" width="50px;" onmouseover="hover(this);" onmouseout="unhover(this);"/></span>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/skel.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script src="assets/js/scroll_to_top.js"></script>
+
+	</body>
+</html>
+
+<script>
+$('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').trigger('focus')
+})
+
+</script>
