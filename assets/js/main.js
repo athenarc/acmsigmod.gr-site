@@ -64,7 +64,7 @@ jQuery(document).ready(function($) {
     
     
     // OPEN POPUP SEQUENCE
-    $(".open-popup-form").click(function(){
+    $(".open-popup-subscribe").click(function(){
         
         $(".popup").addClass("show");
         $(".popup").append('<div class="close-popup backface"></div>');
