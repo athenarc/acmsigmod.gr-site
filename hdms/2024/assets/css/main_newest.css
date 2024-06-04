@@ -3790,3 +3790,15 @@ overflow-x:auto;
 .blue {
 	color: #015CAB;
 }
+
+.program-session-titles{
+	font-size: 1.2em;
+}
+.program-sessions{
+	font-size: 1em;
+}
+.program-session-breaks{
+	font-size: 1.2em;
+	color: red;
+	font-weight: 700;
+}
