@@ -3021,7 +3021,7 @@
 		#registration p {
 			margin: 0 0 1em 0;
 			font-size: 0.8em;
-			text-align: justify;
+			text-align: center;
 		}
 
 		.yellow {
@@ -3801,4 +3801,15 @@ overflow-x:auto;
 	font-size: 1.2em;
 	color: red;
 	font-weight: 700;
+}
+
+.register-button{
+	color: #015CAB !important;
+	background-color: white;
+	text-align: center;
+	width: 1em;
+	font-size: 20px;
+	padding: 0.5em;
+	text-decoration: none !important;
+	margin: auto;
 }
