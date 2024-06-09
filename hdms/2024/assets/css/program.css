@@ -1,0 +1,7 @@
+.paper-abstract{
+    display: none;
+}
+
+.toggle-abstract{
+    cursor: pointer;
+}

@@ -10,6 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main_newest.css" />
+		<link rel="stylesheet" href="assets/css/program.css" />
 	</head>
 	<body class="subpage">
     <!-- Header -->
@@ -62,89 +63,320 @@
                                     <td class="program-sessions"><b>Event</b></td>
                                 </tr>
                                 <tr>
-                                    <td class="program-sessions">8:00 - 8:45am</td>
+                                    <td class="program-sessions">8:00 - 9:15am</td>
                                     <td class="program-sessions">Registration </td>
                                 </tr>
                                 <tr>
-                                    <td class="program-sessions">8:45 - 9:00am</td>
+                                    <td class="program-sessions">9:15 - 9:30am</td>
                                     <td class="program-sessions">Opening Remarks</td>
                                 </tr>
                                 <tr>
                                     <td class="program-sessions">9:30 - 10:00am</td>
-                                    <td class="program-sessions"> keynote 1 </td>
+                                    <td class="program-sessions"> <b>Keynote 1:</b> Stavros Papadopoulos (TileDB) </td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2" class="program-session-titles"> <b> Session 1: "Title" </b> Chair: Chair </tr>
+                                    <td colspan="2" class="program-session-titles"> <b> Session 1: "Modern Data Processing" </b> </tr>
                                 </tr>
                                 <tr>
-                                    <td class="program-sessions">10:00 - 10:15am</td>
-                                    <td class="program-sessions">Paper 1</td>
+                                    <td class="program-sessions"><!--10:00 - 10:15am--></td>
+                                    <td class="program-sessions"> <i>Amazon Redshift Re-invented</i>
+                                        <br> Armenatzoglou, Nikos*; Pandis, Ippokratis; Polychroniou, Orestis; Parchas, Panos 
+                                        <br> <a class="toggle-abstract" onclick="toggleAbstract('abstract-1')">Click to display the abstract</a>
+                                        <span class="paper-abstract" id="abstract-1">
+                                            In 2013, Amazon Web Services revolutionized the data warehousing industry by launching Amazon Redshift, the first fully-managed, 
+                                            petabyte-scale, enterprise-grade cloud data warehouse. Amazon Redshift made it simple and cost-effective to efficiently analyze 
+                                            large volumes of data using existing business intelligence tools. This cloud service was a significant leap from the traditional 
+                                            on-premise data warehousing solutions, which were expensive, not elastic, and required significant expertise to tune and operate. 
+                                            Customers embraced Amazon Redshift and it became the fastest growing service in AWS. Today, tens of thousands of customers use Redshift 
+                                            in AWS’s global infrastructure to process exabytes of data daily.
+                                            <br><br>
+                                            In the last few years, the use cases for Amazon Redshift have evolved and in response, the service has delivered and continues to 
+                                            deliver a series of innovations that delight customers. Through architectural enhancements, Amazon Redshift has maintained its industry-leading 
+                                            performance. Redshift improved storage and compute scalability with innovations such as tiered storage, multi-cluster auto-scaling, cross-cluster 
+                                            data sharing and the AQUA query acceleration layer. Autonomics have made Amazon Redshift easier to use. Amazon Redshift Serverless is the 
+                                            culmination of autonomics effort, which allows customers to run and scale analytics without the need to set up and manage data warehouse infrastructure. 
+                                            Finally, Amazon Redshift extends beyond traditional datawarehousing workloads, by integrating with the broad AWS ecosystem with features such 
+                                            as querying the data lake with Spectrum, semistructured data ingestion and querying with PartiQL, streaming ingestion from Kinesis and MSK, Redshift ML, 
+                                            federated queries to Aurora and RDS operational databases, and federated materialized views."
+                                        </span>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td class="program-sessions">10:15 - 10:30am</td>
-                                    <td class="program-sessions">Paper 2</td>
+                                    <td class="program-sessions"><!--10:15 - 10:30am--></td>
+                                    <td class="program-sessions"> <i>QPSeeker: An Efficient Neural Planner combining both data and queries through Variational Inference</i>
+                                        <br> Tsapelas, Christos*; Koutrika, Georgia 
+                                        <br> <a class="toggle-abstract" onclick="toggleAbstract('abstract-2')">Click to display the abstract</a>
+                                        <span class="paper-abstract" id="abstract-2">
+                                            Recently, deep learning methods have been applied on many aspects of the query optimization process, such as cardinality estimation and query 
+                                            execution time prediction, but very few tackle multiple aspects of the optimizer at the same time or com- bine both the underlying data and a 
+                                            query workload. QPSeeker takes a step towards a neural database planner, encapsulating the information of the data and the given workload to 
+                                            learn the distributions of cardinalities, costs and execution times of the query plan space. At inference, when a query is submitted to the 
+                                            database, QPSeeker uses its learned cost model and traverses the query plan space using Monte Carlo Tree Search to provide an execution plan 
+                                            for the query.
+                                        </span>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td class="program-sessions">10:30 - 10:45am</td>
-                                    <td class="program-sessions">Paper 3</td>
+                                    <td class="program-sessions"><!--10:30 - 10:45am--></td>
+                                    <td class="program-sessions"> <i>Dalton: Learned Partitioning for Distributed Data Streams</i>
+                                        <br> Zapridou, Eleni*; Mytilinis, Ioannis; Ailamaki, Anastasia 
+                                        <br> <a class="toggle-abstract" onclick="toggleAbstract('abstract-3')">Click to display the abstract</a>
+                                        <span class="paper-abstract" id="abstract-3">
+                                            "To sustain the input rate of high-throughput streams, modern stream processing systems rely on parallel execution. However, skewed data yield 
+                                            imbalanced load assignments and create stragglers that hinder scalability. Deciding on a static partitioning for a given set of ""hot"" keys is 
+                                            not sufficient as these keys are not known in advance, and even worse, the data distribution can change unpredictably. Existing algorithms 
+                                            either optimize for a specific distribution or, in order to adapt, assume a centralized partitioner that processes every incoming tuple and 
+                                            observes the whole workload. However, this is not realistic in a distributed environment, where multiple parallel upstream operators exist, as 
+                                            the centralized partitioner itself becomes the bottleneck and limits scalability.
+                                            <br><br>
+                                            In this work, we propose Dalton: a lightweight, adaptive, yet scalable partitioning operator that relies on reinforcement learning. 
+                                            By memoizing state and dynamically keeping track of recent experience, Dalton: i) adjusts its policy at runtime and quickly adapts to the workload, ii) 
+                                            avoids redundant computations and minimizes the per-tuple partitioning overhead, and iii) efficiently scales out to multiple instances that learn 
+                                            cooperatively and converge to a joint policy. Our experiments indicate that Dalton scales regardless of the input data distribution and sustains 
+                                            1.3x - 6.7x higher throughput than existing approaches."
+                                        </span>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td class="program-sessions">10:45 - 11:00am</td>
-                                    <td class="program-sessions">Paper 4</td>
+                                    <td class="program-sessions"><!--10:45 - 11:00am--></td>
+                                    <td class="program-sessions"> <i>LlamaTune: Sample-Efficient DBMS Configuration Tuning</i>
+                                        <br> Kanellis, Konstantinos* 
+                                        <br> <a class="toggle-abstract" onclick="toggleAbstract('abstract-4')">Click to display the abstract</a>
+                                        <span class="paper-abstract" id="abstract-4">
+                                            Tuning a database system to achieve optimal performance on a given workload is a long-standing problem in the database community. 
+                                            A number of recent works have leveraged ML-based approaches to guide the sampling of large parameter spaces (hundreds of tuning knobs) 
+                                            in search for high performance configurations. Looking at Microsoft production services operating millions of databases, sample efficiency 
+                                            emerged as a crucial requirement to use tuners on diverse workloads. This motivates our investigation in LlamaTune, a tuner design that 
+                                            leverages domain knowledge to improve the sample efficiency of existing optimizers. LlamaTune employs an automated dimensionality reduction 
+                                            technique based on randomized projections, a biased-sampling approach to handle special values for certain knobs, and knob values bucketization, 
+                                            to reduce the size of the search space. LlamaTune compares favorably with the state-of-theart optimizers across a diverse set of workloads. 
+                                            It identifies the best performing configurations with up to 11× fewer workload runs, and reaching up to 21% higher throughput. We also show 
+                                            that benefits from LlamaTune generalize across both BO-based and RL-based optimizers, as well as different DBMS versions. While the journey 
+                                            to perform database tuning at cloud-scale remains long, LlamaTune goes a long way in making automatic DBMS tuning practical at scale."
+                                        </span>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td class="program-sessions">11:00 - 11:15am</td>
-                                    <td class="program-sessions">Paper 5</td>
+                                    <td class="program-sessions"><!--11:00 - 11:15am--></td>
+                                    <td class="program-sessions"> <i>Pre-trained Embeddings for Entity Resolution: An Experimental Analysis</i>
+                                        <br> Zeakis, Alexandros*; Papadakis, George; Skoutas, Dimitrios; Koubarakis, Manolis 
+                                        <br> <a class="toggle-abstract" onclick="toggleAbstract('abstract-5')">Click to display the abstract</a>
+                                        <span class="paper-abstract" id="abstract-5">
+                                            Many recent works on Entity Resolution (ER) leverage Deep Learning techniques involving language models to improve effectiveness. 
+                                            This is applied to both main steps of ER, i.e., blocking and matching. Several pre-trained embeddings have been tested, with the 
+                                            most popular ones being fastText and variants of the BERT model. However, there is no detailed analysis of their pros and cons. 
+                                            To cover this gap, we perform a thorough experimental analysis of 12 popular language models over 17 established benchmark datasets. 
+                                            First, we assess their vectorization overhead for converting all input entities into dense embeddings vectors. Second, we investigate 
+                                            their blocking performance, performing a detailed scalability analysis, and comparing them with the state-of-the-art deep learning-based 
+                                            blocking method. Third, we conclude with their relative performance for both supervised and unsupervised matching. Our experimental 
+                                            results provide novel insights into the strengths and weaknesses of the main language models, facilitating researchers and practitioners 
+                                            to select the most suitable ones in practice.
+                                        </span>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td class="program-sessions">11:15 - 11:30am</td>
-                                    <td class="program-sessions">Paper 6</td>
+                                    <td class="program-sessions"><!--11:15 - 11:30am--></td>
+                                    <td class="program-sessions"> <i>YeSQL: "you extend SQL" with rich and highly performant user-defined functions in relational databases</i>
+                                        <br> Foufoulas, Yannis*; Simitsis, Alkis; Stamatogiannakis, Lefteris; Ioannidis, Yannis 
+                                        <br> <a class="toggle-abstract" onclick="toggleAbstract('abstract-6')">Click to display the abstract</a>
+                                        <span class="paper-abstract" id="abstract-6">
+                                            The diversity and complexity of modern data management applications have led to the extension of the relational paradigm with syntactic 
+                                            and semantic support for User-Defined Functions (UDFs). Although well-established in traditional DBMS settings, UDFs have become central 
+                                            in many application contexts as well, such as data science, data analytics, and edge computing. Still, a critical limitation of UDFs is 
+                                            the impedance mismatch between their evaluation and relational processing. In this paper, we present YeSQL, an SQL extension with rich 
+                                            UDF support along with a pluggable architecture to easily integrate it with either server-based or embedded database engines. YeSQL currently 
+                                            supports Python UDFs fully integrated with relational queries as scalar, aggregator, or table functions. Key novel characteristics of YeSQL 
+                                            include easy implementation of complex algorithms and several performance enhancements, including tracing JIT compilation of Python UDFs, 
+                                            parallelism and fusion of UDFs, stateful UDFs, and seamless integration with a database engine. Our experimental analysis showcases the 
+                                            usability and expressiveness of YeSQL and demonstrates that our techniques of minimizing context switching between the relational engine 
+                                            and the Python VM are very effective and achieve significant speedups up to 68x in common, practical use cases compared to earlier 
+                                            approaches and alternative implementation choices.
+                                        </span>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2" class="program-session-breaks"> 30 min break</td>
+                                    <td class="program-sessions"><!--11:15 - 11:30am--></td>
+                                    <td class="program-sessions"> <i>Joint Source and Schema Evolution: Insights from a Study of 195 FOSS Projects</i>
+                                        <br> Vassiliadis, Panos* 
+                                        <br> <a class="toggle-abstract" onclick="toggleAbstract('abstract-7')">Click to display the abstract</a>
+                                        <span class="paper-abstract" id="abstract-7">
+                                            In this paper, we address the problem of the co-evolution of Free Open Source Software projects with the relational schemata 
+                                            that they encompass. We exploit a data set of 195 publicly available schema histories of FOSS projects hosted in Github, 
+                                            for which we locally cloned their respective project and measured their evolution progress. Our first research question asks 
+                                            which percentage of the projects demonstrates a “hand-in-hand” schema and source code co-evolution? To address this question, 
+                                            we defined synchronicity by allowing a bounded amount of lag between the cumulative evolution of the schema and the entire project. 
+                                            A core finding is that there are all kinds of behaviors with respect to project and schema co-evolution, resulting in only a small 
+                                            number of projects where the evolution of schema and project progress in sync. Moreover, we discovered that after exceeding a 5-year 
+                                            threshold of project life, schemata gravitate to lower rates of evolution, which practically means that, with time, the schemata stop 
+                                            evolving as actively as they originally did. To answer a second question, on whether evolution comes early in the life of a schema, 
+                                            we measured how often does the cumulative progress of schema evolution exceed the respective progress of source change, as well as 
+                                            the respective progress of time. The results indicate that a large majority of schemata demonstrates early advance of schema change 
+                                            with respect to code evolution, and, an even larger majority is also demonstrating an advance of schema evolution with respect to time, too. 
+                                            Third, we asked at which time point in their lives do schemata attain a substantial percentage of their evolution. A large number of 
+                                            projects attracts a large percentage of their schema evolution disproportionately early with respect to their project life span. 
+                                            Indicatively, 98 of the 195 projects attained 75% of the evolution in just the first 20% of their project’s lifetime."
+                                        </span>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2" class="program-session-titles"> <b> Session 2: "Title" </b> Chair: Chair </tr>
+                                    <td class="program-sessions"><!--11:15 - 11:30am--></td>
+                                    <td class="program-sessions"> <i>Adaptive Real-time Virtualization of Legacy ETL Pipelines in Cloud Data Warehouses</i>
+                                        <br> Tsikoudis, Nikos* 
+                                        <br> <a class="toggle-abstract" onclick="toggleAbstract('abstract-8')">Click to display the abstract</a>
+                                        <span class="paper-abstract" id="abstract-8">
+                                            Extract, Transform, and Load (ETL) pipelines are widely used to ingest data into Enterprise Data Warehouse (EDW) systems. These pipelines 
+                                            can be very complex and often tightly coupled to a given EDW, making it challenging to upgrade from a legacy EDW to a Cloud Data Warehouse (CDW). 
+                                            This paper presents a novel solution for a transparent and fully-automated porting of legacy ETL pipelines to CDW environments."
+                                        </span>
+                                    </td>
+                                </tr>
+                                
+                                <tr>
+                                    <td class="program-sessions"> 11:30 - 12:00pm </td>
+                                    <td class="program-sessions"> <b>Break</b> </td>
                                 </tr>
                                 <tr>
-                                    <td class="program-sessions">12:00 - 12:15pm</td>
-                                    <td class="program-sessions">Paper 1</td>
+                                    <td colspan="2" class="program-session-titles"> <b> Session 2: "Time-Series, Mobile, Scientific Databases" </b> Chair: Chair </tr>
                                 </tr>
                                 <tr>
-                                    <td class="program-sessions">12:15 - 12:30pm</td>
-                                    <td class="program-sessions">Paper 2</td>
+                                    <td class="program-sessions"><!--12:00 - 12:15pm--></td>
+                                    <td class="program-sessions"> <i>TIMBER: On supporting data pipelines in Mobile Cloud Environments</i> 
+                                        <br> Tomaras, Dimitris; Tsenos, Michalis; Kalogeraki, Vana; Gunopulos, Dimitrios 
+                                        <!-- <br> <a class="toggle-abstract" onclick="toggleAbstract('abstract-9')">Click to display the abstract</a>
+                                        <span class="paper-abstract" id="abstract-9">
+                                            
+                                        </span> -->
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td class="program-sessions">12:30 - 12:45pm</td>
-                                    <td class="program-sessions">Paper 3</td>
+                                    <td class="program-sessions"><!--12:15 - 12:30pm--></td>
+                                    <td class="program-sessions"> <i>Mobility Data Science: Perspectives and Challenges</i> 
+                                        <br> Mokbel, Mohamed; Sakr, Mahmoud A; Xiong, Li; Züfle, Andreas; Theodoridis, Yannis* 
+                                        <br> <a class="toggle-abstract" onclick="toggleAbstract('abstract-10')">Click to display the abstract</a>
+                                        <span class="paper-abstract" id="abstract-10">
+                                            Mobility data captures the locations of moving objects such as humans, animals, and cars. With the availability of GPS equipped 
+                                            mobile devices and other inexpensive location-tracking technologies, mobility data is collected ubiquitously. In recent years, 
+                                            the use of mobility data has demonstrated significant impact in various domains including traffic management, urban planning, and 
+                                            health sciences. In this paper, we present the domain of mobility data science. Towards a unified approach to mobility data science, 
+                                            we present a pipeline having the following components: mobility data collection, cleaning, analysis, management, and privacy. 
+                                            For each of these components, we explain how mobility data science differs from general data science, we survey the current state of 
+                                            the art, and describe open challenges for the research community in the coming years.
+                                        </span>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td class="program-sessions">12:45 - 1:00pm</td>
-                                    <td class="program-sessions">Paper 4</td>
+                                    <td class="program-sessions"><!--12:30 - 12:45pm--></td>
+                                    <td class="program-sessions"> <i>SIESTA: A Scalable Infrastructure of Sequential Pattern Analysis</i> 
+                                        <br> Mavroudopoulos, Ioannis*; Gounaris, Anastasios 
+                                        <br> <a class="toggle-abstract" onclick="toggleAbstract('abstract-11')">Click to display the abstract</a>
+                                        <span class="paper-abstract" id="abstract-11">
+                                            Sequential pattern analysis has become a mature topic with a lot of techniques for a variety of sequential pattern mining-related problems. 
+                                            Moreover, tailored solutions for specific domains, such as business process mining, have been developed. However, there is a gap in the 
+                                            literature for advanced techniques for efficient detection of arbitrary sequences in large collections of activity logs. In this work, 
+                                            we introduce the SIESTA ( S calable i nfrastructur e of s equential pa t tern a nalysis) solution making a threefold contribution: (i) 
+                                            we employ a novel architecture that relies on inverted indices during preprocessing and we introduce an advanced query processor that 
+                                            can detect and explore arbitrary patterns efficiently; (ii) we discuss and evaluate different configurations to optimize both the 
+                                            preprocessing and the querying phase; and (iii) we present evaluation results competing against representatives of the state-of-the-art 
+                                            with a focus on Big Data. The experimental results are particularly encouraging, e.g., when all methods are deployed in a cluster and 
+                                            the volume of the data is increased, SIESTA creates the indices in almost half the time compared to the state-of-the-art Elasticsearch-based 
+                                            solution, while also yielding faster query responses than all its competitors by up to 1 order of magnitude.
+                                        </span>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td class="program-sessions">1:00 - 1:15pm</td>
-                                    <td class="program-sessions">Paper 5</td>
+                                    <td class="program-sessions"><!--12:45 - 1:00pm--></td>
+                                    <td class="program-sessions"> <i>Exploring unsupervised anomaly detection for vehicle predictive maintenance with partial information</i> 
+                                        <br> Giannoulidis, Apostolos*; Gounaris, Anastasios; Constantinou, Ioannis 
+                                        <br> <a class="toggle-abstract" onclick="toggleAbstract('abstract-12')">Click to display the abstract</a>
+                                        <span class="paper-abstract" id="abstract-12">
+                                            Predicting the need for maintenance in vehicle fleets enhances safety and lessens the downtime. While vehicle manufacturers provide 
+                                            built-in alert systems, these often fail to alert the driver when something goes wrong. However, harnessing the power of data analytics 
+                                            and real-time signals can solve this problem. In this work, we describe a challenging real-world setting  with scarce and partial data 
+                                            of failures. We propose a non-supervised approach that detects behavioral changes related to failures avoiding using the raw signals 
+                                            directly to cope with driving behavior and weather volatility. Our solution calculates the differences in the correlations of collected 
+                                            signals between two periods and dynamically creates reference profiles of normal operational conditions tolerating noise. The initial 
+                                            experiments are particularly promising, e.g., we achieve 78\% precision detecting nearly half of the failures outperforming the behavior 
+                                            of a state-of-the-art deep learning technique. More importantly, we consider our solution as a specific instantiation of a broader 
+                                            framework, for which we thoroughly evaluate a broad range of alternatives.    
+                                        </span>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td class="program-sessions">1:15 - 1:30pm</td>
-                                    <td class="program-sessions">Paper 6</td>
+                                    <td class="program-sessions"><!--1:00 - 1:15pm--></td>
+                                    <td class="program-sessions"> <i>On Vessel Location Forecasting and the Effect of Federated Learning</i> 
+                                        <br> Tritsarolis, Andreas*; Pelekis, Nikos; Bereta, Konstantina; Zissis, Dimitrios; Theodoridis, Yannis 
+                                        <br> <a class="toggle-abstract" onclick="toggleAbstract('abstract-13')">Click to display the abstract</a>
+                                        <span class="paper-abstract" id="abstract-13">
+                                            The wide spread of Automatic Identification System (AIS) has motivated several maritime analytics operations. Vessel Location Forecasting (VLF) 
+                                            is one of the most critical operations for maritime awareness. However, accurate VLF is a challenging problem due to the complexity and 
+                                            dynamic nature of maritime traffic conditions. Furthermore, as privacy concerns and restrictions have grown, training data has become 
+                                            increasingly fragmented, resulting in dispersed databases of several isolated data silos among different organizations, which in turn 
+                                            decreases the quality of learning models. In this paper, we propose an efficient VLF solution based on LSTM neural networks, in two 
+                                            variants, namely Nautilus and FedNautilus for the centralized and the federated learning approach, respectively. We also demonstrate 
+                                            the superiority of the centralized approach with respect to current state of the art and discuss the advantages and disadvantages 
+                                            of the federated against the centralized approach.
+                                        </span>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2" class="program-session-breaks"> 90 min lunch break</td>
+                                    <td class="program-sessions"><!--1:15 - 1:30pm--></td>
+                                    <td class="program-sessions"> <i>Collision Risk Assessment and Forecasting on Maritime Data (Industrial Paper)</i> 
+                                        <br> Tritsarolis, Andreas*; Murray, Brian; Pelekis, Nikos; Theodoridis, Yannis 
+                                        <br> <a class="toggle-abstract" onclick="toggleAbstract('abstract-14')">Click to display the abstract</a>
+                                        <span class="paper-abstract" id="abstract-14">
+                                            The wide spread of the Automatic Identification System (AIS) and related tools has motivated several maritime analytics operations. 
+                                            One of the most critical operations for the purpose of maritime safety is the so-called Vessel Collision Risk Assessment and 
+                                            Forecasting (VCRA/F), with the difference between the two lying in the time horizon when the collision risk is calculated: either 
+                                            at current time by assessing the current collision risk (i.e., VCRA) or in the (near) future by forecasting the anticipated locations 
+                                            and corresponding collision risk (i.e., VCRF). Accurate VCRA/F is a difficult task, since maritime traffic can become quite volatile 
+                                            due to various factors, including weather conditions, vessel manoeuvres, etc. Addressing this problem by using complex models 
+                                            introduces a trade-off between accuracy (in terms of quality of assessment / forecasting) and responsiveness. In this paper, we 
+                                            propose a deep learning-based framework that discovers encountering vessels and assesses/predicts their corresponding collision 
+                                            risk probability, in the latter case via state-of-the-art vessel route forecasting methods. Our experimental study on a real-world 
+                                            AIS dataset demonstrates that the proposed framework balances the aforementioned trade-off while presenting up to 70% improvement 
+                                            in R2 score, with an overall accuracy of around 96% for VCRA and 77% for VCRF.
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="program-sessions"><!--1:15 - 1:30pm--></td>
+                                    <td class="program-sessions"> <i>Visualization-aware Time Series Min-Max Caching with Error Bound Guarantees</i> 
+                                        <br> Maroulis , Stavros *; Stamatopoulos, Vassilis; Papastefanatos, George; Terrovitis, Manolis 
+                                        <br> <a class="toggle-abstract" onclick="toggleAbstract('abstract-15')">Click to display the abstract</a>
+                                        <span class="paper-abstract" id="abstract-15">
+                                            This paper addresses the challenges in interactive visual exploration of large multi-variate time series data. Traditional data 
+                                            reduction techniques may improve latency but can distort visualizations. State-of-the-art methods aimed at 100% accurate 
+                                            visualization often fail to maintain interactive response times or require excessive pre-processing and additional storage. 
+                                            We propose an in-memory adaptive caching approach, MinMaxCache, that efficiently reuses previous query results to accelerate 
+                                            visualization performance within accuracy constraints. MinMaxCache fetches data at adaptively determined aggregation granularities 
+                                            to maintain interactive response times and generate approximate visualizations with accuracy guarantees. Our results show that it 
+                                            is up to 10 times faster than current solutions without significant accuracy compromise.
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="program-sessions"><!--1:15 - 1:30pm--></td>
+                                    <td class="program-sessions"> <i>Chimp: Efficient Lossless Floating Point Compression for Time Series Databases</i> 
+                                        <br> Liakos, Panagiotis; Papakonstantinopoulou, Katia; Kotidis, Yannis 
+                                        <br> <a class="toggle-abstract" onclick="toggleAbstract('abstract-16')">Click to display the abstract</a>
+                                        <span class="paper-abstract" id="abstract-16">
+
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="program-sessions"> 1:30 - 3:00pm </td>
+                                    <td class="program-sessions"> <b>Lunch break</b> </td>
                                 </tr>
                                 <tr>
                                     <td class="program-sessions">3:00 - 3:30pm</td>
-                                    <td class="program-sessions"> keynote 2 </td>
+                                    <td class="program-sessions"> Industry Session </td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2" class="program-session-titles"> <b> Session 3: "Title" </b> Chair: Chair </tr>
+                                    <td class="program-sessions">3:30 - 4:00pm</td>
+                                    <td class="program-sessions"><b>Keynote 2:</b> Verena Kantere </td>
                                 </tr>
-                                <tr>
-                                    <td class="program-sessions">3:30 - 3:45pm</td>
-                                    <td class="program-sessions">Paper 1</td>
-                                </tr>
-                                <tr>
+                                <!-- <tr>
                                     <td class="program-sessions">3:45 - 4:00pm</td>
                                     <td class="program-sessions">Paper 2</td>
                                 </tr>
@@ -163,23 +395,27 @@
                                 <tr>
                                     <td class="program-sessions">4:45 - 5:00pm</td>
                                     <td class="program-sessions">Paper 6</td>
+                                </tr> -->
+                                <tr>
+                                    <td class="program-sessions">4:00-4:30pm</td>
+                                    <td class="program-sessions"><b>Break</b></td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2" class="program-session-breaks">30 min break</td>
+                                    <td class="program-sessions">4:30-5:30pm</td>
+                                    <td class="program-sessions">Panel AI & DB in Industry</tr>
                                 </tr>
                                 <tr>
-                                    <td colspan="2" class="program-session-titles"> <b> Session 4: "Panel/Poster session" </b> Chair: Chair </tr>
-                                </tr>
-                                <tr>
-                                    <td class="program-sessions">5:30-7:00pm</td>
-                                    <td class="program-sessions">Panel / Posters</td>
+                                    <td class="program-sessions">5:45-7:00pm</td>
+                                    <td class="program-sessions">Posters</td>
                                 </tr>
                                 <tr>
                                     <td colspan="2" class="program-session-breaks">Move to dinner</td>
                                 </tr>
                             </tbody>
                         </table>
-                        <br><br>
+                    </div>
+                    <br><br>
+                    <div class="table-wrapper">
                         <table class="alt">
                             <tbody>
                                 <tr>
@@ -191,91 +427,290 @@
                                 </tr>
                                 <tr>
                                     <td class="program-sessions">9:30 - 10:00am</td>
-                                    <td class="program-sessions"> keynote 1 </td>
+                                    <td class="program-sessions"> <b> keynote 3: </b> Ippokratis Pandis </td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2" class="program-session-titles"> <b> Session 1: "Title" </b> Chair: Chair </tr>
+                                    <td colspan="2" class="program-session-titles"> <b> Session 1: "Query Processing & Execution" </b> Chair: Chair </tr>
                                 </tr>
                                 <tr>
-                                    <td class="program-sessions">10:00 - 10:15am</td>
-                                    <td class="program-sessions">Paper 1</td>
+                                    <td class="program-sessions"><!--10:00 - 10:15am--></td>
+                                    <td class="program-sessions"> <i> Predicate Transfer: Efficient Pre-Filtering on Multi-Join Queries </i> 
+                                        <br> Koutris, Paraschos*; Yu, Xiangyao; Zhao, Hangdong; Yang, Yifei 
+                                        <br> <a class="toggle-abstract" onclick="toggleAbstract('abstract-17')">Click to display the abstract</a>
+                                        <span class="paper-abstract" id="abstract-17">
+                                            This paper presents predicate transfer, a novel method that optimizes join performance by pre-filtering tables to reduce the join input sizes. 
+                                            Predicate transfer generalizes Bloom join, which conducts pre-filtering within a single join operation, to multi-table joins such that the 
+                                            filtering benefits can be significantly increased. Predicate transfer is inspired by the seminal theoretical results by Yannakakis, which uses 
+                                            semi-joins to pre-filter acyclic queries. Predicate transfer generalizes the theoretical results to any join graphs and use Bloom filters to replace 
+                                            semi-joins leading to significant speedup. Evaluation shows predicate transfer can outperform Bloom join by 3.3× on average on the TPC-H benchmark.
+                                        </span>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td class="program-sessions">10:15 - 10:30am</td>
-                                    <td class="program-sessions">Paper 2</td>
+                                    <td class="program-sessions"><!--10:15 - 10:30am--></td>
+                                    <td class="program-sessions"> <i> Foreign Keys Open the Door for Faster Incremental View Maintenance </i> 
+                                        <br> Svingos, Christoforos* 
+                                        <br> <a class="toggle-abstract" onclick="toggleAbstract('abstract-18')">Click to display the abstract</a>
+                                        <span class="paper-abstract" id="abstract-18">
+                                            Serverless cloud-based warehousing systems enable users to create materialized views in order to speed up predictable and repeated query workloads. 
+                                            Incremental view maintenance (IVM) minimizes the time needed to bring a materialized view up-to-date. It allows the refresh of a materialized view 
+                                            solely based on the base table changes since the last refresh. In serverless cloud-based warehouses, IVM uses computations defined as SQL scripts 
+                                            that update the materialized view based on updates to its base tables. However, the scripts set up for materialized views with inner joins are not 
+                                            optimal in the presence of foreign key constraints. For instance, for a join of two tables, the state of the art IVM computations use a UNION ALL 
+                                            operator of two joins - one computing the contributions to the join from updates to the first table and the other one computing the remaining 
+                                            contributions from the second table. Knowing that one of the join keys is a foreign-key would allow us to prune all but one of the UNION ALL branches 
+                                            and obtain a more efficient IVM script. In this work, we explore ways of incorporating knowledge about foreign key into IVM in order to speed up 
+                                            its performance. Experiments in Redshift showed that the proposed technique improved the execution times of the whole refresh process up to 2 times, 
+                                            and up to 2.7 times the process of calculating the necessary changes that will be applied into the materialized view.
+                                        </span>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td class="program-sessions">10:30 - 10:45am</td>
-                                    <td class="program-sessions">Paper 3</td>
+                                    <td class="program-sessions"><!--10:30 - 10:45am--></td>
+                                    <td class="program-sessions"> <i> SH2O: Efficient Data Access for Work-Sharing Databases </i> 
+                                        <br> Mytilinis, Ioannis*; Sioulas, Panagiotis; Ailamaki, Anastasia 
+                                        <br> <a class="toggle-abstract" onclick="toggleAbstract('abstract-19')">Click to display the abstract</a>
+                                        <span class="paper-abstract" id="abstract-19">
+                                            Interactive applications require processing tens to hundreds of concurrent analytical queries within tight time constraints. In such setups, where 
+                                            high concurrency causes contention, work-sharing databases are critical for improving scalability and for bounding the increase in response time. 
+                                            However, as such databases share data access using full scans and expensive shared filters, they suffer from a data-access bottleneck that jeopardizes
+                                            interactivity. We present SH2O: a novel data-access operator that addresses the data-access bottleneck of work-sharing
+                                            databases. SH2O is based on the idea that an access pattern based on judiciously selected multidimensional
+                                            ranges can replace a set of shared filters. To exploit the idea in an efficient and scalable manner, SH2O uses a
+                                            three-tier approach: i) it uses spatial indices to efficiently access the ranges without overfetching, ii) it uses an
+                                            optimizer to choose which filters to replace such that it maximizes cost-benefit for index accesses, and iii) it
+                                            exploits partitioning schemes and independently accesses each data partition to reduce the number of filters
+                                            in the access pattern. Furthermore, we propose a tuning strategy that chooses a partitioning and indexing
+                                            scheme that minimizes SH2O’s cost for a target workload. Our evaluation shows a speedup of 1.8 − 22.2 for
+                                            batches of hundreds of data-access-bound queries.
+                                        </span>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td class="program-sessions">10:45 - 11:00am</td>
-                                    <td class="program-sessions">Paper 4</td>
+                                    <td class="program-sessions"><!--10:45 - 11:00am--></td>
+                                    <td class="program-sessions"> <i> Efficient Computation of Quantiles over Joins </i> 
+                                        <br> Tziavelis, Nikolaos*  
+                                        <br> <a class="toggle-abstract" onclick="toggleAbstract('abstract-20')">Click to display the abstract</a>
+                                        <span class="paper-abstract" id="abstract-20">
+                                            We consider the complexity of answering Quantile Join Queries, which ask for the answer at a specified relative position (e.g., 50% for the median) 
+                                            under some ordering over the answers to an ordinary Join Query. The goal is to avoid materializing the set of all join answers, and to achieve close 
+                                            to linear time in the size of the database, regardless of the total number of answers. As we show, this is not possible for all queries 
+                                            (under certain assumptions in fine-grained complexity) and it crucially depends on both the join structure and the desired order. We establish a 
+                                            dichotomy that precisely characterizes the (self-join-free) queries that can be handled efficiently for common ranking functions, such as a sum 
+                                            of attribute weights. We also provide an algorithm that can handle all known tractable cases by iteratively using a "trimming'' subroutine which 
+                                            removes query answers that are higher or lower (according to the ranking function) than a certain answer determined as the "pivot".
+                                        </span>
+                                    
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td class="program-sessions">11:00 - 11:15am</td>
-                                    <td class="program-sessions">Paper 5</td>
+                                    <td class="program-sessions"><!--11:00 - 11:15am--></td>
+                                    <td class="program-sessions"> <i> Raster Intervals: An Approximation Technique for Polygon Intersection Joins </i> 
+                                        <br> Georgiadis, Thanasis*; Mamoulis, Nikos 
+                                        <br> <a class="toggle-abstract" onclick="toggleAbstract('abstract-21')">Click to display the abstract</a>
+                                        <span class="paper-abstract" id="abstract-21">
+                                            Many data science applications, most notably Geographic Information Systems, require the computation of spatial joins between large object collections. 
+                                            The objective is to find pairs of objects that intersect, i.e., share at least one common point. The intersection test is very expensive especially 
+                                            for polygonal objects. Therefore, the objects are typically approximated by their minimum bounding rectangles (MBRs) and the join is performed in two 
+                                            steps. In the filter step, all pairs of objects whose MBRs intersect are identified as candidates; in the refinement step, each of the candidate pairs 
+                                            is verified for intersection. The refinement step has been shown notoriously expensive, especially for polygon-polygon joins, constituting the bottleneck 
+                                            of the entire process. We propose a novel approximation technique for polygons, which (i) rasterizes them using a fine grid, (ii) models groups of 
+                                            nearby cells that intersect a polygon as an interval, and (iii) encodes each interval by a bitstring that captures the overlap of each cell in it with 
+                                            the polygon. We also propose an efficient intermediate filter, which is applied on the object approximations before the refinement step, to avoid it 
+                                            for numerous object pairs. Via experimentation with real data, we show that the end-to-end spatial join cost can be reduced by up to one order of 
+                                            magnitude with the help of our filter and by at least three times compared to using alternative intermediate filters.
+                                        </span>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td class="program-sessions">11:15 - 11:30am</td>
-                                    <td class="program-sessions">Paper 6</td>
+                                    <td class="program-sessions"><!--11:15 - 11:30am--></td>
+                                    <td class="program-sessions"> <i> In-Situ Cross-Database Query Processing </i>  
+                                        <br> Gavriilidis, Haralampos*; Beedkar, Kaustubh; Quiané Ruiz, Jorge Arnulfo; Markl, Volker 
+                                        <br> <a class="toggle-abstract" onclick="toggleAbstract('abstract-22')">Click to display the abstract</a>
+                                        <span class="paper-abstract" id="abstract-22">
+                                            Today’s organizations utilize a plethora of heterogeneous and autonomous DBMSes, many of those being spread across different geo-locations. It is 
+                                            therefore crucial to have effective and efficient cross-database query processing capabilities. We present XDB, an efficient middleware system that 
+                                            runs cross-database analytics over existing DBMSes. In contrast to traditional query processing systems, XDB does not rely on any mediating execution 
+                                            engine to perform cross-database operations (e.g., joining data from two DBMSes). It delegates an entire query execution including cross-database 
+                                            operations to underlying DBMSes. At its core, it comprises an optimizer and a delegation engine: the optimizer rewrites cross-database queries into 
+                                            a delegation plan, which captures the semantics as well as the mechanics of a fully decentralized query execution; the delegation engine then deploys 
+                                            the plan to the underlying DBMSes via their declarative interfaces. Our experimental study based on the TPC-H benchmark data shows that XDB outperforms 
+                                            state-of-the-art systems (Garlic and Presto) by up to 6× in terms of runtime and up to 3 orders of magnitude in terms of data transfer.
+                                        </span>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2" class="program-session-breaks"> 30 min break</td>
+                                    <td class="program-sessions"><!--11:15 - 11:30am--></td>
+                                    <td class="program-sessions">P <i> Cost-based Data Prefetching and Scheduling in Big Data Platforms over Tiered Storage Systems </i> 
+                                        <br> Herodotou, Herodotos *; Kakoulli, Elena 
+                                        <br> <a class="toggle-abstract" onclick="toggleAbstract('abstract-23')">Click to display the abstract</a>
+                                        <span class="paper-abstract" id="abstract-23">
+                                            The use of storage tiering is becoming popular in data-intensive compute clusters due to the recent advancements in storage technologies. 
+                                            The Hadoop Distributed File System, for example, now supports storing data in memory, SSDs, and HDDs, while OctopusFS and hatS offer fine-grained 
+                                            storage tiering solutions. However, current big data platforms (such as Hadoop and Spark) are not exploiting the presence of storage tiers and 
+                                            the opportunities they present for performance optimizations. Specifically, schedulers and prefetchers will make decisions only based on data 
+                                            locality information and completely ignore the fact that local data are now stored on a variety of storage media with different performance 
+                                            characteristics. This article presents Trident, a scheduling and prefetching framework that is designed to make task assignment, resource scheduling, 
+                                            and prefetching decisions based on both locality and storage tier information. Trident formulates task scheduling as a minimum cost maximum 
+                                            matching problem in a bipartite graph and utilizes two novel pruning algorithms for bounding the size of the graph, while still guaranteeing 
+                                            optimality. In addition, Trident extends YARN’s resource request model and proposes a new storage-tier-aware resource scheduling algorithm. 
+                                            Finally, Trident includes a cost-based data prefetching approach that coordinates with the schedulers for optimizing prefetching operations. 
+                                            Trident is implemented in both Spark and Hadoop and evaluated extensively using a realistic workload derived from Facebook traces as well as 
+                                            an industry-validated benchmark, demonstrating significant benefits in terms of application performance and cluster efficiency.
+                                        </span>
+                                    
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2" class="program-session-titles"> <b> Session 2: "Title" </b> Chair: Chair </tr>
+                                    <td class="program-sessions"><!--11:15 - 11:30am--></td>
+                                    <td class="program-sessions"> <i> DIAERESIS: RDF Data Partitioning and Query Processing on SPARK </i> 
+                                        <br> Troullinou, Georgia; Agathangelos, Giannis; Kondylakis, Haridimos*; Stefanidis, Kostas; Plexousakis, Dimitris 
+                                        <br> <a class="toggle-abstract" onclick="toggleAbstract('abstract-24')">Click to display the abstract</a>
+                                        <span class="paper-abstract" id="abstract-24">
+                                            The explosion of the web and the abundance of linked data demand effective and efficient methods for storage, management, and querying. Apache Spark 
+                                            is one of the most widely used engines for big data processing, with more and more systems adopting it for efficient query answering. Existing 
+                                            approaches exploiting Spark for querying RDF data, adopt partitioning techniques for reducing the data that need to be accessed in order to improve 
+                                            efficiency. However, simplistic data partitioning fails, on one hand, to minimize data access and on the other hand to group data usually queried 
+                                            together. This is translated into limited improvement in terms of efficiency in query answering. In this paper, we present DIAERESIS, a novel 
+                                            platform that accepts as input an RDF dataset and effectively partitions it, minimizing data access and improving query answering efficiency. 
+                                            To achieve this, DIAERESIS first identifies the top-k most important schema nodes, i.e., the most important classes, as centroids and distributes 
+                                            the other schema nodes to the centroid they mostly depend on. Then, it allocates the corresponding instance nodes to the schema nodes they are 
+                                            instantiated under. Our algorithm enables fine-tuning of data distribution, significantly reducing data access for query answering. We experimentally 
+                                            evaluate our approach using both synthetic and real workloads, strictly dominating existing state-of-the-art, showing that we improve query answering 
+                                            in several cases by orders of magnitude.
+                                        </span>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td class="program-sessions">12:00 - 12:15pm</td>
-                                    <td class="program-sessions">Paper 1</td>
+                                    <td class="program-sessions"> 11:30 - 12:00pm </td>
+                                    <td class="program-sessions"> <b>Break</b> </td>
                                 </tr>
                                 <tr>
-                                    <td class="program-sessions">12:15 - 12:30pm</td>
-                                    <td class="program-sessions">Paper 2</td>
+                                    <td colspan="2" class="program-session-titles"> <b> Session 2: "Indexing & Similarity Search" </b> Chair: Chair </tr>
                                 </tr>
                                 <tr>
-                                    <td class="program-sessions">12:30 - 12:45pm</td>
-                                    <td class="program-sessions">Paper 3</td>
+                                    <td class="program-sessions"><!--12:00 - 12:15pm--></td>
+                                    <td class="program-sessions"> <i> LIT: Lightning-fast In-memory Temporal Indexing </i> <br> 
+                                        George Christodoulou (TU Delft); Panagiotis Bouros (Johannes Gutenberg University Mainz); Nikos Mamoulis (University of Ioannina)* 
+                                        <br> <a class="toggle-abstract" onclick="toggleAbstract('abstract-25')">Click to display the abstract</a>
+                                        <span class="paper-abstract" id="abstract-25">
+                                            We study the problem of temporal database indexing, i.e., indexing versions of a database table in an evolving database. With the larger and 
+                                            cheaper memory chips nowadays, we can afford to keep track of all versions of an evolving table in memory. This raises the question of how to 
+                                            index such a table effectively. We depart from the classic indexing approach, where both current (i.e., live) and past (i.e., dead) data versions 
+                                            are indexed in the same data structure, and propose LIT, a hybrid index, which decouples the management of the current and past states of the indexed 
+                                            column. LIT includes optimized indexing modules for dead and live records, which support efficient queries and updates, and gracefully combines them. 
+                                            We experimentally show that LIT is orders of magnitude faster than the state-of-the-art temporal indices. Furthermore, we demonstrate that LIT uses 
+                                            linear space to the number of record indexed versions, making it suitable for main-memory temporal data management.
+                                        </span>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td class="program-sessions">12:45 - 1:00pm</td>
-                                    <td class="program-sessions">Paper 4</td>
+                                    <td class="program-sessions"><!--12:15 - 12:30pm--></td>
+                                    <td class="program-sessions"> <i> Efficient Semantic Similarity Search over Spatio-textual Data </i> 
+                                        <br> George S. Theodoropoulos (University of Piraeus); Kjetil Nørvåg (Norwegian University of Science and Technology); Christos Doulkeridis 
+                                        (University of Pireaus)* 
+                                        <br> <a class="toggle-abstract" onclick="toggleAbstract('abstract-26')">Click to display the abstract</a>
+                                        <span class="paper-abstract" id="abstract-26">
+                                            In this paper, we address the problem of semantic similarity search over spatio-textual data. In contrast with most existing works on spatial-keyword 
+                                            search that rely on exact matching of query keywords to textual descriptions, we focus on semantic textual similarity using word embeddings, which 
+                                            have been shown to capture semantic similarity exceptionally well in practice. To support efficient k-nearest neighbor (k-NN) search over a weighted 
+                                            combination of spatial and semantic dimensions, we propose a novel indexing approach (called CSSI) that ensures correctness of results, alongside its 
+                                            approximate variant (called CSSIA) that introduces a small amount of error in exchange for improved performance. Both variants are based on a hybrid 
+                                            clustering scheme that jointly indexes the spatial and textual/semantic information, achieving high pruning percentages and improved performance and 
+                                            scalability.
+                                        </span>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td class="program-sessions">1:00 - 1:15pm</td>
-                                    <td class="program-sessions">Paper 5</td>
+                                    <td class="program-sessions"><!--12:30 - 12:45pm--></td>
+                                    <td class="program-sessions"> <i> Ένα Πλαίσιο Διαχείρισης Δεδομένων για Συνεχή kNN Κατάταξη Φορτιστών Ηλεκτρικών Οχημάτων με Εκτιμώμενα Στοιχεία </i> 
+                                        <br> Soteris Constantinou (University of Cyprus)*; Constantinos Costa (Rinnoco Ltd); Andreas Konstantinidis (Frederick University); Mohamed Mokbel 
+                                        (University of Minnesota - Twin Cities); Demetrios Zeinalipour-Yazti (University of Cyprus) 
+                                        <br> <a class="toggle-abstract" onclick="toggleAbstract('abstract-27')">Click to display the abstract</a>
+                                        <span class="paper-abstract" id="abstract-27">
+                                            Σε αυτό το άρθρο, παρουσιάζουμε ένα πλαίσιο διαχείρισης δεδομένων του οποίου ο στόχος είναι να επιτρέψει στους οδηγούς να επαναφορτίζουν τα 
+                                            Ηλεκτρικά Οχήματά τους (ΗΟ) από τους πιο φιλικούς προς το περιβάλλον φορτιστές. Ειδικότερα, στόχος ειναι να μεγιστοποιούν οι  οι φορτιστές την 
+                                            ιδιοκατανάλωση ανανεώσιμων πηγών (π.χ., ηλιακής ενέργειας), ελαχιστοποιώντας με αυτόν τον τρόπο την παραγωγή CO2 και επίσης την ανάγκη για ακριβές 
+                                            στάσιμες μπαταρίες στο ηλεκτρικό δίκτυο για την αποθήκευση ανανεώσιμης ενέργειας. Μοντελοποιούμε το πρόβλημά μας ως ένα επερώτημα Continuous 
+                                            k-Nearest Neighbor, όπου η συνάρτηση απόστασης υπολογίζεται χρησιμοποιώντας Εκτιμώμενα Στοιχεία (Estimated Components - EC), και το ονομάζουμε 
+                                            CkNN-EC. Ένα EC ορίζει μια συνάρτηση που μπορεί να έχει ασαφή τιμή βάσει ορισμένων εκτιμήσεων. Συγκεκριμένα EC που χρησιμοποιούνται σε αυτή τη 
+                                            δουλειά είναι: (i) η (διαθέσιμη καθαρή) ενέργεια στον φορτιστή, που εξαρτάται από τις εκτιμώμενες καιρικές συνθήκες, (ii) η διαθεσιμότητα του 
+                                            φορτιστή, που εξαρτάται από τα εκτιμώμενα χρονοδιαγράμματα που δείχνουν πότε ο φορτιστής είναι κατειλημμένοι, και (iii) το κόστος παράκαμψης, 
+                                            που είναι ο χρόνος για να φτάσει κανείς στον φορτιστή ανάλογα με την εκτιμώμενη κίνηση. Δημιουργήσαμε το σύστημα EcoCharge που συνδυάζει τους 
+                                            πολλαπλούς μη-αντικρουόμενους στόχους σε μια συνάρτηση βελτιστοποίησης παράγοντας μια κατάταξη φορτιστών. Ο βασικός μας αλγόριθμος χρησιμοποιεί 
+                                            κατώτερες και ανώτερες τιμές διαστημάτων που προέρχονται από τα EC για να προτείνει τους φορτιστές με την υψηλότερη κατάταξη και να τους 
+                                            παρουσιάσει στους χρήστες μέσω μιας διεπαφής χαρτών. Η πειραματική μας αξιολόγηση με εκτενείς συνθετικά και πραγματικά δεδομένα μαζί με δεδομένα 
+                                            φορτιστών από το Plugshare δείχνει ότι το EcoCharge πληροί τους στόχους της συνάρτησης με αποτελεσματικό τρόπο, επιτρέποντας συνεχή και ακριβές 
+                                            επαναυπολογισμό στις διάφορες συσκευές.
+                                        </span>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td class="program-sessions">1:15 - 1:30pm</td>
-                                    <td class="program-sessions">Paper 6</td>
+                                    <td class="program-sessions"><!--12:45 - 1:00pm--></td>
+                                    <td class="program-sessions"> <i> OmniSketch: Efficient Multi-Dimensional High-Velocity Stream Analytics with Arbitrary Predicates </i> 
+                                        <br> Wieger R. Punter (TU Eindhoven); Odysseas Papapetrou (TU Eindhoven)*; Minos Garofalakis (ATHENA Research Center) 
+                                        <br> <a class="toggle-abstract" onclick="toggleAbstract('abstract-28')">Click to display the abstract</a>
+                                        <span class="paper-abstract" id="abstract-28">
+                                            A key need in different disciplines is to perform analytics over fast-paced data streams, similar in nature to the traditional OLAP analytics in relational
+                                            databases i.e., with filters and aggregates. Storing unbounded streams, however, is not a realistic, or desired approach due to the high storage 
+                                            requirements, and the delays introduced when storing massive data. Accordingly, many synopses/sketches have been proposed that can summarize the stream 
+                                            in small memory (usually sufficiently small to be stored in RAM), such that aggregate queries can be efficiently approximated, without storing the full 
+                                            stream. However, past synopses predominantly focus on summarizing single-attribute streams, and cannot handle filters and constraints on arbitrary subsets 
+                                            of multiple attributes efficiently. In this work, we propose OmniSketch, the first sketch that scales to fast-paced and complex data streams 
+                                            (with many attributes), and supports aggregates with filters on multiple attributes, dynamically chosen at query time. The sketch offers probabilistic 
+                                            guarantees, a favorable space-accuracy tradeoff, and a worst-case logarithmic complexity for updating and for query execution. We demonstrate experimentally
+                                            with both real and synthetic data that the sketch outperforms the state-of-the-art, and that it can approximate complex ad-hoc queries within the 
+                                            configured accuracy guarantees, with small memory requirements.
+                                        </span>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2" class="program-session-breaks"> 90 min lunch break</td>
+                                    <td class="program-sessions"><!--1:00 - 1:15pm--></td>
+                                    <td class="program-sessions"> <i> Dandelion Hashtable: Beyond Billion In-memory Requests per Second on a Commodity Server. </i> 
+                                        <br> Antonios Katsarakis (Huawei Research)*; Vasilis Gavrielatos (Huawei); Nikos Ntarmos (Edinburgh Research Center, Central Software Institute, Huawei) 
+                                        <br> <a class="toggle-abstract" onclick="toggleAbstract('abstract-29')">Click to display the abstract</a>
+                                        <span class="paper-abstract" id="abstract-29">
+                                            This paper presents DLHT, a concurrent in-memory hashtable. Despite efforts to optimize hashtables, that go as far as sacrificing core functionality, 
+                                            state-of-the-art designs still incur multiple memory accesses per request and block request processing in three cases. First, most hashtables block while waiting for 
+                                            data to be retrieved from memory. Second, open-addressing designs, which represent the current state-of-the-art, either cannot free index slots on deletes or must block 
+                                            all requests to do so. Third, index resizes block every request until all objects are copied to the new index. Defying folklore wisdom, DLHT forgoes open-addressing and adopts 
+                                            a fully-featured and memory-aware closed-addressing design based on bounded cache-line-chaining. This design offers lock-free index operations and deletes that free slots instantly, 
+                                            (2) completes most requests with a single memory access, (3) utilizes software prefetching to hide memory latencies, and (4) employs a novel non-blocking and parallel resizing. 
+                                            In a commodity server and a memory-resident workload, DLHT surpasses 1.6B requests per second and provides 3.5x (12×) the throughput of the state-of-the-art closed-addressing (open-addressing) 
+                                            resizable hashtable on Gets (Deletes).
+                                        </span>
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td class="program-sessions">3:00 - 4:00pm</td>
-                                    <td class="program-sessions"> Mentoring </td>
+                                    <td class="program-sessions"><!--1:15 - 1:30pm--></td>
+                                    <td class="program-sessions"> <i> Proportionality on Spatial Data with Context </i> 
+                                        <br> Fakas, George; Kalamatianos, Georgios; 
+                                        <!-- <br> <a class="toggle-abstract" onclick="toggleAbstract('abstract-30')">Click to display the abstract</a>
+                                        <span class="paper-abstract" id="abstract-30">
+                                        </span> -->
+                                    </td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2" class="program-session-breaks"> 30 min break</td>
+                                    <td class="program-sessions"> 1:15-3:00pm </td>
+                                    <td class="program-sessions"> <b>Lunch break & Mentoring Event</b></td>
+                                </tr>
+                                <tr>
+                                    <td class="program-sessions">3:00 - 4:30pm</td>
+                                    <td class="program-sessions"> Updates/Highlights in DB </td>
                                 </tr>
                                 <tr>
                                     <td class="program-sessions">4:30 - 5:00pm</td>
-                                    <td class="program-sessions">Athena/Archimedes</td>
+                                    <td class="program-sessions"> <b>Break</b> </td>
                                 </tr>
                                 <tr>
-                                    <td colspan="2" class="program-session-breaks">30 min break</td>
+                                    <td colspan="2" class="program-session-titles"> <b> Session 3: "Panel AI in Academia / Education-Research-System Design" </b> </tr>
                                 </tr>
                                 <tr>
-                                    <td colspan="2" class="program-session-titles"> <b> Session 3: "New directions in DB Panel" </b> Chair: Chair </tr>
-                                </tr>
-                                <tr>
-                                    <td class="program-sessions">5:30 - 6:30pm</td>
+                                    <td class="program-sessions">5:00 - 6:30pm</td>
                                     <td class="program-sessions"> Panel </td>
                                 </tr>
                                 <tr>
-                                    <td class="program-sessions">6:30</td>
+                                    <td class="program-sessions">6:30pm</td>
                                     <td class="program-sessions"> Closing remarks </td>
                                 </tr>
                             </tbody>
@@ -304,12 +739,13 @@
     <span onclick="topFunction()" id="top_button" title="Go to top"><img src="images/up-arrow.png" width="50px;" onmouseover="hover(this);" onmouseout="unhover(this);"/></span>
 
 <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/skel.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/scroll_to_top.js"></script>
-    
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/skel.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/scroll_to_top.js"></script>
+<script src="assets/js/program.js"></script>
+
 
     
 
