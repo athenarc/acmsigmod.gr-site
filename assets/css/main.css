@@ -112,6 +112,7 @@ a:hover
     html
     {
         font-size: 8px !important;
+        color: red !important;
     }
 }
 
@@ -371,15 +372,15 @@ a:hover
 
 .hero .front-content .container-mid
 {
-    /* position: absolute; */
-    /* bottom: 10%; */
-    /* left: 0; */
-    /* margin: auto; */
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    /* margin: auto;
     height: 100%;
     overflow: hidden;
     width: 100%;
     margin: auto;
-    margin-top: 17em;
+    margin-top: 17em; */
 /* 
     -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
