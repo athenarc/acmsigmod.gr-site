@@ -1,0 +1,485 @@
+<!DOCTYPE HTML>
+<!--
+	Theory by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+
+<head>
+	<title>HDMS 2024</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-138972724-1"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="assets/css/main_newest.css" />
+
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'UA-138972724-1');
+	</script>
+
+	<style>
+		<style>.bold {
+			font-weight: bold;
+		}
+
+		.time {
+			position: relative;
+			float: left;
+		}
+
+		.timeline-wrapper {
+			margin-left: auto;
+			margin-right: auto;
+			padding-left: 80px;
+			min-width: 400px;
+			font-family: 'Arial';
+			font-size: 14px;
+			/*border: 1px solid #CCC;*/
+		}
+
+		.StepProgress {
+			position: relative;
+			padding-left: 45px;
+			margin-left: auto;
+			margin-right: auto;
+			list-style: none;
+		}
+
+		.StepProgress::before {
+			display: inline-block;
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 15px;
+			width: 10px;
+			height: 100%;
+			border-left: 2px solid white;
+		}
+
+		.StepProgress-item {
+			position: relative;
+			counter-increment: list;
+		}
+
+		.StepProgress-item:not(:last-child) {
+			padding-bottom: 20px;
+		}
+
+		.StepProgress-item::before {
+			display: inline-block;
+			content: '';
+			position: absolute;
+			left: -30px;
+			height: 100%;
+			width: 10px;
+		}
+
+		.StepProgress-item::after {
+			content: '';
+			display: inline-block;
+			position: absolute;
+			top: 0;
+			left: -37px;
+			width: 12px;
+			height: 12px;
+			border: 2px solid white;
+			border-radius: 50%;
+			background-color: white;
+		}
+
+		.StepProgress-item.is-done::before {
+			border-left: 2px solid white;
+		}
+
+		.StepProgress-item.is-done::after {
+			/*content: "?";*/
+			font-size: 10px;
+			color: green;
+			text-align: center;
+			border: 2px solid white;
+			background-color: white;
+		}
+
+		.StepProgress strong {
+			display: block;
+		}
+
+		h2 a:hover {
+			color: rgb(129, 197, 254) !important;
+		}
+	</style>
+</head>
+
+<body>
+
+	<header id="header">
+		<div class="inner">
+			<nav id="nav">
+				<a href="index.html">
+					<picture>
+						<source media="(min-width: 1250px)" srcset="images/logo.png">
+						<source media="(max-width: 1250px)" srcset="images/logo_mobile.png" width="170px;">
+						<img id="logo" src="images/banner.jpg" alt="HDMS 2024" style="left: 37px;">
+					</picture>
+
+					<!-- <img src="images/logo.png" alt="HDMS 2024" width="70px;" style="margin-top: 10px; left: 37px;" /> -->
+				</a>
+				<div class="mobile_menu_divider"><img src="images/mobile_menu_divider.png" width="70px;"></div>
+				<a href="index.html"><b>HOME</b></a>
+				<!-- <a href="generic.html">News</a> -->
+				<a href="#topics"><b>TOPICS</b></a>
+				<a href="#dates"><b>DATES</b></a>
+				<!-- <a href="program.html"><b>PROGRAM</b></a> -->
+				<!-- <a href="posters.html"><b>POSTERS</b></a> -->
+				<a href="#committee"><b>ORGANIZATION</b></a>
+				<a href="#registration"><b>REGISTRATION</b></a>
+				<!-- <a href="#student_awards"><b>STUDENT AWARDS</b></a> -->
+				<a href="#social_event"><b>SOCIAL EVENT</b></a>
+				<!-- <a href="#photos"><b>PHOTOS</b></a> -->
+				<a href="../history.html"><b>HISTORY</b></a>
+				<a href="#sponsors"><b>SPONSORS</b></a>
+				<!-- <a href="sponsorship-opportunities.html"><b>SPONSOR OPPORTUNITIES</b><a> -->
+				<div class="mobile_menu_divider"><img src="images/mobile_menu_divider.png" width="70px;"></div>
+				<a href="index_gr.html" style="position: absolute; right: 37px;"></a>
+			</nav>
+			<a href="#navPanel" class="navPanelToggle">
+				<img src="images/mobile_menu_icon.png" alt="Menu" width="60px;">
+			</a>
+		</div>
+	</header>
+
+
+	<section style="background-color: #015CAB;">
+		<!-- <img src="images/banner.jpg" width="100%"> -->
+		<picture>
+			<source media="(min-width: 1250px)" srcset="images/banner_new_no_dates.png">
+			<source media="(max-width: 750px)" srcset="images/banner_mobile3_new_no_dates.png">
+			<img src="images/banner_mobile3_new_2024.png" alt="HDMS banner" width="100%">
+		</picture>
+		</div>
+	</section>
+
+	<section style="background-color: #015CAB;">
+		<div id="banner_wrapper">
+		</div>
+	</section>
+	<section id="one" class="wrapper">
+		<div class="inner" style="text-align: justify;">
+			<div class="row 200%">
+				<div class="12u 12u$(medium)" style="text-align:justify;">
+					<!-- <p class="text-center"><b><u>Venue:</u></b> Panorama Hall | Royal
+							 Olympic Hotel | Athens, Greece</p> -->
+					<p>The Hellenic Data Management
+						Symposium (HDMS) is the annual forum for the Greek database community to
+						present and discuss recent advances for data-intensive applications and
+						systems. After a hiatus due to the pandemic, we resume the successful
+						series with the 19th HDMS.</p>
+					<p>The program will include academic and industry talks, keynotes, panels,
+						poster sessions, demos, and, new this year, mentoring 1-1 sessions open
+						to all registered students.</p>
+
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<section id="topics"
+		style="background-color:#015CAB; margin:auto; padding: 32px; text-align:center; vertical-align:middle;">
+		<h2 class="font_stroke">TOPICS</h2>
+	</section>
+
+	<div id="second_header">
+		<p> <br /><br />We invite submissions in the following three tracks:<br />
+			(A) Research, (B) Working Ideas, and (C) Demos.</p>
+	</div>
+
+	<div id="third_header">
+		Topics of interest include but are not limited to:
+	</div>
+	<section id="conference-timeline">
+		<div class="conference-center-line"></div>
+		<div class="conference-timeline-content">
+			<!-- Article -->
+			<div class="timeline-article">
+				<div class="content-left-container">
+					<div class="content-left">
+						<p>Core database technologies (e.g., query processing and optimization, storage and indexing,
+							database concurrency control, OLTP and OLAP processing).</p>
+					</div>
+
+				</div>
+				<div class="content-right-container">
+					<div class="content-right">
+						<p>Models and languages for the management of data (e.g., XML, RDF, probabilistic databases,
+							meta-data management, multi-media, graph data management).</p>
+					</div>
+
+				</div>
+				<div class="meta-date">
+					<span class="date"></span>
+					<span class="month"></span>
+				</div>
+			</div>
+			<div class="timeline-article" style="vertical-align:middle; ">
+				<div class="content-left-container" style="width:auto; vertical-align:middle;">
+					<div class="content-left" style="width:100%; vertical-align:middle;">
+						<p style="padding: 26px 0 0 0;">NoSQL and Cloud technologies (e.g., storage, scalability) </p>
+
+					</div>
+
+				</div>
+				<div class="content-right-container">
+					<div class="content-right">
+						<p>Techniques for high performance and scalability in the management of data (e.g., distributed
+							data processing, hardware accelerators, new hardware technologies).</p>
+					</div>
+
+				</div>
+				<div class="meta-date">
+					<span class="date"></span>
+					<span class="month"></span>
+				</div>
+			</div>
+			<div class="timeline-article">
+				<div class="content-left-container">
+					<div class="content-left">
+						<p>Emerging data management architectures (e.g., data stream management, peer-to-peer systems,
+							mobile data management, blockchain).</p>
+					</div>
+				</div>
+				<div class="content-right-container">
+					<div class="content-right">
+						<p>Confluence of data management with: information retrieval, knowledge management, natural
+							language processing, and data mining.</p>
+					</div>
+				</div>
+				<div class="meta-date">
+					<span class="date"></span>
+					<span class="month"></span>
+				</div>
+			</div>
+			<div class="timeline-article">
+
+				<div class="content-left-container">
+					<div class="content-left">
+						<p>Data management applications (e.g., geographical information systems, data warehouses, social
+							networks, scientific databases, IoT, crowd sourcing).</p>
+					</div>
+				</div>
+				<div class="content-right-container">
+					<div class="content-right">
+						<p>Other aspects of modern information systems (e.g., security, privacy, user interfaces, energy
+							use minimization).</p>
+					</div>
+				</div>
+				<div class="meta-date">
+					<span class="date"></span>
+					<span class="month"></span>
+				</div>
+			</div>
+			<div class="timeline-article">
+				<div class="content-left-container">
+					<div class="content-left">
+						<p>AI/ML and databases (applied ML for data management, data management to support ML).</p>
+					</div>
+				</div>
+				<div class="content-right-container">
+					<div class="content-right">
+						<p>Analysis of different data types (graphs, social networks, time series, logs, and text).</p>
+					</div>
+				</div>
+				<div class="meta-date">
+					<span class="date"></span>
+					<span class="month"></span>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	</section>
+	<section id="schedule" class="wrapper">
+		<br>
+		<div id="third_header">
+			Τhe following evaluation principles will apply
+		</div>
+
+
+		<div id="Research">
+			<p><b style="color:#015CAB; font-size:22px;">RESEARCH TRACK</b> <br />Submissions recently accepted at top
+				international conferences or journals are automatically accepted. Examples include but are not limited
+				to SIGMOD, VLDB, PODS, ICDE, EDBT, SIGIR, KDD, WWW, MDM, SoCC, DEBS, MLSys, and associated workshops.
+				Each submission should include the DOI link of the original paper.</p>
+		</div>
+		<div id="Working_track">
+			<p><b style="color:#015CAB; font-size:24px;">WORKING IDEAS</b> <br />The Working Ideas track accepts
+				original work, ongoing work, and position/vision statements. Authors should submit a 1 page PDF in ACM
+				SIGMOD format. Submissions will be reviewed by the PC and chosen for presentation or poster.</p>
+		</div>
+		<div id="img_circle" style="position:absolute; width:30%; vertical-align:middle;"><img id="img_c"
+				src="images/Blue_Circle_with_Dots.png"></div>
+		<div id="Demos">
+			<p><b style="color:#015CAB; font-size:22px;">DEMOS</b> <br />This track accepts demonstrations of innovative
+				data-intensive applications, systems, algorithms, etc. Authors should submit a 1 page PDF in ACM SIGMOD
+				format. Submissions will be reviewed by the PC. If submitting an already published demonstration at a
+				top conference, only the DOI is needed (and it will be an automatic accept).</p>
+		</div>
+	</section>
+
+
+
+
+	<div id="third_header">
+		Conference Format:
+	</div>
+
+
+	<section id="conference-timeline">
+		<div class="conference-center-line" style="height:78%;"></div>
+		<div class="conference-timeline-content">
+			<div class="timeline-article">
+				<div class="content-left-container">
+					<div class="content-left">
+						<p>The conference format will be optimized for interactivity. We will have few long talks and
+							many shorter talks (10 minutes) and posters.</p>
+					</div>
+
+				</div>
+				<div class="content-right-container" id="submission_site" style="margin-top: 3% !important;">
+					<div class="content-right">
+						<p>Submission website: <b>TBA</b>
+							<!-- <a href="https://cmt3.research.microsoft.com/HDMS2024"
+								target="_blank">https://cmt3.research.microsoft.com/HDMS2024</a> -->
+						</p>
+					</div>
+
+				</div>
+				<div class="meta-date">
+					<span class="date"></span>
+					<span class="month"></span>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+
+	</section>
+	<section id="dates" class="wrapper style1 special" style="padding:24px;">
+
+		<h2 class="font_stroke">DATES</h2>
+
+		<b><u>Submission Deadline:</b> TBA</u><br />
+
+		<b><u>Notification of Acceptance:</b> TBA</u><br />
+
+		<b><u>Camera Ready:</b> TBA</u><br />
+
+		<b><u>Symposium Dates:</b> TBA</u><br />
+	</section>
+	<section id="committee" class="wrapper special">
+		<div id="comm" style="background-color:#015CAB; padding:24px; margin:auto;">
+			<h2 class="font_stroke">ORGANIZATION</h2>
+		</div>
+		<div class="inner">
+			<header class="align-center" style="margin-bottom: 0px !important;">
+				<br /><br />
+				<h3>General Co-chairs:</h3>
+				TBA
+
+				<div style="position:relative; margin:auto;"><img id="img_curve" src="images/Curve.png"></div>
+				<br />
+
+				<h3>Program Co-chairs:</h3>
+				TBA
+
+				<div style="position:relative; margin:auto;"><img id="img_curve" src="images/Curve.png"></div>
+				<br />
+
+				<h3>Local Arrangements Co-chairs:</h3>
+				TBA
+				<div style="position:relative; margin:auto;"><img id="img_curve" src="images/Curve.png"></div>
+			</header>
+		</div>
+	</section>
+	<section id="registration" class="wrapper special style1" style="background-color:#015CAB;  padding: 24px;">
+		<h2 class="font_stroke">REGISTRATION</h2>
+		<div class="inner">
+		</div>
+
+	</section>
+	<section id="sponsors_c" class="wrapper special" style="max-height: 10em;">
+		TBA
+	</section>
+	<section id="social_event" class="wrapper special style1" style="background-color:#015CAB;  padding: 24px;">
+		<h2 class="font_stroke">SOCIAL EVENT</h2>
+	</section>
+
+	<section id="sponsors_c" class="wrapper special">
+		TBA
+	</section>
+
+	<section id="sponsors" class="wrapper special style1" style="background-color:#015CAB;  padding: 24px;">
+		<h2 class="font_stroke">SPONSORS</h2>
+	</section>
+
+	<section id="sponsors_c" class="wrapper special">
+		TBA
+	</section>
+	<section id="dates" class="wrapper style1 special" style="padding:24px;">
+
+		<h2 class="font_stroke">#HDMS2025</h2>
+
+		<b>Follow HDMS on Twitter to learn more about data management in Greece</b><br />
+		<a href="https://twitter.com/hdmsymposium" class="icon fa-twitter fa-3x"
+			style="text-decoration:none;color: white;" target="_blank"></a>
+
+	</section>
+
+	<footer id="footer">
+		<div class="inner">
+			<div class="flex">
+				<div class="copyright" style="width: 100%; text-align: center;">
+					Copyright © 2025: <a href="https://acmsigmod.gr/" style="text-decoration: underline;"
+						target="_blank">Hellenic ACM SIGMOD Chapter</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<span onclick="topFunction()" id="top_button" title="Go to top"><img src="images/up-arrow.png" width="50px;"
+			onmouseover="hover(this);" onmouseout="unhover(this);" /></span>
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/skel.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script src="assets/js/scroll_to_top.js"></script>
+
+</body>
+
+</html>
+
+<script>
+	$('#myModal').on('shown.bs.modal', function () {
+		$('#myInput').trigger('focus')
+	})
+
+</script>

@@ -1,0 +1,8 @@
+.paper-abstract{
+    display: none;
+    font-style: italic;
+}
+
+.toggle-abstract{
+    cursor: pointer;
+}

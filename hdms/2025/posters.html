@@ -1,0 +1,668 @@
+<!DOCTYPE HTML>
+<!--
+	Theory by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>HDMS 2024 - Posters</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="assets/css/main_newest.css" />
+		<link rel="stylesheet" href="assets/css/program.css" />
+	</head>
+	<body class="subpage">
+    <!-- Header -->
+        <header id="header">
+            <div class="inner">
+                <nav id="nav">
+                    <a href="index.html">
+                        <picture>
+                            <source media="(min-width: 1250px)" srcset="images/logo.png">
+                            <source media="(max-width: 1250px)" srcset="images/logo_mobile.png" width="170px;">
+                            <img id="logo" src="images/banner.jpg" alt="HDMS 2024" style="left: 37px;">
+                        </picture>
+
+                    <!-- <img src="images/logo.png" alt="HDMS 2019" width="70px;" style="margin-top: 10px; left: 37px;" /> -->
+                    </a>
+                    <div class="mobile_menu_divider"><img src="images/mobile_menu_divider.png" width="70px;"></div>
+                    <a href="index.html"><b>HOME</b></a>
+                    <!-- <a href="generic.html">News</a> -->
+                    <a href="index.html#topics"><b>TOPICS</b></a>
+                    <a href="index.html#dates"><b>DATES</b></a>
+                    <a href="program.html"><b>PROGRAM</b></a>
+                    <a href="posters.html"><b>POSTERS</b></a>
+                    <a href="index.html#committee"><b>ORGANIZATION</b></a>
+                    <a href="index.html#registration"><b>REGISTRATION</b></a>
+                    <a href="index.html#social_event"><b>SOCIAL EVENT</b></a>
+                    <!-- <a href="index.html#student_awards"><b>STUDENT AWARDS</b></a> -->
+                    <a href="../history.html"><b>HISTORY</b></a>
+                    <a href="index.html#sponsors"><b>SPONSORS</b><a>
+                    <div class="mobile_menu_divider"><img src="images/mobile_menu_divider.png" width="70px;"></div>
+                    <a href="index_gr.html" style="position: absolute; right: 37px;"></a>
+                </nav>
+                <a href="#navPanel" class="navPanelToggle">
+                    <img src="images/mobile_menu_icon.png" alt="Menu" width="60px;">
+                </a>
+            </div>
+        </header>
+        <section id="program" class="wrapper special style1" style="padding-top: 0px; padding-bottom: 0px;">
+			<div class="inner">
+				<header class="align-center">
+					<h2>Posters</h2>
+				</header>
+            </div>
+        </section>
+        <section id="program" class="wrapper special" style="padding-top: 0px;">
+			<div class="inner">
+				<header class="align-center">
+                    <h4> 
+                        Posters must be up to A0 size!
+                    </h4>    
+                    <div class="table-wrapper">
+                        <table class="alt program-table">
+                            <tbody>
+                                <tr>
+                                    <td style="background-color:#015CAB; color:White;">
+                                        <b>Poster Session </b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="program-sessions"> <i>Automated Multidimensional Data Layouts in Amazon Redshift</i>
+                                        <br> Parchas, Panos*
+                                        <br> <a class="toggle-abstract" onclick="toggleAbstract('abstract-1')">Click to display the abstract</a>
+                                        <span class="paper-abstract" id="abstract-1">
+                                            "Analytic data systems typically use data layouts to improve the performance of scanning and filtering data. Common data layout techniques 
+                                            include single-column sort keys, compound sort keys (also known as composite sort keys), and more complex multidimensional data layouts such as 
+                                            the Z-order. An appropriately-selected data layout over a table, in combination with metadata such as zone maps, enable the system to skip 
+                                            irrelevant data blocks when scanning the table, which reduces the amount of data scanned and improves query performance.
+                                            <br>
+                                            In this paper, we introduce Multidimensional Data Layouts (MDDL), a new data layout technique which outperforms existing data layout 
+                                            techniques for query workloads with repetitive scan filters. Unlike existing data layout approaches, which typically sort tables 
+                                            based on columns, MDDL sorts tables based on a collection of predicates, which enables a much higher degree of specialization to 
+                                            the user's workload. We additionally introduce an algorithm for automatically learning the best MDDL for each table based on 
+                                            telemetry collected from the historical workload. We implemented MDDL within Amazon Redshift. Benchmarks on internal datasets 
+                                            and workloads show that MDDL achieves up to 85% reduction in end-to-end workload runtime and up to 100X faster performance on 
+                                            individual queries, compared to using traditional column-based data layout techniques. MDDL is, to the best of our knowledge, 
+                                            the first data layout technique in a commercial product that sorts based on predicates and automatically learns the best predicates. 
+                                            MDDL has now been released to customers in Public Preview."
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="program-sessions"> 
+                                        <i> XDB in Action: Decentralized Cross-Database Query Processing for Black-Box DBMSes</i>
+                                        <br> Haralampos Gavriilidis (Technische Universität Berlin)*; Leonhard Rose (Technische Universität Berlin); Joel Ziegler (Technische Universität Berlin); 
+                                        Kaustubh Beedkar (IIT Delhi); Jorge Arnulfo Quiané Ruiz (IT University of Copenhagen); Volker Markl (Technische Universität Berlin)
+                                        <br> 
+                                        <a class="toggle-abstract" onclick="toggleAbstract('abstract-2')">Click to display the abstract</a>
+                                        <span class="paper-abstract" id="abstract-2">
+                                            Data are naturally produced at different locations and hence stored on different DBMSes. To maximize the value of the collected data, 
+                                            today's users combine data from different sources. Research in data integration has proposed the Mediator-Wrapper (MW) architecture to 
+                                            enable ad-hoc querying processing over multiple sources. The MW approach is desirable for users, as they do not need to deal with heterogeneous 
+                                            data sources. However, from a query processing perspective, the MW approach is inefficient: First, one needs to provision the mediating execution 
+                                            engine with resources. Second, during query processing, data gets "centralized" within the mediating engine, which causes redundant data movement. 
+                                            Recently, we proposed in-situ cross-database query processing, a paradigm for federated query processing without a mediating engine. Our approach optimizes 
+                                            runtime performance and reduces data movement by leveraging existing systems, eliminating the need for an additional federated query engine. In this demonstration, 
+                                            we showcase XDB, our prototype for in-situ cross-database query processing. We demonstrate several aspects of XDB, i.e. the cross-database environment, 
+                                            our optimization techniques, and its decentralized execution phase.
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="program-sessions"> 
+                                        <i> Perseus: Verifiable Databases Beyond Merkle Trees</i>
+                                        <br> Charalampos Papamanthou (Yale University)*
+                                        <br> 
+                                        <a class="toggle-abstract" onclick="toggleAbstract('abstract-3')">Click to display the abstract</a>
+                                        <span class="paper-abstract" id="abstract-3">
+                                            We propose Perseus, a system for cryptographically verifying SQL queries. In Perseus, relational tables are represented with succinct digests. 
+                                            All SQL queries are decomposed into SQL operators for which we provide custom MAP/REDUCE protocols based on recursive succinct proof systems. 
+                                            The Perseus prover is distributed (both across operators and within each operator) and produces proofs sublinear in size. 
+                                            Our preliminary experimental estimates on the well-known TPC-H benchmark used by the database community show that Perseus outperforms 
+                                            the baseline by 139x and 6.11x on proof size and updates, respectively.
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="program-sessions"> 
+                                        <i> DAPHNE Runtime: Harnessing Parallelism for Integrated Data Analysis Pipelines</i>
+                                        <br> Aristotelis Vontzalidis (Computing Systems Lab - National Technical University of Athens); 
+                                        Constantinos Bitsakos (NTUA); Stratos Psomadakis (Computing Systems Lab - National Technical University of Athens); 
+                                        Mark Dokter (Know-Center GmbH); Kevin Innerebner (Graz University of Technology); Patrick Damme (Technische Universität Berlin); 
+                                        Matthias Boehm (Technische Universität Berlin); Florina M. Ciorba (Technical University of Dresden, Germany / University of Basel, Switzerland); 
+                                        Ahmed Eleliemy (University of Basel); Vasileios Karakostas (National and Kapodistrian University of Athens); Aleš Zamuda (University of Maribor); 
+                                        Dimitrios Tsoumakos (National Technical University of Athens)*
+                                        <br> 
+                                        <a class="toggle-abstract" onclick="toggleAbstract('abstract-4')">Click to display the abstract</a>
+                                        <span class="paper-abstract" id="abstract-4">
+                                            Integrated data analysis pipelines combine rigorous data management and processing, high-performance computing and machine learning tasks. 
+                                            While these systems and operations share many compilation and runtime techniques, data analysts and scientists are currently dealing with 
+                                            multiple systems for each stage of their pipeline. DAPHNE is an open and extensible system infrastructure for such pipelines, including 
+                                            language abstractions, compilation and runtime techniques, multi-level scheduling, hardware accelerators and computational storage. 
+                                            In this demonstration, we focus on the DAPHNE runtime that provides the implementation of kernels for local, distributed and 
+                                            accelerator-enhanced operations, vectorized execution, integration with existing frameworks and libraries for productivity and 
+                                            interoperability, as well as efficient I/O and communication primitives.
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="program-sessions"> 
+                                        <i> Assess Queries for Interactive Analysis of Data Cubes</i>
+                                        <br> Panos Vassiliadis (University of Ioannina)*
+                                        <br> 
+                                        <a class="toggle-abstract" onclick="toggleAbstract('abstract-5')">Click to display the abstract</a>
+                                        <span class="paper-abstract" id="abstract-5">
+                                            Assessment is the process of comparing the actual to the expected
+                                            behavior of a business phenomenon and judging the outcome of
+                                            the comparison. In this paper we propose assess, a novel querying
+                                            operator that supports assessment based on the results of a
+                                            query on a data cube. This operator requires (1) the specification
+                                            of an OLAP query over a measure of a data cube, to define the
+                                            target cube to be assessed; (2) the specification of a reference cube
+                                            of comparison (benchmark), which represents the expected performance
+                                            of the measure; (3) the specification of how to perform
+                                            the comparison between the target cube and the benchmark, and
+                                            (4) a labeling function that classifies the result of this comparison
+                                            using a set of labels. After introducing an SQL-like syntax for
+                                            our operator, we formally define its semantics in terms of a set
+                                            of logical operators. To support the computation of assess we
+                                            propose a basic plan as well as some optimization strategies, then
+                                            we experimentally evaluate their performance using a prototype.
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="program-sessions"> 
+                                        <i> TrajParquet: A Trajectory-Oriented Column File Format for Mobility Data Lakes</i>
+                                        <br> Nikolaos Koutroumanis (University of Piraeus)*; Christos Doulkeridis (University of Pireaus); 
+                                        Chiara Renso (ISTI-CNR); Mirco Nanni (CNR-ISTI Pisa, Italy); Raffaele Perego (ISTI-CNR)
+                                        <br> 
+                                        <a class="toggle-abstract" onclick="toggleAbstract('abstract-6')">Click to display the abstract</a>
+                                        <span class="paper-abstract" id="abstract-6">
+                                            Columnar data formats, such as Apache Parquet, are increasingly popular nowadays for scalable data storage 
+                                            and querying data lakes, due to compressed storage and efficient data access via data skipping. However, 
+                                            when applied to spatial or spatio-temporal data, advanced solutions are required to go beyond pruning over 
+                                            single attributes and towards multidimensional pruning. Even though there exist solutions for geospatial data, 
+                                            such as GeoParquet and SpatialParquet, they fall short when applied to trajectory data 
+                                            (sequences of spatio-temporal positions). In this paper, we propose TrajParquet, a format for columnar storage 
+                                            of trajectory data, which is highly efficient and scalable. Also, we present a query processing algorithm that 
+                                            supports spatio-temporal range queries over TrajParquet. We evaluate TrajParquet using real-world data sets 
+                                            and in comparison with extensions of GeoParquet and SpatialParquet, suitable for handling spatio-temporal data.
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="program-sessions"> 
+                                        <i> Unanimous 2PC: Fault-tolerant Distributed Transactions Can be Fast and Simple</i>
+                                        <br> Antonios Katsarakis (Huawei Research)*
+                                        <br> 
+                                        <a class="toggle-abstract" onclick="toggleAbstract('abstract-7')">Click to display the abstract</a>
+                                        <span class="paper-abstract" id="abstract-7">
+                                            Distributed transactional datastores are pivotal in supporting the needs of modern applications and services. 
+                                            Datastores rely on distributed transactional protocols to tolerate faults while also aiming for strong consistency 
+                                            and high performance. State-of-the-art distributed transactional protocols, such as FaRM, provide a lock-free execution phase, 
+                                            thus improving performance and simplifying recovery. However, these protocols often come with lengthy and complicated commit phases, 
+                                            requiring multiple round-trips to commit a transaction (or additional replicas). This completely contrasts with the simplicity 
+                                            and efficiency of the traditional two-phase commit (2PC) protocol, which can commit a transaction after a single round-trip, 
+                                            albeit lacking fault tolerance.
+                                            <br>
+                                            To address the limitations of both approaches, we introduce U2PC, a novel 2PC variant that combines simplicity, efficiency, 
+                                            and fault tolerance. U2PC frugally replicates data (f+1) times to tolerate up to f faults with strong consistency. 
+                                            It offers a single round-trip commit after unanimous responses of all replicas of the involved shards and safe recovery 
+                                            via an extra ""pre-abort"" round before aborting a transaction. Our verification in TLA+ confirms that U2PC achieves strict 
+                                            serializability and recovers safely. In short, U2PC ensures fault tolerance, optimizes performance for common scenarios, 
+                                            and maintains uniform transaction handling.
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="program-sessions"> 
+                                        <i> CAP Off: Local Reads and Linearizable Asynchronous Replication</i>
+                                        <br> Antonios Katsarakis (Huawei Research)*
+                                        <br> 
+                                        <a class="toggle-abstract" onclick="toggleAbstract('abstract-8')">Click to display the abstract</a>
+                                        <span class="paper-abstract" id="abstract-8">
+                                            Distributed datastores are the backbone of highly concurrent read-intensive applications and are responsible for providing consistency, 
+                                            availability, and performance.  Datastores deploy crash-tolerant protocols to replicate data across servers and endure replica server crashes. 
+                                            To ensure safety and accommodate the performance demands of datastores, replication protocols must offer high throughput reads that are 
+                                            strongly consistent (i.e., linearizable) without making any synchrony assumptions. However, existing crash-tolerant protocols either (1) 
+                                            relax consistency; or offer linearizable reads that are either (2) fully asynchronous and remote (i.e., involve multiple replicas); 
+                                            or (3) local but mandate some sort of synchrony.
+                                            <br>
+                                            This work reveals a fundamental tradeoff between consistency, asynchrony, and the performance of crash-tolerant protocols by 
+                                            introducing the L2AW impossibility. The L2AW asserts that: in any linearizable asynchronous read/write register implementation that 
+                                            tolerates a single crash, no reads are local. We prove this impossibility without strong assumptions -- i.e., in the absence of                                             
+                                            Byzantine faults, message losses, and network partitions.
+                                            <br>
+                                            Guided by this result, we introduce almost-local reads (ALRs), which can be implemented in a crash-tolerant and linearizable 
+                                            manner under asynchrony. ALRs inevitably have higher latency than local (single-node) reads, but they are very lightweight, 
+                                            with computation and network costs close to local reads. As such, we demonstrate that the tradeoff exposed by LAW affects mainly 
+                                            the latency and not the throughput of reads. We present two simple yet effective ALR schemes that can improve protocols falling 
+                                            into either of the three categories. When applied to protocols offering local reads, they remove their consistency or synchrony 
+                                            deficiencies with minimal (2-5% throughput) overhead. ALRs can also boost the performance (2.5x higher throughput) of existing 
+                                            asynchronous linearizable protocols without compromises.
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="program-sessions"> 
+                                        <i> Dandelion: Hundreds of Millions of Distributed Replicated Transactions with Few Machines</i>
+                                        <br> Antonios Katsarakis (Huawei Research)*; Vasilis Gavrielatos (Huawei Research); Nikos Ntarmos (Huawei Research)
+                                        <br> 
+                                        <a class="toggle-abstract" onclick="toggleAbstract('abstract-9')">Click to display the abstract</a>
+                                        <span class="paper-abstract" id="abstract-9">
+                                            We present an in-memory, RDMA-enabled, highly-available, transactional Key-Value Store (KVS), dubbed Dandelion, focusing on significantly 
+                                            improving performance in small deployments (e.g., 5 machines). The focus on small deployments is motivated by the emerging memory expansion 
+                                            (e.g., via CXL), which enables the deployment of KVSes with few machines but lots of memory.
+                                            <br>
+                                            A small deployment presents locality opportunities that have not been examined by related work. Specifically, it is more likely that at any 
+                                            given time, we must send multiple messages to the same recipient. We leverage this by batching multiple requests in the same network packet. 
+                                            Similarly, it is more likely that at any given time, we have multiple requests that can be served by the local hashtable without going through 
+                                            the network. Sending all requests to the hashtable as a batch allows it to overlap their memory latencies through software prefetching. 
+                                            Finally, it is more likely that the node that requests a key, is itself a backup of that key. We leverage this by allowing local reads from backups.
+                                            <br>
+                                            Our evaluation shows that these optimizations and careful engineering results in hundreds of millions of distributed, 
+                                            strongly consistent, and 3-way replicated transactions per second with very few machines. This also translates to 3.3 - 6.5x throughput 
+                                            improvement over a state-of-the-art system, FaSST, in OLTP workloads in a 5-machine deployment. We characterize the impact and scalability 
+                                            of each of these optimizations with up to 10 machines – where Dandelion still offers up to 3.5× higher throughput than FaSST."
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="program-sessions"> 
+                                        <i> On Explaining Unfairness: An Overview</i>
+                                        <br> Christos Fragkathoulas (University of Ioannina;Athena Research Center)*; Vasiliki Papanikou (University of Ioannina; Athena Research Center); 
+                                        Danae Pla Karidi (Archimedes, Athena RC); Evaggelia Pitoura (Univ. of Ioannina)
+                                        <br> 
+                                        <a class="toggle-abstract" onclick="toggleAbstract('abstract-10')">Click to display the abstract</a>
+                                        <span class="paper-abstract" id="abstract-10">
+                                            Algorithmic fairness and explainability are foundational elements for achieving responsible AI. In this paper, we focus on their interplay, 
+                                            a research area that is recently receiving increasing attention. To this end, we first present two comprehensive taxonomies, 
+                                            each representing one of the two complementary fields of study: fairness and explanations. Then, we categorize explanations for 
+                                            fairness into three types: (a) Explanations to enhance fairness metrics, (b) Explanations to help us understand the causes of (un)fairness, 
+                                            and (c) Explanations to assist us in designing methods for mitigating unfairness. Finally, based on our fairness and explanation taxonomies, 
+                                            we present undiscovered literature paths revealing gaps that can serve as valuable insights for future research.
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="program-sessions"> 
+                                        <i> TokenJoin: Efficient Filtering for Set Similarity Join with Maximum Weighted Bipartite Matching</i>
+                                        <br> Alexandros Zeakis (National and Kapodistrian University of Athens)*; Dimitrios Skoutas (Athena Research Center); 
+                                        Dimitris Sacharidis (ULB); Odysseas Papapetrou (TU Eindhoven); Manolis Koubarakis (University of Athens, Greece)
+                                        <br> 
+                                        <a class="toggle-abstract" onclick="toggleAbstract('abstract-11')">Click to display the abstract</a>
+                                        <span class="paper-abstract" id="abstract-11">
+                                            Set similarity join is an important problem with many applications in data discovery, cleaning and integration. To increase robustness, 
+                                            fuzzy set similarity join calculates the similarity of two sets based on maximum weighted bipartite matching instead of set overlap. 
+                                            This allows pairs of elements, represented as sets or strings, to also match approximately rather than exactly, e.g., based on Jaccard 
+                                            similarity or edit distance. However, this significantly increases the verification cost, making even more important the need for efficient 
+                                            and effective filtering techniques to reduce the number of candidate pairs. The current state-of-the-art algorithm relies on similarity 
+                                            computations between pairs of elements to filter candidates. In this paper, we propose token-based instead of element-based filtering, 
+                                            showing that it is significantly more lightweight, while offering similar or even better pruning effectiveness. Moreover, we address 
+                                            the top-k variant of the problem, alleviating the need for a user-specified similarity threshold. We also propose early termination 
+                                            to reduce the cost of verification. Our experimental results on six real-world datasets show that our approach always outperforms 
+                                            the state of the art, being an order of magnitude faster on average.
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="program-sessions"> 
+                                        <i> QFusor: A UDF Optimizer Plugin for SQL Databases</i>
+                                        <br> Konstantinos Chasialis (Athena RC); Theoni Palaiologou (University of Athens); Yannis Foufoulas (Athena Research Center)*; 
+                                        Alkis Simitsis (Athena Research Center); Yannis Ioannidis (University of Athens)
+                                        <br> 
+                                        <a class="toggle-abstract" onclick="toggleAbstract('abstract-12')">Click to display the abstract</a>
+                                        <span class="paper-abstract" id="abstract-12">
+                                            Modern data applications in areas such as text
+                                            mining, document analysis, and data science, involve complex
+                                            algorithms and logic that cannot be expressed in SQL. Therefore,
+                                            SQL databases employ user-defined functions (UDFs) to extend
+                                            their supported functionality. However, this comes at a significant
+                                            performance cost as UDFs routinely become the bottleneck in
+                                            query execution. To deal with this problem, we present QFusor,
+                                            an optimizer plugin for UDF queries in relational databases.
+                                            QFusor minimizes the performance overheads introduced by
+                                            the impedance mismatch between the UDF and SQL execution
+                                            environments by employing techniques such as vectorization,
+                                            parallelization, tracing JIT compilation, and operator fusion
+                                            for various types of UDF (scalar, aggregate, table UDFs) and
+                                            relational operators. QFusor follows a pluggable, engine-agnostic
+                                            design and can work with several popular SQL databases offering
+                                            a significant boost in their UDF query performance.
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="program-sessions"> 
+                                        <i> MIP: Advanced Data Processing and Analytics for Science and Medicine</i>
+                                        <br> Kostas Filippopolitis  (Athena Research Center); Yannis Foufoulas (Athena Research Center)*; Minos Garofalakis (ATHENA Research Center); 
+                                        Apostolos Glenis (Athena Research Center); Yannis Ioannidis (University of Athens); Thanasis-Michail Karampatsis (ATHENA R.C.); 
+                                        Maria - Olympia Katsouli (Athena Research Center); Evdokia Mailli (ATHENA RC); Asimakis Papageorgiou-Mariglis  (Athena Research Center); 
+                                        Giorgos Papanikos (Athena Research Center); George Pikramenos (Athena Research Center); Jason Sakellariou (Athena Research Center); 
+                                        Alkis Simitsis (Athena Research Center); Pauline Ducouret (CHUV); Philippe Ryvlin (CHUV); Manuel-Guy  Spuhler (CHUV)
+                                        <br> 
+                                        <a class="toggle-abstract" onclick="toggleAbstract('abstract-13')">Click to display the abstract</a>
+                                        <span class="paper-abstract" id="abstract-13">
+                                            We present the Medical Informatics Platform (MIP), an online col- laborative platform for the scientific and medical community. 
+                                            It federates de-centralized patient data located in hospitals, helping clinicians, clinical scientists, and researchers identify 
+                                            patterns unique to diseases and provide clear diagnoses and personalized treatments. The platform enables users to access 
+                                            harmonized medical data from pre-processed neurophysiological and med- ical records, and research cohort datasets without 
+                                            the need to transfer original clinical data. This functionality facilitates explo- ration and analysis of medical data while 
+                                            preserving the privacy and security of sensitive patient information. The MIP blends data science and machine learning with 
+                                            data technology, and especially data integration, secure computation, decentralized distributed query execution, and low level, 
+                                            efficient execution of science pipelines exploiting features of modern data engines such as vectorization, parallelization, 
+                                            and JIT compilation. The MIP is the result of a multi-disciplinary, multi-year effort among computer scientists, 
+                                            clinical scientists and medical professionals. To date, it has been deployed and used in 40+ hospitals across Europe and 
+                                            another 12 installations are in process.
+
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="program-sessions"> 
+                                        <i> Apollo+: A Dataset Profiling and Operator Modeling System for Distributed, Dynamic Datasets</i>
+                                        <br> Constantinos Pefkianakis (Database and Knowledge Systems Lab, National Technical University of Athens); 
+                                        Ioannis Giannakopoulos (Computing Systems Lab, NTUA); Dimitrios Tsoumakos (National Technical University of Athens)*
+                                        <br> 
+                                        <a class="toggle-abstract" onclick="toggleAbstract('abstract-14')">Click to display the abstract</a>
+                                        <span class="paper-abstract" id="abstract-14">
+                                            Apollo showcased a dataset profiling methodology that
+                                            can infer the output of an analytics operator executed on
+                                            different input datasets. By quantifying dataset similarities
+                                            based on statistical distribution, size, and data ordering, Apollo
+                                            can model and predict the output of a wide range of analytics
+                                            operators over both tabular and graph datasets. This demonstration presents Apollo+, a scalable system for modeling
+                                            analytics operator behavior over dynamic and distributed
+                                            datasets. It incrementally maintains dataset similarity projections as new data arrives through microbatch or streaming
+                                            updates. By adaptively recomputing only affected similarities, Apollo+ enables low-overhead operator output approximation for evolving data. It also takes into consideration the
+                                            location of the datasets considering data locality and transfer
+                                            costs.
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="program-sessions"> 
+                                        <i> Θυμόμαστε τα Ξεχασμένα: Ομαδοποίηση, Ανίχνευση Ανωμαλιών και Προσαρμογή Ακρίβειας σε μια Διαδικασία Αναπλήρωσης Δεδομένων</i>
+                                        <br >"Anna Baskin (University of Pittsburgh); Scott Heyman (University of Pittsburgh	); Brian Nixon (University of Pittsburgh); 
+                                        Constantinos Costa (Rinnoco Ltd)*; Panos K. Chrysanthis (University of Pittsburgh)"
+                                        <br> 
+                                        <a class="toggle-abstract" onclick="toggleAbstract('abstract-15')">Click to display the abstract</a>
+                                        <span class="paper-abstract" id="abstract-15">
+                                            Η συνεχώς αυξανόμενη ζήτηση για χρήση και αποθήκευση δεδομένων επ' αόριστον περιορίζεται από το κόστος αποθήκευσης, το οποίο μειώνεται αργά σε σύγκριση με την 
+                                            εκθετική αύξηση της υπολογιστικής ισχύος. Υπό αυτές τις συνθήκες, η σκόπιμη απώλεια λεπτομερειών στα δεδομένα καθώς αυτά παλαιώνουν (αναφερόμενη ως φθορά δεδομένων) 
+                                            είναι χρήσιμη επειδή επιτρέπει τη μείωση του κόστους αποθήκευσης παράλληλα με τη χρησιμότητα των δεδομένων. Η ιδέα της αναπλήρωσης δεδομένων ως μέθοδος φθοράς 
+                                            δεδομένων χρησιμοποιεί τεχνικές μηχανικής μάθησης για την ανάκτηση προηγουμένως διαγραμμένων τιμών από την αποθήκευση δεδομένων.
+                                            <br>
+                                            Αυτή η εργασία προτείνει και αξιολογεί μια νέα διαδικασία χρησιμοποιώντας ομαδοποίηση, ανίχνευση ανωμαλιών, μηχανική μάθηση και προσαρμογή ακρίβειας για 
+                                            την υλοποίηση μιας αποτελεσματικής αναπλήρωσης δεδομένων για την αρχειοθέτηση δεδομένων. Συνολικά, ο στόχος είναι η εκπαίδευση ενός μοντέλου μηχανικής 
+                                            μάθησης για την προσέγγιση των τιμών μιας βάσης δεδομένων, επιτρέποντας τη διαγραφή ολόκληρων στηλών, οι οποίες μπορούν αργότερα να ανακατασκευαστούν 
+                                            εντός ενός ορίου ακρίβειας χρησιμοποιώντας τα αποθηκευμένα μοντέλα.
+                                            <br>
+                                            Αξιολογήσαμε την αποτελεσματικότητα της διαδικασίας αναπλήρωσης δεδομένων όσον αφορά τη μείωση της αποθήκευσης και την ακρίβεια ανάκτησης δεδομένων 
+                                            χρησιμοποιώντας ένα πραγματικό σύνολο δεδομένων υγειονομικής περίθαλψης. Τα πρώτα μας αποτελέσματα δείχνουν ότι η σειρά με την οποία εφαρμόζονται οι 
+                                            μέθοδοι ανίχνευσης ανωμαλιών, ομαδοποίησης και μηχανικής μάθησης οδηγεί σε διαφορετικές συμβιβαστικές λύσεις όσον αφορά την αποθήκευση και την ακρίβεια ανάκτησης.
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="program-sessions"> 
+                                        <i> Big Data Compression Tool using Attribute-based Signatures</i>
+                                        <br> Constantinos Costa (Rinnoco Ltd)*; Panos K. Chrysanthis (Rinnoco Ltd); Herodotos  Herodotou (Cyprus University of Technology); 
+                                        Marios Costa (Rinnoco Ltd); Efstathios Stavrakis (Algolysis); Nicolas Nicolaou (Algolysis)
+                                        <br> 
+                                        <a class="toggle-abstract" onclick="toggleAbstract('abstract-16')">Click to display the abstract</a>
+                                        <span class="paper-abstract" id="abstract-16">
+                                            This paper introduces COMPASS, a multiple compression tool utilizing attribute-based signatures. COMPASS exploits K-means clustering to select the best 
+                                            compression scheme for different data subsets in a database. The experimental results show that COMPASS significantly reduces disk space usage compared 
+                                            to monolithic methods.
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="program-sessions"> 
+                                        <i> EcoCharge: Ένα Πλαίσιο Διαχείρισης Δεδομένων για Βιώσιμη Φόρτιση Ηλεκτρικών Οχημάτων</i>
+                                        <br> Soteris Constantinou (University of Cyprus)*; Constantinos Costa (Rinnoco Ltd); Andreas Konstantinidis (Frederick University); 
+                                        Mohamed Mokbel (University of Minnesota - Twin Cities); Demetrios Zeinalipour-Yazti (University of Cyprus)
+                                        <br> 
+                                        <a class="toggle-abstract" onclick="toggleAbstract('abstract-17')">Click to display the abstract</a>
+                                        <span class="paper-abstract" id="abstract-17">
+                                            Σε αυτό το άρθρο, παρουσιάζουμε ένα καινοτόμο πλαίσιο διαχείρισης δεδομένων για βιώσιμη φόρτιση Ηλεκτρικών Οχημάτων (ΗΟ) με την ονομασία EcoCharge. 
+                                            Συγκεκριμένα, το EcoCharge εφαρμόζει ένα επερώτημα Continuous k-Nearest Neighbor, όπου η συνάρτηση απόστασης υπολογίζεται χρησιμοποιώντας Εκτιμώμενα Στοιχεία (Estimated Components - EC), 
+                                            και το ονομάζουμε CkNN-EC. Ένα ΕC ορίζει μια συνάρτηση που μπορεί να έχει ασαφή τιμή βάσει ορισμένων εκτιμήσεων. Συγκεκριμένα ΕC που χρησιμοποιούνται σε αυτή τη δουλειά είναι: 
+                                            (i) η (διαθέσιμη καθαρή) ενέργεια στον φορτιστή, που εξαρτάται από τις εκτιμώμενες καιρικές συνθήκες, (ii) η διαθεσιμότητα του φορτιστή, που εξαρτάται 
+                                            από τα εκτιμώμενα χρονοδιαγράμματα που δείχνουν πότε ο φορτιστής είναι κατειλημμένος, και (iii) το κόστος παράκαμψης, που είναι ο χρόνος για να φτάσει 
+                                            κανείς στον φορτιστή ανάλογα με την εκτιμώμενη κίνηση. Το πλαίσιο μας συνδυάζει τους πολλαπλούς μη-αντικρουόμενους στόχους σε μια συνάρτηση 
+                                            βελτιστοποίησης παράγοντας μια κατάταξη φορτιστών. Ο αλγόριθμος χρησιμοποιεί κατώτερες και ανώτερες τιμές διαστημάτων που προέρχονται από τα 
+                                            ΕC για να προτείνει τους φορτιστές ΗΟ με την υψηλότερη κατάταξη και να τους παρουσιάσει στους χρήστες μέσω μιας γεωγραφικής πληροφοριακής εφαρμογής. 
+                                            Παρουσιάζουμε το EcoCharge χρησιμοποιώντας ένα πλήρες σύστημα που αναπτύχθηκε με τη βιβλιοθήκη Leaflet - OpenStreetMap. Στο σενάριο της επίδειξής μας, οι 
+                                            συμμετέχοντες έχουν την ευκαιρία να παρατηρήσουν μέσω κινητών συσκευών τα οφέλη του EcoCharge, προσομοιώνοντας την εκτέλεσή του σε διάφορα προγραμματισμένα 
+                                            ταξίδια με πραγματικά δεδομένα.
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="program-sessions"> 
+                                        <i> Apache Wayang: A Unified Data Analytics Framework</i>
+                                        <br> Kaustubh Beedkar (IIT Delhi); Bertty Contreras-Rojas (QCRI); Haralampos Gavriilidis (Technische Universität Berlin); 
+                                        Zoi Kaoudi (IT University of Copenhagen)*; Volker Markl (Technische Universität Berlin); Jorge Arnulfo Quiané Ruiz (IT University of Copenhagen)
+                                        <br> 
+                                        <a class="toggle-abstract" onclick="toggleAbstract('abstract-18')">Click to display the abstract</a>
+                                        <span class="paper-abstract" id="abstract-18">
+                                            The large variety of specialized data processing platforms and the increased complexity of data analytics has led to the need for 
+                                            unifying data analytics within a single framework. Such a framework should free users from the burden of (i) choosing the right 
+                                            platform(s) and (ii) gluing code between the different parts of their pipelines. Apache Wayang (Incubating) is the only open-source 
+                                            framework that provides a systematic solution to unified data analytics by integrating multiple heterogeneous data processing platforms. 
+                                            It achieves that by decoupling applications from the underlying platforms and providing an optimizer so that users do not have to specify 
+                                            the platforms on which their pipeline should run. Wayang provides a unified view and processing model, effectively integrating the hodgepodge 
+                                            of heterogeneous platforms into a single framework with increased usability without sacrificing performance and total cost of ownership. 
+                                            In this paper, we present the architecture of Wayang, describe its main components, and give an outlook on future directions.
+                                        </span>
+                                    </td>
+                                </tr>
+                                <!-- <tr>
+                                    <td class="program-sessions"> 
+                                        <i> Demonstrating 𝜆-Tune: Exploiting Large Language Models for Workload-Adaptive Database System Tuning</i>
+                                        <br> Victor Giannakouris (Cornell University)*
+                                        <br> 
+                                        <a class="toggle-abstract" onclick="toggleAbstract('abstract-19')">Click to display the abstract</a>
+                                        <span class="paper-abstract" id="abstract-19">
+                                            We demonstrate 𝜆-Tune, a tool that leverages Large Language Models (LLMs) for automated, workload-adaptive database system tuning. 
+                                            𝜆-Tune harnesses the ability of LLMs to process and comprehend arbitrary textual data in a zero-shot manner, employing a workload-adaptive 
+                                            optimization approach. Given a database system, the hardware specifications, and a set of queries, 𝜆-Tune generates prompts to retrieve 
+                                            configuration recommendations for the tuning knobs and the physical design, tailored to the specific system and workload. 
+                                            Our framework utilizes a workload compression approach that extracts and includes in the prompt only the most insightful workload characteristics, 
+                                            while the prompt size can be adjusted by a user defined token budget. Utilizing the zero-shot capabilities of LLMs, 𝜆-Tune outperforms other 
+                                            LLM and machine learning-enhanced database tuning baselines, which rely on time-consuming tuning and training phases, as well as expensive 
+                                            hardware, such as GPUs. During demonstration, users will be able to experiment with 𝜆-Tune to tune Postgres and MySQL, as well as explore 
+                                            and modify the configurations retrieved by the LLM in an interactive way through 𝜆-Tune’s user interface.
+                                        </span>
+                                    </td>
+                                </tr> -->
+                                <tr>
+                                    <td class="program-sessions"> 
+                                        <i> F2: Designing a Key-Value Store for Large Skewed Workloads</i>
+                                        <br> Konstantinos Kanellis (University of Wisconsin-Madison)*
+                                        <br> 
+                                        <a class="toggle-abstract" onclick="toggleAbstract('abstract-20')">Click to display the abstract</a>
+                                        <span class="paper-abstract" id="abstract-20">
+                                            Today's key-value stores are either disk-optimized, focusing on large data and saturating device IOPS, or memory-optimized, 
+                                            focusing on high throughput with linear thread scaling assuming plenty of main memory. However, many practical workloads demand high 
+                                            performance for read and write working sets that are much larger than main memory, over a total data size that is even larger. 
+                                            They require judicious use of memory and disk, and today's systems do not handle such workloads well. We propose F2, 
+                                            a new key-value store design based on compartmentalization. It consists of five key components that work together in 
+                                            well-defined ways to achieve high throughput, saturating disk and memory bandwidths, while incurring low disk read 
+                                            and write amplification. A key design characteristic of F2 is that it separates the management of hot and cold data,
+                                            across the read and write domains, and adapts the use of memory to optimize each case. Through a sequence of new 
+                                            latch-free system constructs, F2 solves the key challenge of maintaining high throughput with linear thread 
+                                            scalability in such a compartmentalized design. Detailed experiments on benchmark data validate our design's 
+                                            superiority, in terms of throughput, over state-of-the-art key-value stores, when the available memory resources are scarce.
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="program-sessions"> 
+                                        <i> Achieving real-time relational OLTP and graph OLAP with OOPS</i>
+                                        <βρ> Nikos Ntarmos (Huawei Research), Pawel Guzewicz (Huawei Research)*, Antonio Maccioni (Huawei Research), Eleftherios Zervakis (Huawei Research), Soukaina Firmli (Huawei Research), Maria
+                                        Krommyda (Huawei Research), Jia Li (Huawei Research), Jake Konrad (Huawei Research), Michail Theofilatos (Huawei Research)
+                                        <br> 
+                                        <a class="toggle-abstract" onclick="toggleAbstract('abstract-21')">Click to display the abstract</a>
+                                        <span class="paper-abstract" id="abstract-21">
+                                            It is common to encounter a layer of, possibly legacy, applications
+                                            sharing a relational database, with other applications needing to
+                                            continuously execute complex business logic on top. Such logic
+                                            enjoys a more natural expression through graph-based modeling,
+                                            as seen in fraud detection, data quality verification, marketing
+                                            prospecting, recommendation systems, and intrusion detection. At
+                                            Huawei, we frequently encounter these scenarios within embedded
+                                            and real-time systems such as smartphones, automotive, network
+                                            devices, domotics, and operative systems. Unfortunately, existing
+                                            solutions often fail to meet requirements for space efficiency, high
+                                            throughput, low latency, low power consumption, and handling
+                                            weak hardware. They typically resort to techniques such as query
+                                            rewriting or, worse, impractical on-the-fly data transformations
+                                            through expensive joins. To address these challenges, we have
+                                            developed a system called OOPS. This system allows applications to:
+                                            i) retain their legacy CRUD relational operations, ii) define a graph
+                                            view by specifying vertex and edge definitions based on relational
+                                            algebra statements independently of the source schema, iii) ingest
+                                            table records at high speed while other applications traverse the
+                                            graph view with consistency guarantees, and iv) allow continuous
+                                            querying of the previously mentioned traversals.
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="program-sessions"> 
+                                        <i> OBLIVIATOR: Oblivious Parallel Joins and other Operators in Shared Memory Environment</i>
+                                        <br> Apostolos Mavrogiannakis (UCSC)*
+                                        <br> 
+                                        <a class="toggle-abstract" onclick="toggleAbstract('abstract-22')">Click to display the abstract</a>
+                                        <span class="paper-abstract" id="abstract-22">
+                                            In this paper, we introduce oblivious parallel operators designed for both non-foreign key and foreign key equi-joins.
+                                            Our approach is based on efficient oblivious primitives for compaction and sorting, combined with two novel oblivious algorithms 
+                                            that we propose: (i) a new oblivious aggregation tree, which can be described as a variation of the parallel prefix sum, and (ii) 
+                                            a new algorithm designed to obliviously expand the elements of a relation.
+                                            In the sequential setting, our oblivious join operator performs 4.6x- 5.14x faster than the prior state-the-art solution, introduced 
+                                            in Krastnikov et al. (VLDB 2020) on datasets of size n=2^{24}. In the parallel setting, our algorithm achieves a speedup of up to roughly
+                                            16x over the sequential version, when running with 32 threads (becoming up to 78x faster compared to Krastnikov's sequential algorithm).
+                                            Last but not least, our oblivious operators can be used independently to support other oblivious operators for relational database queries, 
+                                            such as oblivious selection and oblivious group-by queries. "
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="program-sessions"> 
+                                        <i> How to Make your Duck Fly: Advanced Floating Point Compression to the Rescue</i>
+                                        <br> Panagiotis Liakos (Athens University of Economics and Business)*; Katia Papakonstantinopoulou (Athens University of Economics and Business); 
+                                        Yannis Kotidis (Athens University of Economics and Business)
+                                        <br> 
+                                        <a class="toggle-abstract" onclick="toggleAbstract('abstract-23')">Click to display the abstract</a>
+                                        <span class="paper-abstract" id="abstract-23">
+                                            The massive volumes of data generated in diverse domains, such as scientific computing, finance and environmental monitoring, hinder our ability 
+                                            to perform multidimensional analysis at high speeds and also yield significant storage and egress costs. Applying compression algorithms 
+                                            to reduce these costs is particularly suitable for column-oriented DBMSs, as the values of individual columns are usually similar and thus, 
+                                            allow for effective compression. However, this has not been the case for binary floating point numbers, as the space savings achieved 
+                                            by respective compression algorithms are usually very modest. We present here two lossless compression algorithms for floating point data, 
+                                            termed Chimp and Patas, that attain impressive compression ratios and greatly outperform state-of-the-art approaches. 
+                                            We focus on how these two algorithms impact the performance of DuckDB, a purpose-built embeddable database for interactive analytics. 
+                                            Our demonstration will showcase how our novel compression approaches a) reduce storage requirements, 
+                                            and b) improve the time needed to load and query data using DuckDB.
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="program-sessions"> 
+                                        <i> DataMingler: A Novel Approach to Data Virtualization</i>
+                                        <br> Damianos Chatziantoniou (Athens University of Economics and Business)*; Verena Kantere (University of Ottawa)
+                                        <br> 
+                                        <a class="toggle-abstract" onclick="toggleAbstract('abstract-24')">Click to display the abstract</a>
+                                        <span class="paper-abstract" id="abstract-24">
+                                            A Data Virtual Machine (DVM) is a novel graph-based conceptual model, similar to the entity-relationship model, 
+                                            representing existing data (persistent, transient, derived) of an organization. A DVM can be built quickly, agilely, 
+                                            offering schematic flexibility to data engineers. Data scientists can visually define complex dataframe queries in 
+                                            an intuitive and simple manner, which are evaluated within an algebraic framework. A DVM can be easily materialized 
+                                            in any logical data model and can be ""reoriented'' around any node, offering a ""single view of any entity''. 
+                                            In this paper we demonstrate DataMingler, a tool implementing DVMs. We argue that DVMs can have a significant 
+                                            practical impact in analytics environments."
+                                        </span>
+                                    </td>
+                                </tr>
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+                                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            </tbody>
+                        </table>
+                    </div>
+                </header>
+            </div>
+        </section>
+</body>
+</html>		<footer id="footer">
+    <div class="inner">
+        <div class="flex">
+            <div class="copyright" style="width: 100%; text-align: center;">
+                Copyright © 2024: <a href="https://acmsigmod.gr/" style="text-decoration: underline;" target="_blank">Hellenic ACM SIGMOD Chapter</a>
+            </div>
+        </div>
+    </div>
+</footer>
+    <span onclick="topFunction()" id="top_button" title="Go to top"><img src="images/up-arrow.png" width="50px;" onmouseover="hover(this);" onmouseout="unhover(this);"/></span>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/skel.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/scroll_to_top.js"></script>
+<script src="assets/js/program.js"></script>
+
+
+    
+
+    
+
+                                        
