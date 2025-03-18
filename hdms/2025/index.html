@@ -5,170 +5,149 @@
 	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 -->
 <html>
-  <head>
-    <title>HDMS 2025</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    />
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-138972724-1"
-    ></script>
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="assets/css/main_newest.css" />
 
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
+<head>
+  <title>HDMS 2025</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138972724-1"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="assets/css/main_newest.css" />
 
-      gtag("config", "UA-138972724-1");
-    </script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-    <style>
-      .bold {
-        font-weight: bold;
-      }
+    gtag("config", "UA-138972724-1");
+  </script>
 
-      .time {
-        position: relative;
-        float: left;
-      }
+  <style>
+    .bold {
+      font-weight: bold;
+    }
 
-      .timeline-wrapper {
-        margin-left: auto;
-        margin-right: auto;
-        padding-left: 80px;
-        min-width: 400px;
-        font-family: "Arial";
-        font-size: 14px;
-        /*border: 1px solid #CCC;*/
-      }
+    .time {
+      position: relative;
+      float: left;
+    }
 
-      .StepProgress {
-        position: relative;
-        padding-left: 45px;
-        margin-left: auto;
-        margin-right: auto;
-        list-style: none;
-      }
+    .timeline-wrapper {
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 80px;
+      min-width: 400px;
+      font-family: "Arial";
+      font-size: 14px;
+      /*border: 1px solid #CCC;*/
+    }
 
-      .StepProgress::before {
-        display: inline-block;
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 15px;
-        width: 10px;
-        height: 100%;
-        border-left: 2px solid white;
-      }
+    .StepProgress {
+      position: relative;
+      padding-left: 45px;
+      margin-left: auto;
+      margin-right: auto;
+      list-style: none;
+    }
 
-      .StepProgress-item {
-        position: relative;
-        counter-increment: list;
-      }
+    .StepProgress::before {
+      display: inline-block;
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 15px;
+      width: 10px;
+      height: 100%;
+      border-left: 2px solid white;
+    }
 
-      .StepProgress-item:not(:last-child) {
-        padding-bottom: 20px;
-      }
+    .StepProgress-item {
+      position: relative;
+      counter-increment: list;
+    }
 
-      .StepProgress-item::before {
-        display: inline-block;
-        content: "";
-        position: absolute;
-        left: -30px;
-        height: 100%;
-        width: 10px;
-      }
+    .StepProgress-item:not(:last-child) {
+      padding-bottom: 20px;
+    }
 
-      .StepProgress-item::after {
-        content: "";
-        display: inline-block;
-        position: absolute;
-        top: 0;
-        left: -37px;
-        width: 12px;
-        height: 12px;
-        border: 2px solid white;
-        border-radius: 50%;
-        background-color: white;
-      }
+    .StepProgress-item::before {
+      display: inline-block;
+      content: "";
+      position: absolute;
+      left: -30px;
+      height: 100%;
+      width: 10px;
+    }
 
-      .StepProgress-item.is-done::before {
-        border-left: 2px solid white;
-      }
+    .StepProgress-item::after {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      left: -37px;
+      width: 12px;
+      height: 12px;
+      border: 2px solid white;
+      border-radius: 50%;
+      background-color: white;
+    }
 
-      .StepProgress-item.is-done::after {
-        /*content: "?";*/
-        font-size: 10px;
-        color: green;
-        text-align: center;
-        border: 2px solid white;
-        background-color: white;
-      }
+    .StepProgress-item.is-done::before {
+      border-left: 2px solid white;
+    }
 
-      .StepProgress strong {
-        display: block;
-      }
+    .StepProgress-item.is-done::after {
+      /*content: "?";*/
+      font-size: 10px;
+      color: green;
+      text-align: center;
+      border: 2px solid white;
+      background-color: white;
+    }
 
-      h2 a:hover {
-        color: rgb(129, 197, 254) !important;
-      }
-    </style>
-  </head>
+    .StepProgress strong {
+      display: block;
+    }
 
-  <body>
-    <header id="header">
-      <div class="inner">
-        <nav id="nav">
-          <a href="index.html">
-            <picture>
-              <source media="(min-width: 1250px)" srcset="images/logo.png" />
-              <source
-                media="(max-width: 1250px)"
-                srcset="images/logo_mobile.png"
-                width="170px;"
-              />
-              <img
-                id="logo"
-                src="images/banner.jpg"
-                alt="HDMS 2025"
-                style="left: 37px"
-              />
-            </picture>
+    h2 a:hover {
+      color: rgb(129, 197, 254) !important;
+    }
+  </style>
+</head>
 
-            <!-- <img src="images/logo.png" alt="HDMS 2024" width="70px;" style="margin-top: 10px; left: 37px;" /> -->
-          </a>
-          <div class="mobile_menu_divider">
-            <img src="images/mobile_menu_divider.png" width="70px;" />
-          </div>
-          <a href="index.html"><b>HOME</b></a>
-          <!-- <a href="generic.html">News</a> -->
-          <a href="#topics"><b>TOPICS</b></a>
-          <a href="#dates"><b>DATES</b></a>
+<body>
+  <header id="header">
+    <div class="inner">
+      <nav id="nav">
+        <a href="index.html">
+          <picture>
+            <source media="(min-width: 1250px)" srcset="images/logo.png" />
+            <source media="(max-width: 1250px)" srcset="images/logo_mobile.png" width="170px;" />
+            <img id="logo" src="images/banner.jpg" alt="HDMS 2025" style="left: 37px" />
+          </picture>
+
+          <!-- <img src="images/logo.png" alt="HDMS 2024" width="70px;" style="margin-top: 10px; left: 37px;" /> -->
+        </a>
+        <div class="mobile_menu_divider">
+          <img src="images/mobile_menu_divider.png" width="70px;" />
+        </div>
+        <a href="index.html"><b>HOME</b></a>
+        <!-- <a href="generic.html">News</a> -->
+        <a href="#topics"><b>TOPICS</b></a>
+        <a href="#dates"><b>DATES</b></a>
 
           <a href="#dbhellas"><b>DB HELLAS</b></a>
           <!-- <a href="program.html"><b>PROGRAM</b></a> -->
@@ -193,24 +172,14 @@
       </div>
     </header>
 
-    <section style="background-color: #015cab">
-      <!-- <img src="images/banner.jpg" width="100%"> -->
-      <picture>
-        <source
-          media="(min-width: 1250px)"
-          srcset="images/banner_new_no_dates.png"
-        />
-        <source
-          media="(max-width: 750px)"
-          srcset="images/banner_mobile3_new_no_dates.png"
-        />
-        <img
-          src="images/banner_mobile3_new_no_dates.png"
-          alt="HDMS banner"
-          width="100%"
-        />
-      </picture>
-    </section>
+  <section style="background-color: #015cab">
+    <!-- <img src="images/banner.jpg" width="100%"> -->
+    <picture>
+      <source media="(min-width: 1250px)" srcset="images/banner_new_no_dates.png" />
+      <source media="(max-width: 750px)" srcset="images/banner_mobile3_new_no_dates.png" />
+      <img src="images/banner_mobile3_new_no_dates.png" alt="HDMS banner" width="100%" />
+    </picture>
+  </section>
 
     <section style="background-color: #015cab">
       <div id="banner_wrapper"></div>
@@ -226,15 +195,15 @@
               held between <b>July 3-4, 2025</b> in <b>Ioannina</b>, Greece.
             </p>
 
-            <p>
-              The program will include academic and industry talks, keynotes,
-              panels, research poster sessions, demos, student poster sessions,
-              and other social activities.
-            </p>
-          </div>
+          <p>
+            The program will include academic and industry talks, keynotes,
+            panels, research poster sessions, demos, student poster sessions,
+            and other social activities.
+          </p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
     <div id="third_header">Conference Format:</div>
 
@@ -284,231 +253,224 @@
         padding: 32px;
         text-align: center;
         vertical-align: middle;
-      "
-    >
-      <h2 class="font_stroke">TOPICS</h2>
-    </section>
+      ">
+    <h2 class="font_stroke">TOPICS</h2>
+  </section>
 
-    <div id="second_header">
-      <p>
-        <br /><br />We invite submissions to the following three tracks:<br />
-        (A)
-        Research/Industry/Data-Science/Application/Exper-Analysis/Tutorial/Journal
-        <br />
-        (B) Research Posters and Demos <br />(C) Student Posters (unpublished
-        work by undergraduate/postgraduate students)
-      </p>
+  <div id="second_header">
+    <p>
+      <br /><br />We invite submissions to the following three tracks:<br />
+      (A)
+      Research/Industry/Data-Science/Application/Exper-Analysis/Tutorial/Journal
+      <br />
+      (B) Research Posters and Demos <br />(C) Student Posters (unpublished
+      work by undergraduate/postgraduate students)
+    </p>
 
-      <p>Specifically:</p>
-      <div id="third_header">
-        (A)
-        Research/Industry/Data-Science/Application/Exper-Analysis/Tutorial/Journal:
-      </div>
-      <br />
-      <ul style="width: 70%; margin: auto; text-align: justify">
-        <li>
-          A1) Submissions recently accepted at top DM international conferences
-          or journals are automatically accepted (any track of these
-          conferences). Examples include but are not limited to SIGMOD, VLDB,
-          PODS, ICDE, EDBT, ICDT, CIKM, SIGIR, KDD, WWW, MDM, SoCC, DEBS, MLSys,
-          associated workshops, and associated journals.
-        </li>
-        <li>
-          A2) Each submission must include the DOI link of the published paper.
-          Original submissions that have not been previously published must be
-          uploaded to arXiv.org or a similar DOI-registered repository. This is
-          important as HDMS has no proceedings and this is the only way for
-          authors to timestamp/protect their work before presenting it at HDMS.
-        </li>
-        <li>
-          A3) Authors can use the original format and original length for
-          submissions that have undergone peer review at any top event. Work
-          that has not undergone peer review is limited to 12 pages in ACM
-          double column format. Submissions that have not appeared at top events
-          or have not undergone peer review (e.g., arxiv.org or similar papers),
-          will be reviewed by the PC.
-        </li>
-        <li>
-          A4) Any submitted paper (peer reviewed or not) might be accepted for
-          full, short, or poster presentation, based on program time
-          constraints.
-        </li>
-        <li>
-          A5) Papers in this category should be submitted to the
-          "Research/Industry/Data-Science/Application/Exper-Analysis/
-          Tutorial/Journal" track on CMT.
-        </li>
-      </ul>
-      <br />
-      <div id="third_header">(B) Research Posters and Demos:</div>
-      <br />
-      <ul style="width: 70%; margin: auto; text-align: justify">
-        <li>
-          B1) Research Poster & Demo submissions recently accepted at top
-          international conferences are automatically accepted (any track of
-          these conferences). Examples include but are not limited to SIGMOD,
-          VLDB, PODS, ICDE, EDBT, ICDT, CIKM, SIGIR, KDD, WWW, MDM, SoCC, DEBS,
-          MLSys, and associated workshops.
-        </li>
-        <li>
-          B2) Authors can use the original format and original length for
-          submissions that have undergone peer review at any top event. Work
-          that has not undergone peer review is limited to 2 pages and 4 pages
-          in ACM double column format, for Demos and Posters respectively.
-          Submissions that have not appeared at top events or have not undergone
-          peer review (e.g., arxiv.org or similar papers), will be reviewed by
-          the PC.
-        </li>
-        <li>
-          B3) Both Posters and Demos will be presented at the symposium during a
-          designated session named "Lightning Talks". Both will also receive a
-          separate slot in the program for a more extensive presentation using
-          an Easel (for posters) and Table/Easel (for demos).
-        </li>
-        <li>
-          B4) Papers in this category should be submitted to the "Research
-          Posters and Demos" track on CMT.
-        </li>
-      </ul>
-      <br />
-
-      <div id="third_header">(C) Student Posters - unpublished work only</div>
-      <br />
-      <ul style="width: 70%; margin: auto; text-align: justify">
-        <li>
-          C1) Student Poster submissions by undergraduate and postgraduate that
-          have worked on some research project or other research activity
-          related to any area of data management are invited to submit a short
-          abstract (up to 1 page in WORD format). More details will be posted on
-          the HDMS website shortly.
-        </li>
-
-        <li>
-          C2) These submissions refer to unpublished work. In case a submission
-          refers to peer review published work, the student should submit the
-          contribution to category (B).
-        </li>
-        <li>
-          C3) Student Posters will be presented using an Easel during the poster
-          session.
-        </li>
-        <li>
-          C4) Papers in this category should be submitted to the "Student
-          Posters" track on CMT.
-        </li>
-      </ul>
-    </div>
-    <br />
-
+    <p>Specifically:</p>
     <div id="third_header">
-      For all categories (A-C) topics of interest include any topic, but are not
-      limited to:
+      (A)
+      Research/Industry/Data-Science/Application/Exper-Analysis/Tutorial/Journal:
     </div>
     <br />
-    <section id="conference-timeline">
-      <div class="conference-center-line"></div>
-      <div class="conference-timeline-content">
-        <div class="timeline-article">
-          <div class="content-left-container">
-            <div class="content-left">
-              <p>
-                Core database technologies (e.g., query processing and
-                optimization, storage and indexing, database concurrency
-                control, OLTP and OLAP processing).
-              </p>
-            </div>
-          </div>
-          <div class="content-right-container">
-            <div class="content-right">
-              <p>
-                Non-traditional data management architectures (e.g., data stream
-                management, cloud data management, peer-to-peer systems, mobile
-                data management, blockchain databases).
-              </p>
-            </div>
-          </div>
-          <div class="meta-date">
-            <span class="date"></span>
-            <span class="month"></span>
+    <ul style="width: 45%;  margin: auto; text-align: justify">
+      <li>
+        Submissions recently accepted at top DM international conferences
+        or journals are automatically accepted (any track of these
+        conferences). Examples include but are not limited to SIGMOD, VLDB,
+        PODS, ICDE, EDBT, ICDT, CIKM, SIGIR, KDD, WWW, MDM, SoCC, DEBS, MLSys,
+        associated workshops, and associated journals.
+      </li>
+      <li>
+        Each submission must include the DOI link of the published paper.
+        Original submissions that have not been previously published must be
+        uploaded to arXiv.org or a similar DOI-registered repository. This is
+        important as HDMS has no proceedings and this is the only way for
+        authors to timestamp/protect their work before presenting it at HDMS.
+      </li>
+      <li>
+        Authors can use the original format and original length for
+        submissions that have undergone peer review at any top event. Work
+        that has not undergone peer review is limited to 12 pages in ACM
+        double column format. Submissions that have not appeared at top events
+        or have not undergone peer review (e.g., arxiv.org or similar papers),
+        will be reviewed by the PC.
+      </li>
+      <li>
+        Any submitted paper (peer reviewed or not) might be accepted for
+        full, short, or poster presentation, based on program time
+        constraints.
+      </li>
+      <li>
+        Papers in this category should be submitted to the
+        "Research/Industry/Data-Science/Application/Exper-Analysis/
+        Tutorial/Journal" track on CMT.
+      </li>
+    </ul>
+    <br />
+    <div id="third_header">(B) Research Posters and Demos:</div>
+    <br />
+    <ul style="width: 45%; margin: auto; text-align: justify">
+      <li>
+        Research Poster & Demo submissions recently accepted at top
+        international conferences are automatically accepted (any track of
+        these conferences). Examples include but are not limited to SIGMOD,
+        VLDB, PODS, ICDE, EDBT, ICDT, CIKM, SIGIR, KDD, WWW, MDM, SoCC, DEBS,
+        MLSys, and associated workshops.
+      </li>
+      <li>
+        Authors can use the original format and original length for
+        submissions that have undergone peer review at any top event. Work
+        that has not undergone peer review is limited to 2 pages and 4 pages
+        in ACM double column format, for Demos and Posters respectively.
+        Submissions that have not appeared at top events or have not undergone
+        peer review (e.g., arxiv.org or similar papers), will be reviewed by
+        the PC.
+      </li>
+      <li>
+        Both Posters and Demos will be presented at the symposium during a
+        designated session named "Lightning Talks". Both will also receive a
+        separate slot in the program for a more extensive presentation using
+        an Easel (for posters) and Table/Easel (for demos).
+      </li>
+      <li>
+        Papers in this category should be submitted to the "Research
+        Posters and Demos" track on CMT.
+      </li>
+    </ul>
+    <br />
+
+    <div id="third_header">(C) Student Posters - unpublished work only</div>
+    <br />
+    <ul style="width: 45%; margin: auto; text-align: justify">
+      <li>
+        Student Poster submissions by undergraduate and postgraduate that
+        have worked on some research project or other research activity
+        related to any area of data management are invited to submit a short
+        abstract (up to 1 page in WORD format). More details will be posted on
+        the HDMS website shortly.
+      </li>
+
+      <li>
+        These submissions refer to unpublished work. In case a submission
+        refers to peer review published work, the student should submit the
+        contribution to category (B).
+      </li>
+      <li>
+        Student Posters will be presented using an Easel during the poster
+        session.
+      </li>
+      <li>
+        Papers in this category should be submitted to the "Student
+        Posters" track on CMT.
+      </li>
+    </ul>
+  </div>
+  <br />
+
+  <div id="third_header">
+    For all categories (A-C) topics of interest include any topic, but are not
+    limited to:
+  </div>
+  <br />
+  <section id="conference-timeline">
+    <div class="conference-center-line"></div>
+    <div class="conference-timeline-content">
+      <div class="timeline-article">
+        <div class="content-left-container">
+          <div class="content-left">
+            <p>
+              Core database technologies (e.g., query processing and
+              optimization, storage and indexing, database concurrency
+              control, OLTP and OLAP processing).
+            </p>
           </div>
         </div>
-        <div class="timeline-article" style="vertical-align: middle">
-          <div
-            class="content-left-container"
-            style="width: auto; vertical-align: middle"
-          >
-            <div
-              class="content-left"
-              style="width: 100%; vertical-align: middle"
-            >
-              <p style="padding: 26px 0 0 0">
-                Data management applications (e.g., geographical information
-                systems, data warehouses, social networks, scientific databases,
-                IoT, crowdsourcing).
-              </p>
-            </div>
-          </div>
-          <div class="content-right-container">
-            <div class="content-right">
-              <p>
-                Models and languages for the management of data (e.g., XML, RDF,
-                probabilistic databases, meta-data management, multi-media,
-                graph data management).
-              </p>
-            </div>
-          </div>
-          <div class="meta-date">
-            <span class="date"></span>
-            <span class="month"></span>
+        <div class="content-right-container">
+          <div class="content-right">
+            <p>
+              Non-traditional data management architectures (e.g., data stream
+              management, cloud data management, peer-to-peer systems, mobile
+              data management, blockchain databases).
+            </p>
           </div>
         </div>
-        <div class="timeline-article">
-          <div class="content-left-container">
-            <div class="content-left">
-              <p>
-                Techniques for high performance and scalability in the
-                management of data (e.g., distributed data processing, hardware
-                accelerators, new hardware technologies).
-              </p>
-            </div>
-          </div>
-          <div class="content-right-container">
-            <div class="content-right">
-              <p>
-                Confluence of data management with: information retrieval,
-                knowledge management, natural language processing, and data
-                mining.
-              </p>
-            </div>
-          </div>
-          <div class="meta-date">
-            <span class="date"></span>
-            <span class="month"></span>
-          </div>
-        </div>
-        <div class="timeline-article">
-          <div class="content-left-container">
-            <div class="content-left">
-              <p>Databases and AI (e.g., vector databases, LLMs, RAG).</p>
-            </div>
-          </div>
-          <div class="content-right-container">
-            <div class="content-right">
-              <p>
-                Other aspects of modern information systems (e.g., security,
-                privacy, user interfaces, energy use minimization).
-              </p>
-            </div>
-          </div>
-          <div class="meta-date">
-            <span class="date"></span>
-            <span class="month"></span>
-          </div>
+        <div class="meta-date">
+          <span class="date"></span>
+          <span class="month"></span>
         </div>
       </div>
-    </section>
+      <div class="timeline-article" style="vertical-align: middle">
+        <div class="content-left-container" style="width: auto; vertical-align: middle">
+          <div class="content-left" style="width: 100%; vertical-align: middle">
+            <p style="padding: 26px 0 0 0">
+              Data management applications (e.g., geographical information
+              systems, data warehouses, social networks, scientific databases,
+              IoT, crowdsourcing).
+            </p>
+          </div>
+        </div>
+        <div class="content-right-container">
+          <div class="content-right">
+            <p>
+              Models and languages for the management of data (e.g., XML, RDF,
+              probabilistic databases, meta-data management, multi-media,
+              graph data management).
+            </p>
+          </div>
+        </div>
+        <div class="meta-date">
+          <span class="date"></span>
+          <span class="month"></span>
+        </div>
+      </div>
+      <div class="timeline-article">
+        <div class="content-left-container">
+          <div class="content-left">
+            <p>
+              Techniques for high performance and scalability in the
+              management of data (e.g., distributed data processing, hardware
+              accelerators, new hardware technologies).
+            </p>
+          </div>
+        </div>
+        <div class="content-right-container">
+          <div class="content-right">
+            <p>
+              Confluence of data management with: information retrieval,
+              knowledge management, natural language processing, and data
+              mining.
+            </p>
+          </div>
+        </div>
+        <div class="meta-date">
+          <span class="date"></span>
+          <span class="month"></span>
+        </div>
+      </div>
+      <div class="timeline-article">
+        <div class="content-left-container">
+          <div class="content-left">
+            <p>Databases and AI (e.g., vector databases, LLMs, RAG).</p>
+          </div>
+        </div>
+        <div class="content-right-container">
+          <div class="content-right">
+            <p>
+              Other aspects of modern information systems (e.g., security,
+              privacy, user interfaces, energy use minimization).
+            </p>
+          </div>
+        </div>
+        <div class="meta-date">
+          <span class="date"></span>
+          <span class="month"></span>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- <section id="schedule" class="wrapper">
+  <!-- <section id="schedule" class="wrapper">
 		<br>
 
 
@@ -538,90 +500,88 @@
 		</div>
 	</section> -->
 
-    <!-- </section> -->
-    <section id="dates" class="wrapper style1 special" style="padding: 24px">
-      <h2 class="font_stroke">IMPORTANT DATES</h2>
+  <p style="width: 60%; margin: auto; margin-bottom: 5vh;">The <a href=""> Microsoft CMT Service</a> was used for
+    managing the peer-reviewing process for
+    this conference.
+    This
+    service was provided for free by Microsoft and they
+    bore all expenses, including costs for Azure cloud services as well as for software development and support.
+  </p>
+  <!-- </section> -->
+  <section id="dates" class="wrapper style1 special" style="padding: 24px">
+    <h2 class="font_stroke">IMPORTANT DATES</h2>
 
-      <u><b>Submission Deadline:</b> Friday, May 2, 2025 (11:59 pm AoE)</u
-      ><br />
+    <u><b>Submission Deadline:</b> Friday, May 2, 2025 (11:59 pm AoE)</u><br />
 
-      <u><b>Notification of Acceptance:</b> Friday, May 16, 2025</u><br />
+    <u><b>Notification of Acceptance:</b> Friday, May 16, 2025</u><br />
 
-      <u><b>Camera Ready:</b> Friday, May 30, 2025</u><br />
+    <u><b>Camera Ready:</b> Friday, May 30, 2025</u><br />
 
-      <u><b>Symposium Dates:</b> July 3-4, 2025</u><br />
-    </section>
-    <section id="committee" class="wrapper special">
-      <div
-        id="comm"
-        style="background-color: #015cab; padding: 24px; margin: auto"
-      >
-        <h2 class="font_stroke">ORGANIZING COMMITTEE</h2>
-      </div>
-      <div class="inner">
-        <header class="align-center" style="margin-bottom: 0px !important">
-          <br /><br />
-          <h3>General Co-chairs:</h3>
+    <u><b>Symposium Dates:</b> July 3-4, 2025</u><br />
+  </section>
+  <section id="committee" class="wrapper special">
+    <div id="comm" style="background-color: #015cab; padding: 24px; margin: auto">
+      <h2 class="font_stroke">ORGANIZING COMMITTEE</h2>
+    </div>
+    <div class="inner">
+      <header class="align-center" style="margin-bottom: 0px !important">
+        <br /><br />
+        <h3>General Co-chairs:</h3>
 
-          Nikos Mamoulis (University of Ioannina, Greece)
-          <br />
-          Panos Vassiliadis (University of Ioannina, Greece)
+        Nikos Mamoulis (University of Ioannina, Greece)
+        <br />
+        Panos Vassiliadis (University of Ioannina, Greece)
 
-          <div style="position: relative; margin: auto">
-            <img id="img_curve" src="images/Curve.png" />
-          </div>
-          <br />
+        <div style="position: relative; margin: auto">
+          <img id="img_curve" src="images/Curve.png" />
+        </div>
+        <br />
 
-          <h3>Program Co-Chairs:</h3>
-          Eleni Tzirita Zacharatou (Hasso Plattner Institute, Germany)
-          <br />
+        <h3>Program Co-Chairs:</h3>
+        Eleni Tzirita Zacharatou (Hasso Plattner Institute, Germany)
+        <br />
 
-          Demetris Zeinalipour (University of Cyprus, Cyprus)
+        Demetris Zeinalipour (University of Cyprus, Cyprus)
 
-          <div style="position: relative; margin: auto">
-            <img id="img_curve" src="images/Curve.png" />
-          </div>
-          <br />
+        <div style="position: relative; margin: auto">
+          <img id="img_curve" src="images/Curve.png" />
+        </div>
+        <br />
 
-          <h3>Demo & Poster Chairs:</h3>
+        <h3>Demo & Poster Chairs:</h3>
 
-          Georgia Koloniari (University of Macedonia, Greece)
-          <br />
+        Georgia Koloniari (University of Macedonia, Greece)
+        <br />
 
-          Stavros Sintos (University of Illinois at Chicago, USA)
+        Stavros Sintos (University of Illinois at Chicago, USA)
 
-          <div style="position: relative; margin: auto">
-            <img id="img_curve" src="images/Curve.png" />
-          </div>
-        </header>
-      </div>
-    </section>
-    <section class="dbhellas">
-      <div
-        id="comm"
-        style="background-color: #015cab; padding: 24px; margin: auto"
-      >
-        <h2 class="font_stroke">DBHELLAS</h2>
-      </div>
-      <div class="inner" style="margin: 10vh">
-        <!-- <header class="align-center" style="margin: 10vh !important"> -->
-        <p>
-          <b>dbhellas</b> is a mailing list for the members of the Greek
-          database community.
-        </p>
+        <div style="position: relative; margin: auto">
+          <img id="img_curve" src="images/Curve.png" />
+        </div>
+      </header>
+    </div>
+  </section>
+  <section class="dbhellas">
+    <div id="comm" style="background-color: #015cab; padding: 24px; margin: auto">
+      <h2 class="font_stroke align-center">DBHELLAS</h2>
+    </div>
+    <div class="inner align-center" style="margin-top: 10vh; margin-bottom: 10vh">
+      <p>
+        <b>dbhellas</b> is a mailing list for the members of the Greek
+        database community.
+      </p>
 
-        <p>
-          To subscribe to dbhellas you need to send a message to
-          dbhellas-request@hdms.gr.
-        </p>
-        <p>
-          To post a message, send an email to dbhellas@hdms.gr with the message
-          as the body of the email.
-        </p>
-        <!-- </header> -->
-      </div>
-    </section>
-    <!-- <section id="registration" class="wrapper special style1" style="background-color:#015CAB;  padding: 24px;">
+      <p>
+        To subscribe to dbhellas you need to send a message to
+        dbhellas-request@hdms.gr.
+      </p>
+      <p>
+        To post a message, send an email to dbhellas@hdms.gr with the message
+        as the body of the email.
+      </p>
+    </div>
+  </section>
+  <!-- <section id="registration" class="wrapper special style1" style="background-color:#015CAB;  padding: 24px;">
 		<h2 class="font_stroke">REGISTRATION</h2>
 		<div class="inner">
 		</div>
@@ -645,47 +605,34 @@
 	<section id="sponsors_c" class="wrapper special">
 		TBA
 	</section> -->
-    <section id="dates" class="wrapper style1 special" style="padding: 24px">
-      <h2 class="font_stroke">#HDMS2025</h2>
+  <section id="dates" class="wrapper style1 special" style="padding: 24px">
+    <h2 class="font_stroke">#HDMS2025</h2>
 
-      <b>Follow HDMS on Twitter to learn more about data management in Greece</b
-      ><br />
-      <a
-        href="https://twitter.com/hdmsymposium"
-        class="icon fa-twitter fa-3x"
-        style="text-decoration: none; color: white"
-        target="_blank"
-      ></a>
-    </section>
+    <b>Follow HDMS on Twitter to learn more about data management in Greece</b><br />
+    <a href="https://twitter.com/hdmsymposium" class="icon fa-twitter fa-3x" style="text-decoration: none; color: white"
+      target="_blank"></a>
+  </section>
 
-    <footer id="footer">
-      <div class="inner">
-        <div class="flex">
-          <div class="copyright" style="width: 100%; text-align: center">
-            Copyright © 2025:
-            <a
-              href="https://acmsigmod.gr/"
-              style="text-decoration: underline"
-              target="_blank"
-              >Hellenic ACM SIGMOD Chapter</a
-            >
-          </div>
+  <footer id="footer">
+    <div class="inner">
+      <div class="flex">
+        <div class="copyright" style="width: 100%; text-align: center">
+          Copyright © 2025:
+          <a href="https://acmsigmod.gr/" style="text-decoration: underline" target="_blank">Hellenic ACM SIGMOD
+            Chapter</a>
         </div>
       </div>
-    </footer>
-    <span onclick="topFunction()" id="top_button" title="Go to top"
-      ><img
-        src="images/up-arrow.png"
-        width="50px;"
-        onmouseover="hover(this);"
-        onmouseout="unhover(this);"
-    /></span>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/skel.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/scroll_to_top.js"></script>
-  </body>
+    </div>
+  </footer>
+  <span onclick="topFunction()" id="top_button" title="Go to top"><img src="images/up-arrow.png" width="50px;"
+      onmouseover="hover(this);" onmouseout="unhover(this);" /></span>
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/skel.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/scroll_to_top.js"></script>
+</body>
+
 </html>
 
 <script>
