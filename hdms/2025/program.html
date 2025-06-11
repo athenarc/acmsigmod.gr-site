@@ -5,822 +5,582 @@
 	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
 -->
 <html>
-	<head>
-		<title>HDMS 2024 - Program</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<link rel="stylesheet" href="assets/css/main_newest.css" />
-		<link rel="stylesheet" href="assets/css/program.css" />
-	</head>
-	<body class="subpage">
+
+<head>
+    <title>HDMS 2025 - Program</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/main_newest.css" />
+    <link rel="stylesheet" href="assets/css/program.css" />
+</head>
+
+<body class="subpage">
     <!-- Header -->
-        <header id="header">
-            <div class="inner">
-                <nav id="nav">
-                    <a href="index.html">
-                        <picture>
-                            <source media="(min-width: 1250px)" srcset="images/logo.png">
-                            <source media="(max-width: 1250px)" srcset="images/logo_mobile.png" width="170px;">
-                            <img id="logo" src="images/banner.jpg" alt="HDMS 2024" style="left: 37px;">
-                        </picture>
+    <header id="header">
+        <div class="inner">
+            <nav id="nav">
+                <a href="index.html">
+                    <picture>
+                        <source media="(min-width: 1250px)" srcset="images/logo.png">
+                        <source media="(max-width: 1250px)" srcset="images/logo_mobile.png" width="170px;">
+                        <img id="logo" src="images/banner.jpg" alt="HDMS 2025" style="left: 37px;">
+                    </picture>
 
                     <!-- <img src="images/logo.png" alt="HDMS 2019" width="70px;" style="margin-top: 10px; left: 37px;" /> -->
-                    </a>
-                    <div class="mobile_menu_divider"><img src="images/mobile_menu_divider.png" width="70px;"></div>
-                    <a href="index.html"><b>HOME</b></a>
-                    <!-- <a href="generic.html">News</a> -->
-                    <a href="index.html#topics"><b>TOPICS</b></a>
-                    <a href="index.html#dates"><b>DATES</b></a>
-                    <a href="program.html"><b>PROGRAM</b></a>
-                    <a href="posters.html"><b>POSTERS</b></a>
-                    <a href="index.html#committee"><b>ORGANIZATION</b></a>
-                    <a href="index.html#registration"><b>REGISTRATION</b></a>
-                    <a href="index.html#social_event"><b>SOCIAL EVENT</b></a>
-                    <!-- <a href="index.html#student_awards"><b>STUDENT AWARDS</b></a> -->
-                    <a href="../history.html"><b>HISTORY</b></a>
-                    <a href="index.html#sponsors"><b>SPONSORS</b><a>
-                    <div class="mobile_menu_divider"><img src="images/mobile_menu_divider.png" width="70px;"></div>
-                    <a href="index_gr.html" style="position: absolute; right: 37px;"></a>
-                </nav>
-                <a href="#navPanel" class="navPanelToggle">
-                    <img src="images/mobile_menu_icon.png" alt="Menu" width="60px;">
                 </a>
-            </div>
-        </header>
-        <section id="program" class="wrapper special style1" style="padding-top: 0px; padding-bottom: 0px;">
-			<div class="inner">
-				<header class="align-center">
-					<h2>Program</h2>
-				</header>
-            </div>
-        </section>
-        <section id="program" class="wrapper special" style="padding-top: 0px;">
-			<div class="inner">
-				<header class="align-center">
-                    <!-- <label class="">Program</label> -->
-                    <h4> Download the program 
-                        <a style="text-decoration: underline;" href="files/HDMS-2024-PROGRAM.pdf"> in PDF format here</a>.
-                    </h4>
-                    <div class="table-wrapper">
-                        <table class="alt program-table">
-                            <tbody>
-                                <tr>
-                                    <td colspan="2" style="background-color:#015CAB; color:White;"><b>Day 1 (July 1st, 2024)</b></td>
-                                </tr>
-                                <tr>
-                                    <td class="program-sessions"><b>Time</b></td>
-                                    <td class="program-sessions"><b>Event</b></td>
-                                </tr>
-                                <tr>
-                                    <td class="program-sessions">8:00 - 9:15am</td>
-                                    <td class="program-sessions"><b>Registration</b> </td>
-                                </tr>
-                                <tr>
-                                    <td class="program-sessions">9:15 - 9:25am</td>
-                                    <td class="program-sessions"><b>Opening Remarks</b> <br>Manos Athanassoulis (Boston University), Alkis Simitsis (ATHENA Research Center)</td>
-                                </tr>
-                                <tr>
-                                    <td class="program-sessions">9:25 - 9:30am</td>
-                                    <td class="program-sessions"><b>Hellenic ACM SIGMOD Chapter Announcement</b> <br>Evi Pitoura (University of Ioannina)</td>
-                                </tr>
-                                <tr>
-                                    <td class="program-sessions">9:30 - 10:00am</td>
-                                    <td class="program-sessions"><b>Keynote 1: <i>The need for a more modern database</i></b>
-                                        <br>Stavros Papadopoulos (TileDB)
-                                        <br> <a class="toggle-abstract" onclick="toggleAbstract('abstract-k1')">Click to display the abstract and bio</a>
-                                        <span class="paper-abstract" id="abstract-k1">
-                                            <b>Abstract:</b> The Databases landscape has changed. We have shifted from monolithic relational database systems to cloud data warehouses and open formats, all the while Generative AI has taken the world by storm and given rise to vector search functionality and integration with LLMs. In this talk, I will argue that, despite the spectacular innovation, organizations have ended up with more complex and fragmented data architectures than ever. I will then elaborate that there is now a need for a more principled and consolidated approach to data management, which cannot be done with half measures, but it is only possible through the hard way of modernizing the Database at its very core to handle all the diverse and complex data and compute requirements of organizations. Finally, I will explain that this concept of a modern database is indeed viable by outlining what we have done with TileDB over the past few years.
-                                            <br/><br/>
-                                            <b>Bio:</b> Prior to founding TileDB, Inc. in February 2017, Dr. Stavros Papadopoulos was a Senior Research Scientist at the Intel Parallel Computing Lab, and a member of the Intel Science and Technology Center for Big Data at MIT CSAIL for three years. He also spent about two years as a Visiting Assistant Professor at the Department of Computer Science and Engineering of the Hong Kong University of Science and Technology (HKUST). Stavros received his PhD degree in Computer Science at HKUST under the supervision of Prof. Dimitris Papadias, and held a postdoc fellow position at the Chinese University of Hong Kong with Prof. Yufei Tao.
-                                        </span>
-                                    </td>
+                <div class="mobile_menu_divider"><img src="images/mobile_menu_divider.png" width="70px;"></div>
+                <a href="index.html"><b>HOME</b></a>
+                <!-- <a href="generic.html">News</a> -->
+                <a href="index.html#topics"><b>TOPICS</b></a>
+                <a href="index.html#dates"><b>DATES</b></a>
+                <a href="program.html"><b>PROGRAM</b></a>
+                <a href="posters.html"><b>POSTERS</b></a>
+                <a href="index.html#committee"><b>ORGANIZATION</b></a>
+                <a href="index.html#registration"><b>REGISTRATION</b></a>
+                <a href="index.html#social_event"><b>SOCIAL EVENT</b></a>
+                <!-- <a href="index.html#student_awards"><b>STUDENT AWARDS</b></a> -->
+                <a href="../history.html"><b>HISTORY</b></a>
+                <a href="index.html#sponsors"><b>SPONSORS</b><a>
+                        <div class="mobile_menu_divider"><img src="images/mobile_menu_divider.png" width="70px;"></div>
+                        <a href="index_gr.html" style="position: absolute; right: 37px;"></a>
+            </nav>
+            <a href="#navPanel" class="navPanelToggle">
+                <img src="images/mobile_menu_icon.png" alt="Menu" width="60px;">
+            </a>
+        </div>
+    </header>
+    <section id="program" class="wrapper special style1" style="padding-top: 0px; padding-bottom: 0px;">
+        <div class="inner">
+            <header class="align-center">
+                <h2>Program</h2>
+            </header>
+        </div>
+    </section>
+    <section id="program" class="wrapper special" style="padding-top: 0px;">
+        <div class="inner">
+            <header class="align-center">
+                <!-- <label class="">Program</label> -->
+                <!-- <h4> Download the program
+                    <a style="text-decoration: underline;" href="files/HDMS-2025-PROGRAM.pdf"> in PDF format here</a>.
+                </h4> -->
+                <div class="table-wrapper">
+                    <table class="alt program-table">
+                        <tbody>
+                            <tr>
+                                <td colspan="2" style="background-color:#015CAB; color:White;"><b>Day 1 (July 3rd,
+                                        2025)</b></td>
+                            </tr>
+                            <tr>
+                                <td class="program-sessions"><b>Time</b></td>
+                                <td class="program-sessions"><b>Event</b></td>
+                            </tr>
+                            <tr>
 
-                                </tr>
-                                <tr>
-                                    <td colspan="2" class="program-session-titles"> <b> Session 1: "Modern Data Processing" </b> Chair: Zoi Kaoudi </tr>
-                                </tr>
-                                <tr>
-                                    <td class="program-sessions">10:00 - 10:10am</td>
-                                    <td class="program-sessions"> <i>Amazon Redshift Re-invented</i>
-                                        <br> Armenatzoglou, Nikos*; Pandis, Ippokratis; Polychroniou, Orestis; Parchas, Panos 
-                                        <br> <a class="toggle-abstract" onclick="toggleAbstract('abstract-1')">Click to display the abstract</a>
-                                        <span class="paper-abstract" id="abstract-1">
-                                            In 2013, Amazon Web Services revolutionized the data warehousing industry by launching Amazon Redshift, the first fully-managed, 
-                                            petabyte-scale, enterprise-grade cloud data warehouse. Amazon Redshift made it simple and cost-effective to efficiently analyze 
-                                            large volumes of data using existing business intelligence tools. This cloud service was a significant leap from the traditional 
-                                            on-premise data warehousing solutions, which were expensive, not elastic, and required significant expertise to tune and operate. 
-                                            Customers embraced Amazon Redshift and it became the fastest growing service in AWS. Today, tens of thousands of customers use Redshift 
-                                            in AWS’s global infrastructure to process exabytes of data daily.
-                                            <br><br>
-                                            In the last few years, the use cases for Amazon Redshift have evolved and in response, the service has delivered and continues to 
-                                            deliver a series of innovations that delight customers. Through architectural enhancements, Amazon Redshift has maintained its industry-leading 
-                                            performance. Redshift improved storage and compute scalability with innovations such as tiered storage, multi-cluster auto-scaling, cross-cluster 
-                                            data sharing and the AQUA query acceleration layer. Autonomics have made Amazon Redshift easier to use. Amazon Redshift Serverless is the 
-                                            culmination of autonomics effort, which allows customers to run and scale analytics without the need to set up and manage data warehouse infrastructure. 
-                                            Finally, Amazon Redshift extends beyond traditional datawarehousing workloads, by integrating with the broad AWS ecosystem with features such 
-                                            as querying the data lake with Spectrum, semistructured data ingestion and querying with PartiQL, streaming ingestion from Kinesis and MSK, Redshift ML, 
-                                            federated queries to Aurora and RDS operational databases, and federated materialized views."
-                                        </span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="program-sessions">10:10 - 10:20am</td>
-                                    <td class="program-sessions"> <i>QPSeeker: An Efficient Neural Planner combining both data and queries through Variational Inference</i>
-                                        <br> Tsapelas, Christos*; Koutrika, Georgia 
-                                        <br> <a class="toggle-abstract" onclick="toggleAbstract('abstract-2')">Click to display the abstract</a>
-                                        <span class="paper-abstract" id="abstract-2">
-                                            Recently, deep learning methods have been applied on many aspects of the query optimization process, such as cardinality estimation and query 
-                                            execution time prediction, but very few tackle multiple aspects of the optimizer at the same time or com- bine both the underlying data and a 
-                                            query workload. QPSeeker takes a step towards a neural database planner, encapsulating the information of the data and the given workload to 
-                                            learn the distributions of cardinalities, costs and execution times of the query plan space. At inference, when a query is submitted to the 
-                                            database, QPSeeker uses its learned cost model and traverses the query plan space using Monte Carlo Tree Search to provide an execution plan 
-                                            for the query.
-                                        </span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="program-sessions">10:20 - 10:30am</td>
-                                    <td class="program-sessions"> <i>Dalton: Learned Partitioning for Distributed Data Streams</i>
-                                        <br> Zapridou, Eleni*; Mytilinis, Ioannis; Ailamaki, Anastasia 
-                                        <br> <a class="toggle-abstract" onclick="toggleAbstract('abstract-3')">Click to display the abstract</a>
-                                        <span class="paper-abstract" id="abstract-3">
-                                            "To sustain the input rate of high-throughput streams, modern stream processing systems rely on parallel execution. However, skewed data yield 
-                                            imbalanced load assignments and create stragglers that hinder scalability. Deciding on a static partitioning for a given set of ""hot"" keys is 
-                                            not sufficient as these keys are not known in advance, and even worse, the data distribution can change unpredictably. Existing algorithms 
-                                            either optimize for a specific distribution or, in order to adapt, assume a centralized partitioner that processes every incoming tuple and 
-                                            observes the whole workload. However, this is not realistic in a distributed environment, where multiple parallel upstream operators exist, as 
-                                            the centralized partitioner itself becomes the bottleneck and limits scalability.
-                                            <br><br>
-                                            In this work, we propose Dalton: a lightweight, adaptive, yet scalable partitioning operator that relies on reinforcement learning. 
-                                            By memoizing state and dynamically keeping track of recent experience, Dalton: i) adjusts its policy at runtime and quickly adapts to the workload, ii) 
-                                            avoids redundant computations and minimizes the per-tuple partitioning overhead, and iii) efficiently scales out to multiple instances that learn 
-                                            cooperatively and converge to a joint policy. Our experiments indicate that Dalton scales regardless of the input data distribution and sustains 
-                                            1.3x - 6.7x higher throughput than existing approaches."
-                                        </span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="program-sessions">10:30 - 10:40am</td>
-                                    <td class="program-sessions"> <i>LlamaTune: Sample-Efficient DBMS Configuration Tuning</i>
-                                        <br> Kanellis, Konstantinos* 
-                                        <br> <a class="toggle-abstract" onclick="toggleAbstract('abstract-4')">Click to display the abstract</a>
-                                        <span class="paper-abstract" id="abstract-4">
-                                            Tuning a database system to achieve optimal performance on a given workload is a long-standing problem in the database community. 
-                                            A number of recent works have leveraged ML-based approaches to guide the sampling of large parameter spaces (hundreds of tuning knobs) 
-                                            in search for high performance configurations. Looking at Microsoft production services operating millions of databases, sample efficiency 
-                                            emerged as a crucial requirement to use tuners on diverse workloads. This motivates our investigation in LlamaTune, a tuner design that 
-                                            leverages domain knowledge to improve the sample efficiency of existing optimizers. LlamaTune employs an automated dimensionality reduction 
-                                            technique based on randomized projections, a biased-sampling approach to handle special values for certain knobs, and knob values bucketization, 
-                                            to reduce the size of the search space. LlamaTune compares favorably with the state-of-theart optimizers across a diverse set of workloads. 
-                                            It identifies the best performing configurations with up to 11× fewer workload runs, and reaching up to 21% higher throughput. We also show 
-                                            that benefits from LlamaTune generalize across both BO-based and RL-based optimizers, as well as different DBMS versions. While the journey 
-                                            to perform database tuning at cloud-scale remains long, LlamaTune goes a long way in making automatic DBMS tuning practical at scale."
-                                        </span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="program-sessions">10:40 - 10:50am</td>
-                                    <td class="program-sessions"> <i>Pre-trained Embeddings for Entity Resolution: An Experimental Analysis</i>
-                                        <br> Zeakis, Alexandros*; Papadakis, George; Skoutas, Dimitrios; Koubarakis, Manolis 
-                                        <br> <a class="toggle-abstract" onclick="toggleAbstract('abstract-5')">Click to display the abstract</a>
-                                        <span class="paper-abstract" id="abstract-5">
-                                            Many recent works on Entity Resolution (ER) leverage Deep Learning techniques involving language models to improve effectiveness. 
-                                            This is applied to both main steps of ER, i.e., blocking and matching. Several pre-trained embeddings have been tested, with the 
-                                            most popular ones being fastText and variants of the BERT model. However, there is no detailed analysis of their pros and cons. 
-                                            To cover this gap, we perform a thorough experimental analysis of 12 popular language models over 17 established benchmark datasets. 
-                                            First, we assess their vectorization overhead for converting all input entities into dense embeddings vectors. Second, we investigate 
-                                            their blocking performance, performing a detailed scalability analysis, and comparing them with the state-of-the-art deep learning-based 
-                                            blocking method. Third, we conclude with their relative performance for both supervised and unsupervised matching. Our experimental 
-                                            results provide novel insights into the strengths and weaknesses of the main language models, facilitating researchers and practitioners 
-                                            to select the most suitable ones in practice.
-                                        </span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="program-sessions">10:50 - 11:00am</td>
-                                    <td class="program-sessions"> <i>YeSQL: "you extend SQL" with rich and highly performant user-defined functions in relational databases</i>
-                                        <br> Foufoulas, Yannis*; Simitsis, Alkis; Stamatogiannakis, Lefteris; Ioannidis, Yannis 
-                                        <br> <a class="toggle-abstract" onclick="toggleAbstract('abstract-6')">Click to display the abstract</a>
-                                        <span class="paper-abstract" id="abstract-6">
-                                            The diversity and complexity of modern data management applications have led to the extension of the relational paradigm with syntactic 
-                                            and semantic support for User-Defined Functions (UDFs). Although well-established in traditional DBMS settings, UDFs have become central 
-                                            in many application contexts as well, such as data science, data analytics, and edge computing. Still, a critical limitation of UDFs is 
-                                            the impedance mismatch between their evaluation and relational processing. In this paper, we present YeSQL, an SQL extension with rich 
-                                            UDF support along with a pluggable architecture to easily integrate it with either server-based or embedded database engines. YeSQL currently 
-                                            supports Python UDFs fully integrated with relational queries as scalar, aggregator, or table functions. Key novel characteristics of YeSQL 
-                                            include easy implementation of complex algorithms and several performance enhancements, including tracing JIT compilation of Python UDFs, 
-                                            parallelism and fusion of UDFs, stateful UDFs, and seamless integration with a database engine. Our experimental analysis showcases the 
-                                            usability and expressiveness of YeSQL and demonstrates that our techniques of minimizing context switching between the relational engine 
-                                            and the Python VM are very effective and achieve significant speedups up to 68x in common, practical use cases compared to earlier 
-                                            approaches and alternative implementation choices.
-                                        </span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="program-sessions">11:00 - 11:10am</td>
-                                    <td class="program-sessions"> <i>Joint Source and Schema Evolution: Insights from a Study of 195 FOSS Projects</i>
-                                        <br> Vassiliadis, Panos* 
-                                        <br> <a class="toggle-abstract" onclick="toggleAbstract('abstract-7')">Click to display the abstract</a>
-                                        <span class="paper-abstract" id="abstract-7">
-                                            In this paper, we address the problem of the co-evolution of Free Open Source Software projects with the relational schemata 
-                                            that they encompass. We exploit a data set of 195 publicly available schema histories of FOSS projects hosted in Github, 
-                                            for which we locally cloned their respective project and measured their evolution progress. Our first research question asks 
-                                            which percentage of the projects demonstrates a “hand-in-hand” schema and source code co-evolution? To address this question, 
-                                            we defined synchronicity by allowing a bounded amount of lag between the cumulative evolution of the schema and the entire project. 
-                                            A core finding is that there are all kinds of behaviors with respect to project and schema co-evolution, resulting in only a small 
-                                            number of projects where the evolution of schema and project progress in sync. Moreover, we discovered that after exceeding a 5-year 
-                                            threshold of project life, schemata gravitate to lower rates of evolution, which practically means that, with time, the schemata stop 
-                                            evolving as actively as they originally did. To answer a second question, on whether evolution comes early in the life of a schema, 
-                                            we measured how often does the cumulative progress of schema evolution exceed the respective progress of source change, as well as 
-                                            the respective progress of time. The results indicate that a large majority of schemata demonstrates early advance of schema change 
-                                            with respect to code evolution, and, an even larger majority is also demonstrating an advance of schema evolution with respect to time, too. 
-                                            Third, we asked at which time point in their lives do schemata attain a substantial percentage of their evolution. A large number of 
-                                            projects attracts a large percentage of their schema evolution disproportionately early with respect to their project life span. 
-                                            Indicatively, 98 of the 195 projects attained 75% of the evolution in just the first 20% of their project’s lifetime."
-                                        </span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="program-sessions">11:10 - 11:20am</td>
-                                    <td class="program-sessions"> <i>Adaptive Real-time Virtualization of Legacy ETL Pipelines in Cloud Data Warehouses</i>
-                                        <br> Tsikoudis, Nikos* 
-                                        <br> <a class="toggle-abstract" onclick="toggleAbstract('abstract-8')">Click to display the abstract</a>
-                                        <span class="paper-abstract" id="abstract-8">
-                                            Extract, Transform, and Load (ETL) pipelines are widely used to ingest data into Enterprise Data Warehouse (EDW) systems. These pipelines 
-                                            can be very complex and often tightly coupled to a given EDW, making it challenging to upgrade from a legacy EDW to a Cloud Data Warehouse (CDW). 
-                                            This paper presents a novel solution for a transparent and fully-automated porting of legacy ETL pipelines to CDW environments."
-                                        </span>
-                                    </td>
-                                </tr>
-                                
-                                <tr>
-                                    <td class="program-sessions"> 11:30 - 12:00pm </td>
-                                    <td class="program-sessions"> <b>Break</b> </td>
-                                </tr>
-                                <tr>
-                                    <td colspan="2" class="program-session-titles"> <b> Session 2: "Time-Series, Mobile, Scientific Databases" </b> Chair: Herodotos Herodotou</tr>
-                                </tr>
-                                <tr>
-                                    <td class="program-sessions">12:00 - 12:10pm</td>
-                                    <td class="program-sessions"> <i>TIMBER: On supporting data pipelines in Mobile Cloud Environments</i> 
-                                        <br> Tomaras, Dimitris; Tsenos, Michalis; Kalogeraki, Vana; Gunopulos, Dimitrios 
-                                        <br> <a class="toggle-abstract" onclick="toggleAbstract('abstract-9')">Click to display the abstract</a>
-                                        <span class="paper-abstract" id="abstract-9">
-                                            The radical advances in mobile computing, the IoT technological evolution along with cyberphysical components (e.g., sensors, actuators, control centers) have led to the de- velopment of smart city applications that generate raw or pre- processed data, enabling workflows involving the city to better sense the urban environment and support citizens’ everyday lives. Recently, a new era of Mobile Edge Cloud (MEC) infrastructures has emerged to support smart city applications that aim to address the challenges raised due to the spatio-temporal dynamics of the urban crowd as well as bring scalability and on-demand computing capacity to urban system applications for timely response. In these, resource capabilities are distributed at the edge of the network and in close proximity to end-users, making it possible to perform computation and data processing at the network edge. However, there are important challenges related to real-time execution, not only due to the highly dynamic and transient crowd, the bursty and highly unpredictable amount of requests but also due to the resource constraints imposed by the Mobile Edge Cloud environment. In this paper, we present TIMBER, our framework for efficiently supporting mobile daTa processing pIpelines in MoBile cloud EnviRonments that ef- fectively addresses the aforementioned challenges. Our detailed experimental results illustrate that our approach can reduce the operating costs by 66.245% on average and achieve up to 96.4% similar throughput performance for agnostic workloads.                                            
-                                        </span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="program-sessions">12:10 - 12:20pm</td>
-                                    <td class="program-sessions"> <i>Mobility Data Science: Perspectives and Challenges</i> 
-                                        <br> Mokbel, Mohamed; Sakr, Mahmoud A; Xiong, Li; Züfle, Andreas; Theodoridis, Yannis* 
-                                        <br> <a class="toggle-abstract" onclick="toggleAbstract('abstract-10')">Click to display the abstract</a>
-                                        <span class="paper-abstract" id="abstract-10">
-                                            Mobility data captures the locations of moving objects such as humans, animals, and cars. With the availability of GPS equipped 
-                                            mobile devices and other inexpensive location-tracking technologies, mobility data is collected ubiquitously. In recent years, 
-                                            the use of mobility data has demonstrated significant impact in various domains including traffic management, urban planning, and 
-                                            health sciences. In this paper, we present the domain of mobility data science. Towards a unified approach to mobility data science, 
-                                            we present a pipeline having the following components: mobility data collection, cleaning, analysis, management, and privacy. 
-                                            For each of these components, we explain how mobility data science differs from general data science, we survey the current state of 
-                                            the art, and describe open challenges for the research community in the coming years.
-                                        </span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="program-sessions">12:20 - 12:30pm</td>
-                                    <td class="program-sessions"> <i>SIESTA: A Scalable Infrastructure of Sequential Pattern Analysis</i> 
-                                        <br> Mavroudopoulos, Ioannis*; Gounaris, Anastasios 
-                                        <br> <a class="toggle-abstract" onclick="toggleAbstract('abstract-11')">Click to display the abstract</a>
-                                        <span class="paper-abstract" id="abstract-11">
-                                            Sequential pattern analysis has become a mature topic with a lot of techniques for a variety of sequential pattern mining-related problems. 
-                                            Moreover, tailored solutions for specific domains, such as business process mining, have been developed. However, there is a gap in the 
-                                            literature for advanced techniques for efficient detection of arbitrary sequences in large collections of activity logs. In this work, 
-                                            we introduce the SIESTA ( S calable i nfrastructur e of s equential pa t tern a nalysis) solution making a threefold contribution: (i) 
-                                            we employ a novel architecture that relies on inverted indices during preprocessing and we introduce an advanced query processor that 
-                                            can detect and explore arbitrary patterns efficiently; (ii) we discuss and evaluate different configurations to optimize both the 
-                                            preprocessing and the querying phase; and (iii) we present evaluation results competing against representatives of the state-of-the-art 
-                                            with a focus on Big Data. The experimental results are particularly encouraging, e.g., when all methods are deployed in a cluster and 
-                                            the volume of the data is increased, SIESTA creates the indices in almost half the time compared to the state-of-the-art Elasticsearch-based 
-                                            solution, while also yielding faster query responses than all its competitors by up to 1 order of magnitude.
-                                        </span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="program-sessions">12:30 - 12:40pm</td>
-                                    <td class="program-sessions"> <i>Exploring unsupervised anomaly detection for vehicle predictive maintenance with partial information</i> 
-                                        <br> Giannoulidis, Apostolos*; Gounaris, Anastasios; Constantinou, Ioannis 
-                                        <br> <a class="toggle-abstract" onclick="toggleAbstract('abstract-12')">Click to display the abstract</a>
-                                        <span class="paper-abstract" id="abstract-12">
-                                            Predicting the need for maintenance in vehicle fleets enhances safety and lessens the downtime. While vehicle manufacturers provide 
-                                            built-in alert systems, these often fail to alert the driver when something goes wrong. However, harnessing the power of data analytics 
-                                            and real-time signals can solve this problem. In this work, we describe a challenging real-world setting  with scarce and partial data 
-                                            of failures. We propose a non-supervised approach that detects behavioral changes related to failures avoiding using the raw signals 
-                                            directly to cope with driving behavior and weather volatility. Our solution calculates the differences in the correlations of collected 
-                                            signals between two periods and dynamically creates reference profiles of normal operational conditions tolerating noise. The initial 
-                                            experiments are particularly promising, e.g., we achieve 78\% precision detecting nearly half of the failures outperforming the behavior 
-                                            of a state-of-the-art deep learning technique. More importantly, we consider our solution as a specific instantiation of a broader 
-                                            framework, for which we thoroughly evaluate a broad range of alternatives.    
-                                        </span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="program-sessions">12:40 - 12:50pm</td>
-                                    <td class="program-sessions"> <i>On Vessel Location Forecasting and the Effect of Federated Learning</i> 
-                                        <br> Tritsarolis, Andreas*; Pelekis, Nikos; Bereta, Konstantina; Zissis, Dimitrios; Theodoridis, Yannis 
-                                        <br> <a class="toggle-abstract" onclick="toggleAbstract('abstract-13')">Click to display the abstract</a>
-                                        <span class="paper-abstract" id="abstract-13">
-                                            The wide spread of Automatic Identification System (AIS) has motivated several maritime analytics operations. Vessel Location Forecasting (VLF) 
-                                            is one of the most critical operations for maritime awareness. However, accurate VLF is a challenging problem due to the complexity and 
-                                            dynamic nature of maritime traffic conditions. Furthermore, as privacy concerns and restrictions have grown, training data has become 
-                                            increasingly fragmented, resulting in dispersed databases of several isolated data silos among different organizations, which in turn 
-                                            decreases the quality of learning models. In this paper, we propose an efficient VLF solution based on LSTM neural networks, in two 
-                                            variants, namely Nautilus and FedNautilus for the centralized and the federated learning approach, respectively. We also demonstrate 
-                                            the superiority of the centralized approach with respect to current state of the art and discuss the advantages and disadvantages 
-                                            of the federated against the centralized approach.
-                                        </span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="program-sessions">12:50 - 1:00pm</td>
-                                    <td class="program-sessions"> <i>Collision Risk Assessment and Forecasting on Maritime Data (Industrial Paper)</i> 
-                                        <br> Tritsarolis, Andreas*; Murray, Brian; Pelekis, Nikos; Theodoridis, Yannis 
-                                        <br> <a class="toggle-abstract" onclick="toggleAbstract('abstract-14')">Click to display the abstract</a>
-                                        <span class="paper-abstract" id="abstract-14">
-                                            The wide spread of the Automatic Identification System (AIS) and related tools has motivated several maritime analytics operations. 
-                                            One of the most critical operations for the purpose of maritime safety is the so-called Vessel Collision Risk Assessment and 
-                                            Forecasting (VCRA/F), with the difference between the two lying in the time horizon when the collision risk is calculated: either 
-                                            at current time by assessing the current collision risk (i.e., VCRA) or in the (near) future by forecasting the anticipated locations 
-                                            and corresponding collision risk (i.e., VCRF). Accurate VCRA/F is a difficult task, since maritime traffic can become quite volatile 
-                                            due to various factors, including weather conditions, vessel manoeuvres, etc. Addressing this problem by using complex models 
-                                            introduces a trade-off between accuracy (in terms of quality of assessment / forecasting) and responsiveness. In this paper, we 
-                                            propose a deep learning-based framework that discovers encountering vessels and assesses/predicts their corresponding collision 
-                                            risk probability, in the latter case via state-of-the-art vessel route forecasting methods. Our experimental study on a real-world 
-                                            AIS dataset demonstrates that the proposed framework balances the aforementioned trade-off while presenting up to 70% improvement 
-                                            in R2 score, with an overall accuracy of around 96% for VCRA and 77% for VCRF.
-                                        </span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="program-sessions">1:00 - 1:10pm</td>
-                                    <td class="program-sessions"> <i>Visualization-aware Time Series Min-Max Caching with Error Bound Guarantees</i> 
-                                        <br> Maroulis , Stavros *; Stamatopoulos, Vassilis; Papastefanatos, George; Terrovitis, Manolis 
-                                        <br> <a class="toggle-abstract" onclick="toggleAbstract('abstract-15')">Click to display the abstract</a>
-                                        <span class="paper-abstract" id="abstract-15">
-                                            This paper addresses the challenges in interactive visual exploration of large multi-variate time series data. Traditional data 
-                                            reduction techniques may improve latency but can distort visualizations. State-of-the-art methods aimed at 100% accurate 
-                                            visualization often fail to maintain interactive response times or require excessive pre-processing and additional storage. 
-                                            We propose an in-memory adaptive caching approach, MinMaxCache, that efficiently reuses previous query results to accelerate 
-                                            visualization performance within accuracy constraints. MinMaxCache fetches data at adaptively determined aggregation granularities 
-                                            to maintain interactive response times and generate approximate visualizations with accuracy guarantees. Our results show that it 
-                                            is up to 10 times faster than current solutions without significant accuracy compromise.
-                                        </span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="program-sessions">1:10 - 1:20pm</td>
-                                    <td class="program-sessions"> <i>Chimp: Efficient Lossless Floating Point Compression for Time Series Databases</i> 
-                                        <br> Liakos, Panagiotis; Papakonstantinopoulou, Katia; Kotidis, Yannis 
-                                        <br> <a class="toggle-abstract" onclick="toggleAbstract('abstract-16')">Click to display the abstract</a>
-                                        <span class="paper-abstract" id="abstract-16">
-                                            Applications in diverse domains such as astronomy, economics and industrial monitoring, increasingly press the need for analyzing massive collections of time series data. The sheer size of the latter hinders our ability to efficiently store them and also yields significant storage costs. Applying general purpose compression algorithms would effectively reduce the size of the data, at the expense of introducing significant computational overhead. Time Series Management Systems that have emerged to address the challenge of handling this overwhelming amount of information, cannot suffer the ingestion rate restrictions that such compression algorithms would cause. Data points are usually encoded using faster, streaming compression approaches. However, the techniques that contemporary systems use do not fully utilize the compression potential of time series data, with implications in both storage requirements and access times. In this work, we propose a novel streaming compression algorithm, suitable for floating point time series data. We empirically establish properties exhibited by a diverse set of time series and harness these features in our proposed encodings. Our experimental evaluation demonstrates that our approach readily outperforms competing techniques, attaining compression ratios that are competitive with slower general purpose algorithms, and on average around 50% of the space required by state-of-the-art streaming approaches. Moreover, our algorithm outperforms all earlier techniques with regards to both compression and access time, offering a significantly improved trade-off between space and speed. The aforementioned benefits of our approach - in terms of all space requirements, compression time and read access - significantly improve the efficiency in which we can store and analyze time series data.
-                                        </span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="program-sessions"> 1:30 - 3:00pm </td>
-                                    <td class="program-sessions"> <b>Lunch break</b> </td>
-                                </tr>
-                                <tr>
-                                    <td class="program-sessions">3:00 - 3:30pm</td>
-                                    <td class="program-sessions"><b>Keynote 2: <i>Robust Query Optimization in the Era of Machine Learning</i></b>
-                                        <br>Verena Kantere (Univeristy of Ottawa)
-                                        <br> <a class="toggle-abstract" onclick="toggleAbstract('abstract-k2')">Click to display the abstract and bio</a>
-                                        <span class="paper-abstract" id="abstract-k2">
-                                            <b>Abstract:</b> Query optimizers are an essential component of database management systems (DBMSs) as they search for an execution plan that is expected to be optimal for a given query. However, they commonly use parameter estimates that are often inaccurate and make assumptions that may not hold in practice. Consequently, the optimizer may select sub-optimal execution plans at runtime, when these estimates and assumptions are not valid, which may result in poor query performance. Therefore, query optimizers do not adequately support the robustness of the database system. In this talk, we will explore the notion of robustness in the context of query optimization, as well as how it is evaluated or  supported.  We focus on comparing traditional cost-model-based methods with modern ML-based techniques in terms of their ability to tackle the challenge of robustness in query optimization. In this context we will discuss briefly recent research results on the creation of robust ML-based query optimization techniques in the M2oDA lab (<a href="https://www.verenakantere.com/moda/home.html">https://www.verenakantere.com/moda/home.html</a>).
-                                            <br/><br/>
-                                            <b>Bio:</b> Dr Verena Kantere is a Full Professor in the School of Electrical Engineering and Computer Science at the University of Ottawa. She has been an Assistant Professor in the School of Electrical and Computer Engineering (ECE) at National Technical University of Athens (NTUA), as well as a Maître Assistante and later a Maître d’Enseignement et de Recherche, at the Centre Universitaire d’ Informatique (CUI) of the University of Geneva (UniGe), where she started working after winning the interdisciplinary competition for young researchers “Boursière d’ Excellence”. Before coming to (UniGe) Dr Kantere was a tenure-track junior assistant professor at the Department of Electrical Engineering and Information Technology at the Cyprus University of Technology (CUT). Dr Kantere has been working towards the provision of data management and services in large-scale systems, including cloud computing systems distributed systems and hybrid systems, focusing on properties of Big Data, the performance of Big Data analytics and multi-objective optimization, query optimization etc. She has developed methods, algorithms and fully fledged systems. Dr Kantere has been a member of more than 160 program committees and served as member of editorial board or guest editor in many journals. More information in: <a href="https://www.verenakantere.com/">https://www.verenakantere.com/</a>.
-                                        </span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <!-- <td class="program-sessions">3:30 - 4:00pm</td> -->
-                                    <td class="program-session-breaks" colspan="2"> <b>Industry Session</b> </td>
-                                </tr>
-                                <tr>
-                                    <td class="program-sessions">3:30 - 3:45pm</td>
-                                    <td class="program-sessions"> <b>Industry Talk 1: <i>Data Systems RnD at Huawei’s Edinburgh Research Centre</i></b>
-                                        <br>Nikos Ntarmos (Huawei)
-                                        <br><a class="toggle-abstract" onclick="toggleAbstract('abstract-is1')">Click to display the abstract and bio</a>
-                                        <span class="paper-abstract" id="abstract-is1">
-                                            <b>Abstract:</b>  Huawei’s vision is a fully connected, intelligent world. To achieve this, data systems play a fundamental role as key enablers and a core building block of several services and products. This talk will give a summary of the work carried out in this context by the Database Lab in Huawei’s Edinburgh RC, spanning different deployment environments and application domains, while also providing a list of research areas and open questions targeted by the lab’s work. 
-                                            <br/><br/>
-                                            <b>Bio:</b> Nikos Ntarmos is the Director of the Database Lab at Huawei's Edinburgh RC, working on designing and implementing next generation database management systems, for environments ranging from small routers/switches to big-iron servers and the cloud. His research interests lie in the areas of distributed computing and (large-scale) data management systems, with a focus on issues pertaining to storage, indexing and query processing and optimization, in embedded databases, distributed data stores, multi-model databases, geo-distributed data management infrastructures, and joint at-rest/streaming data processing systems. He received his PhD from the University of Patras in 2008, is a member of the IEEE and the ACM, and a Fellow of the UK Higher Education Academy. Before joining Huawei, he held academic posts at the University of Glasgow and the University of Ioannina, and research fellow posts at the University of Glasgow and the University of Patras. He was a recipient of the ACM CIKM 2006 best paper award and the IEEE Big Data 2018 best student paper award, and has served in the Program Committees of multiple top-tier international conferences.
-                                        </span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="program-sessions">3:45 - 4:00pm</td>
-                                    <td class="program-sessions"> <b>Industry Talk 2: <i>Snowflake Engineering in Berlin</i></b>
-                                        <br>Kostas Kloudas, Kostas Zoumpatianos (Snowflake)
-                                        <br><a class="toggle-abstract" onclick="toggleAbstract('abstract-is2')">Click to display the abstract and bio</a>
-                                        <span class="paper-abstract" id="abstract-is2">
-                                            <b>Abstract:</b> Snowflake Berlin will soon celebrate its sixth anniversary, marking a significant milestone in our evolution as Snowflake’s first engineering hub in Europe. In October 2018, Snowflake founders Benoit Dageville and Thierry Cruanes established Snowflake Berlin together with two principal engineers, Max Heimel and Martin Hentschel, who relocated from the USA to anchor our third engineering site. Since then, Snowflake Berlin has experienced remarkable organic growth to over 100 employees and is integral to Snowflake’s continued success. Our modern <a href="https://www.google.com/maps/place/Snowflake+Computing+GmbH+(Engineering+Office)/@52.5100074,13.3771935,17z/data=!3m1!4b1!4m6!3m5!1s0x47a85178307ec5f1:0x3aaa6a963249c0c6!8m2!3d52.5100074!4d13.3771935!16s%2Fg%2F11rqkrjpg6?authuser=0&hl=en&entry=ttu" target="_blank">office</a> is situated in central Berlin at Potsdamer Platz. We not only work hard, but <a href="https://www.youtube.com/watch?v=GJiahB37_2A" target="_blank">play</a> hard! Come to our talk to learn more about the key initiatives from the Snowflake Berlin team.
-                                            <br/><br/>
-                                            <b>Bio:</b> <b>Kostas Kloudas</b> has been a Senior Software Engineer at Snowflake Berlin since 2021. Prior to that he was a Software Engineer at Ververica (the company behind Apache Flink) working on Apache Flink for which he is a PMC, a PostDoc at Istituto Tecnico Superior in Lisbon, Portugal, as well as the University of Lisbon. He holds a PhD from Inria in Rennes, France and a BEng from NTUA. 
-                                            <br/><br/>
-                                            <b>Bio:</b> <b>Kostas Zoumpatianos</b> has been a Senior Software Engineer at Snowflake Berlin since 2020. Prior to that he was a PostDoc and Marie Curie Fellow at Harvard University and Universitè Paris Citè. He holds a PhD from the University of Trento in Italy, and BEng and MSc degrees from the University of the Aegean.
-                                        </span>
-                                    </td>
-                                </tr>
-                                <!-- <tr>
-                                    <td class="program-sessions">3:45 - 4:00pm</td>
-                                    <td class="program-sessions">Paper 2</td>
-                                </tr>
-                                <tr>
-                                    <td class="program-sessions">4:00 - 4:15pm</td>
-                                    <td class="program-sessions">Paper 3</td>
-                                </tr>
-                                <tr>
-                                    <td class="program-sessions">4:15 - 4:30pm</td>
-                                    <td class="program-sessions">Paper 4</td>
-                                </tr>
-                                <tr>
-                                    <td class="program-sessions">4:30 - 4:45pm</td>
-                                    <td class="program-sessions">Paper 5</td>
-                                </tr>
-                                <tr>
-                                    <td class="program-sessions">4:45 - 5:00pm</td>
-                                    <td class="program-sessions">Paper 6</td>
-                                </tr> -->
-                                <tr>
-                                    <td class="program-sessions">4:00-4:30pm</td>
-                                    <td class="program-sessions"><b>Break</b></td>
-                                </tr>
-                                <tr>
-                                    <td class="program-sessions">4:30-5:30pm</td>
-                                    <td class="program-sessions"> <b>Panel AI & DB in Industry</b> <br> Nikos Ntarmos (Huawei), Stavros Papadopoulos (TileDB), Ippokratis Pandis (Amazon)</td>
-                                </tr>
-                                <tr>
-                                    <td class="program-sessions">5:30-6:00pm</td>
-                                    <td class="program-sessions"><b>Posters Setup</b></td>
-                                </tr>
-                                <tr>
-                                    <td class="program-sessions">6:00-7:00pm</td>
-                                    <td class="program-sessions"><b>Posters</b></td>
-                                </tr>
-                                <tr>
-                                    <td colspan="2" class="program-session-breaks">Move to <a href="index.html#social_event" target="_blank">dinner</a></td>
-                                </tr>
-                                <tr>
-                                    <td class="program-sessions">7:30-12:30pm</td>
-                                    <td class="program-sessions"><b> Cocktail Dinner</b></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <br><br>
-                    <div class="table-wrapper">
-                        <table class="alt program-table">
-                            <tbody>
-                                <tr>
-                                    <td colspan="2" style="background-color:#015CAB; color:White;"><b>Day 2 (July 2nd, 2024)</b></td>
-                                </tr>
-                                <tr>
-                                    <td class="program-sessions"><b>Time</b></td>
-                                    <td class="program-sessions"><b>Event</b></td>
-                                </tr>
-                                <tr>
-                                    <td class="program-sessions">9:30 - 10:00am</td>
-                                    <td class="program-sessions"> <b> Keynote 3: <i>Data Management innovation at Amazon Web Services</i></b> 
-                                        <br>Ippokratis Pandis (Amazon Web Services)
-                                        <br> <a class="toggle-abstract" onclick="toggleAbstract('abstract-k3')">Click to display the abstract and bio</a>
-                                        <span class="paper-abstract" id="abstract-k3">
-                                            <b>Abstract:</b> Η Amazon Web Services είναι η μεγαλύτερη παροχος υπηρεσιών διαχείρισης δεδομένων στον κόσμο, παρόλο που ξεκίνησε να παρέχει τέτοιες υπηρεσίες μόλις το 2011. Σε αυτή την ομιλία θα προσπαθήσουμε να εξηγήσουμε κάποιες από τις αιτίες πίσω από αυτή την επιτυχία. Αρχικά θα μιλήσουμε για την ανατομία μιας υπηρεσίας διαχείρισης δεδομένων στο cloud, και μετά θα δείξουμε ότι το AWS πρωτοπορεί κ συνεχώς δημιουργεί σε όλα τα στρώματα αυτών των συστημάτων.
-                                            <br/><br/>
-                                            <b>Bio:</b> Ippokratis Pandis is a VP/Distinguished Engineer at Amazon Web Services responsible for the technical direction of AWS’s Analytics and Relational services. Ippokratis spends a lot of his time in Amazon Redshift. Redshift is Amazon's enterprise cloud data warehouse service. Previously, Ippokratis has held positions as software engineer at Cloudera, where he worked on the Impala SQL-on-Hadoop query engine, and as member of the research staff at the IBM Almaden Research Center, where he worked on IBM DB2 BLU.
-                                            <br/><br/>Ippokratis received his PhD from the Electrical and Computer Engineering department at Carnegie Mellon University. He is the recipient of Best Demonstration awards at ICDE 2006 and SIGMOD 2011, and Test-of-Time award at EDBT 2019. He has served as PC chair of DaMoN 2014, DaMoN 2015, CloudDM 2016, HPTS 2019, ICDE Industrial 2022 and SIGMOD Industrial 2024, as well as General Chair of SIGMOD 2023 and the president of HPTS.
-                                        </span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td colspan="2" class="program-session-titles"> <b> Session 3: "Query Processing & Execution" </b> Chair: Katerina Doka</tr>
-                                </tr>
-                                <tr>
-                                    <td class="program-sessions">10:00 - 10:10am</td>
-                                    <td class="program-sessions"> <i> Predicate Transfer: Efficient Pre-Filtering on Multi-Join Queries </i> 
-                                        <br> Koutris, Paraschos*; Yu, Xiangyao; Zhao, Hangdong; Yang, Yifei 
-                                        <br> <a class="toggle-abstract" onclick="toggleAbstract('abstract-17')">Click to display the abstract</a>
-                                        <span class="paper-abstract" id="abstract-17">
-                                            This paper presents predicate transfer, a novel method that optimizes join performance by pre-filtering tables to reduce the join input sizes. 
-                                            Predicate transfer generalizes Bloom join, which conducts pre-filtering within a single join operation, to multi-table joins such that the 
-                                            filtering benefits can be significantly increased. Predicate transfer is inspired by the seminal theoretical results by Yannakakis, which uses 
-                                            semi-joins to pre-filter acyclic queries. Predicate transfer generalizes the theoretical results to any join graphs and use Bloom filters to replace 
-                                            semi-joins leading to significant speedup. Evaluation shows predicate transfer can outperform Bloom join by 3.3× on average on the TPC-H benchmark.
-                                        </span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="program-sessions">10:10 - 10:20am</td>
-                                    <td class="program-sessions"> <i> Foreign Keys Open the Door for Faster Incremental View Maintenance </i> 
-                                        <br> Svingos, Christoforos* 
-                                        <br> <a class="toggle-abstract" onclick="toggleAbstract('abstract-18')">Click to display the abstract</a>
-                                        <span class="paper-abstract" id="abstract-18">
-                                            Serverless cloud-based warehousing systems enable users to create materialized views in order to speed up predictable and repeated query workloads. 
-                                            Incremental view maintenance (IVM) minimizes the time needed to bring a materialized view up-to-date. It allows the refresh of a materialized view 
-                                            solely based on the base table changes since the last refresh. In serverless cloud-based warehouses, IVM uses computations defined as SQL scripts 
-                                            that update the materialized view based on updates to its base tables. However, the scripts set up for materialized views with inner joins are not 
-                                            optimal in the presence of foreign key constraints. For instance, for a join of two tables, the state of the art IVM computations use a UNION ALL 
-                                            operator of two joins - one computing the contributions to the join from updates to the first table and the other one computing the remaining 
-                                            contributions from the second table. Knowing that one of the join keys is a foreign-key would allow us to prune all but one of the UNION ALL branches 
-                                            and obtain a more efficient IVM script. In this work, we explore ways of incorporating knowledge about foreign key into IVM in order to speed up 
-                                            its performance. Experiments in Redshift showed that the proposed technique improved the execution times of the whole refresh process up to 2 times, 
-                                            and up to 2.7 times the process of calculating the necessary changes that will be applied into the materialized view.
-                                        </span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="program-sessions">10:20 - 10:30am</td>
-                                    <td class="program-sessions"> <i> SH2O: Efficient Data Access for Work-Sharing Databases </i> 
-                                        <br> Sioulas, Panagiotis*; Mytilinis, Ioannis; Ailamaki, Anastasia 
-                                        <br> <a class="toggle-abstract" onclick="toggleAbstract('abstract-19')">Click to display the abstract</a>
-                                        <span class="paper-abstract" id="abstract-19">
-                                            Interactive applications require processing tens to hundreds of concurrent analytical queries within tight time constraints. In such setups, where 
-                                            high concurrency causes contention, work-sharing databases are critical for improving scalability and for bounding the increase in response time. 
-                                            However, as such databases share data access using full scans and expensive shared filters, they suffer from a data-access bottleneck that jeopardizes
-                                            interactivity. We present SH2O: a novel data-access operator that addresses the data-access bottleneck of work-sharing
-                                            databases. SH2O is based on the idea that an access pattern based on judiciously selected multidimensional
-                                            ranges can replace a set of shared filters. To exploit the idea in an efficient and scalable manner, SH2O uses a
-                                            three-tier approach: i) it uses spatial indices to efficiently access the ranges without overfetching, ii) it uses an
-                                            optimizer to choose which filters to replace such that it maximizes cost-benefit for index accesses, and iii) it
-                                            exploits partitioning schemes and independently accesses each data partition to reduce the number of filters
-                                            in the access pattern. Furthermore, we propose a tuning strategy that chooses a partitioning and indexing
-                                            scheme that minimizes SH2O’s cost for a target workload. Our evaluation shows a speedup of 1.8 − 22.2 for
-                                            batches of hundreds of data-access-bound queries.
-                                        </span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="program-sessions">10:30 - 10:40am</td>
-                                    <td class="program-sessions"> <i> Efficient Computation of Quantiles over Joins </i> 
-                                        <br> Tziavelis, Nikolaos*  
-                                        <br> <a class="toggle-abstract" onclick="toggleAbstract('abstract-20')">Click to display the abstract</a>
-                                        <span class="paper-abstract" id="abstract-20">
-                                            We consider the complexity of answering Quantile Join Queries, which ask for the answer at a specified relative position (e.g., 50% for the median) 
-                                            under some ordering over the answers to an ordinary Join Query. The goal is to avoid materializing the set of all join answers, and to achieve close 
-                                            to linear time in the size of the database, regardless of the total number of answers. As we show, this is not possible for all queries 
-                                            (under certain assumptions in fine-grained complexity) and it crucially depends on both the join structure and the desired order. We establish a 
-                                            dichotomy that precisely characterizes the (self-join-free) queries that can be handled efficiently for common ranking functions, such as a sum 
-                                            of attribute weights. We also provide an algorithm that can handle all known tractable cases by iteratively using a "trimming'' subroutine which 
-                                            removes query answers that are higher or lower (according to the ranking function) than a certain answer determined as the "pivot".
-                                        </span>
-                                    
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="program-sessions">10:40 - 10:50am</td>
-                                    <td class="program-sessions"> <i> Raster Intervals: An Approximation Technique for Polygon Intersection Joins </i> 
-                                        <br> Georgiadis, Thanasis*; Mamoulis, Nikos 
-                                        <br> <a class="toggle-abstract" onclick="toggleAbstract('abstract-21')">Click to display the abstract</a>
-                                        <span class="paper-abstract" id="abstract-21">
-                                            Many data science applications, most notably Geographic Information Systems, require the computation of spatial joins between large object collections. 
-                                            The objective is to find pairs of objects that intersect, i.e., share at least one common point. The intersection test is very expensive especially 
-                                            for polygonal objects. Therefore, the objects are typically approximated by their minimum bounding rectangles (MBRs) and the join is performed in two 
-                                            steps. In the filter step, all pairs of objects whose MBRs intersect are identified as candidates; in the refinement step, each of the candidate pairs 
-                                            is verified for intersection. The refinement step has been shown notoriously expensive, especially for polygon-polygon joins, constituting the bottleneck 
-                                            of the entire process. We propose a novel approximation technique for polygons, which (i) rasterizes them using a fine grid, (ii) models groups of 
-                                            nearby cells that intersect a polygon as an interval, and (iii) encodes each interval by a bitstring that captures the overlap of each cell in it with 
-                                            the polygon. We also propose an efficient intermediate filter, which is applied on the object approximations before the refinement step, to avoid it 
-                                            for numerous object pairs. Via experimentation with real data, we show that the end-to-end spatial join cost can be reduced by up to one order of 
-                                            magnitude with the help of our filter and by at least three times compared to using alternative intermediate filters.
-                                        </span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="program-sessions">10:50 - 11:00am</td>
-                                    <td class="program-sessions"> <i> In-Situ Cross-Database Query Processing </i>  
-                                        <br> Gavriilidis, Haralampos*; Beedkar, Kaustubh; Quiané Ruiz, Jorge Arnulfo; Markl, Volker 
-                                        <br> <a class="toggle-abstract" onclick="toggleAbstract('abstract-22')">Click to display the abstract</a>
-                                        <span class="paper-abstract" id="abstract-22">
-                                            Today’s organizations utilize a plethora of heterogeneous and autonomous DBMSes, many of those being spread across different geo-locations. It is 
-                                            therefore crucial to have effective and efficient cross-database query processing capabilities. We present XDB, an efficient middleware system that 
-                                            runs cross-database analytics over existing DBMSes. In contrast to traditional query processing systems, XDB does not rely on any mediating execution 
-                                            engine to perform cross-database operations (e.g., joining data from two DBMSes). It delegates an entire query execution including cross-database 
-                                            operations to underlying DBMSes. At its core, it comprises an optimizer and a delegation engine: the optimizer rewrites cross-database queries into 
-                                            a delegation plan, which captures the semantics as well as the mechanics of a fully decentralized query execution; the delegation engine then deploys 
-                                            the plan to the underlying DBMSes via their declarative interfaces. Our experimental study based on the TPC-H benchmark data shows that XDB outperforms 
-                                            state-of-the-art systems (Garlic and Presto) by up to 6× in terms of runtime and up to 3 orders of magnitude in terms of data transfer.
-                                        </span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="program-sessions">11:00 - 11:10am</td>
-                                    <td class="program-sessions"> <i> Cost-based Data Prefetching and Scheduling in Big Data Platforms over Tiered Storage Systems </i> 
-                                        <br> Herodotou, Herodotos *; Kakoulli, Elena 
-                                        <br> <a class="toggle-abstract" onclick="toggleAbstract('abstract-23')">Click to display the abstract</a>
-                                        <span class="paper-abstract" id="abstract-23">
-                                            The use of storage tiering is becoming popular in data-intensive compute clusters due to the recent advancements in storage technologies. 
-                                            The Hadoop Distributed File System, for example, now supports storing data in memory, SSDs, and HDDs, while OctopusFS and hatS offer fine-grained 
-                                            storage tiering solutions. However, current big data platforms (such as Hadoop and Spark) are not exploiting the presence of storage tiers and 
-                                            the opportunities they present for performance optimizations. Specifically, schedulers and prefetchers will make decisions only based on data 
-                                            locality information and completely ignore the fact that local data are now stored on a variety of storage media with different performance 
-                                            characteristics. This article presents Trident, a scheduling and prefetching framework that is designed to make task assignment, resource scheduling, 
-                                            and prefetching decisions based on both locality and storage tier information. Trident formulates task scheduling as a minimum cost maximum 
-                                            matching problem in a bipartite graph and utilizes two novel pruning algorithms for bounding the size of the graph, while still guaranteeing 
-                                            optimality. In addition, Trident extends YARN’s resource request model and proposes a new storage-tier-aware resource scheduling algorithm. 
-                                            Finally, Trident includes a cost-based data prefetching approach that coordinates with the schedulers for optimizing prefetching operations. 
-                                            Trident is implemented in both Spark and Hadoop and evaluated extensively using a realistic workload derived from Facebook traces as well as 
-                                            an industry-validated benchmark, demonstrating significant benefits in terms of application performance and cluster efficiency.
-                                        </span>
-                                    
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="program-sessions">11:10 - 11:20am</td>
-                                    <td class="program-sessions"> <i> DIAERESIS: RDF Data Partitioning and Query Processing on SPARK </i> 
-                                        <br> Troullinou, Georgia; Agathangelos, Giannis; Kondylakis, Haridimos*; Stefanidis, Kostas; Plexousakis, Dimitris 
-                                        <br> <a class="toggle-abstract" onclick="toggleAbstract('abstract-24')">Click to display the abstract</a>
-                                        <span class="paper-abstract" id="abstract-24">
-                                            The explosion of the web and the abundance of linked data demand effective and efficient methods for storage, management, and querying. Apache Spark 
-                                            is one of the most widely used engines for big data processing, with more and more systems adopting it for efficient query answering. Existing 
-                                            approaches exploiting Spark for querying RDF data, adopt partitioning techniques for reducing the data that need to be accessed in order to improve 
-                                            efficiency. However, simplistic data partitioning fails, on one hand, to minimize data access and on the other hand to group data usually queried 
-                                            together. This is translated into limited improvement in terms of efficiency in query answering. In this paper, we present DIAERESIS, a novel 
-                                            platform that accepts as input an RDF dataset and effectively partitions it, minimizing data access and improving query answering efficiency. 
-                                            To achieve this, DIAERESIS first identifies the top-k most important schema nodes, i.e., the most important classes, as centroids and distributes 
-                                            the other schema nodes to the centroid they mostly depend on. Then, it allocates the corresponding instance nodes to the schema nodes they are 
-                                            instantiated under. Our algorithm enables fine-tuning of data distribution, significantly reducing data access for query answering. We experimentally 
-                                            evaluate our approach using both synthetic and real workloads, strictly dominating existing state-of-the-art, showing that we improve query answering 
-                                            in several cases by orders of magnitude.
-                                        </span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="program-sessions"> 11:30 - 12:00pm </td>
-                                    <td class="program-sessions"> <b>Break</b> </td>
-                                </tr>
-                                <tr>
-                                    <td colspan="2" class="program-session-titles"> <b> Session 4: "Indexing & Similarity Search" </b> Chair: Dimitris Skoutas </tr>
-                                </tr>
-                                <tr>
-                                    <td class="program-sessions">12:00 - 12:10pm</td>
-                                    <td class="program-sessions"> <i> LIT: Lightning-fast In-memory Temporal Indexing </i> <br> 
-                                        George Christodoulou (TU Delft); Panagiotis Bouros (Johannes Gutenberg University Mainz); Nikos Mamoulis (University of Ioannina)* 
-                                        <br> <a class="toggle-abstract" onclick="toggleAbstract('abstract-25')">Click to display the abstract</a>
-                                        <span class="paper-abstract" id="abstract-25">
-                                            We study the problem of temporal database indexing, i.e., indexing versions of a database table in an evolving database. With the larger and 
-                                            cheaper memory chips nowadays, we can afford to keep track of all versions of an evolving table in memory. This raises the question of how to 
-                                            index such a table effectively. We depart from the classic indexing approach, where both current (i.e., live) and past (i.e., dead) data versions 
-                                            are indexed in the same data structure, and propose LIT, a hybrid index, which decouples the management of the current and past states of the indexed 
-                                            column. LIT includes optimized indexing modules for dead and live records, which support efficient queries and updates, and gracefully combines them. 
-                                            We experimentally show that LIT is orders of magnitude faster than the state-of-the-art temporal indices. Furthermore, we demonstrate that LIT uses 
-                                            linear space to the number of record indexed versions, making it suitable for main-memory temporal data management.
-                                        </span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="program-sessions">12:10 - 12:20pm</td>
-                                    <td class="program-sessions"> <i> Efficient Semantic Similarity Search over Spatio-textual Data </i> 
-                                        <br> George S. Theodoropoulos (University of Piraeus); Kjetil Nørvåg (Norwegian University of Science and Technology); Christos Doulkeridis 
-                                        (University of Pireaus)* 
-                                        <br> <a class="toggle-abstract" onclick="toggleAbstract('abstract-26')">Click to display the abstract</a>
-                                        <span class="paper-abstract" id="abstract-26">
-                                            In this paper, we address the problem of semantic similarity search over spatio-textual data. In contrast with most existing works on spatial-keyword 
-                                            search that rely on exact matching of query keywords to textual descriptions, we focus on semantic textual similarity using word embeddings, which 
-                                            have been shown to capture semantic similarity exceptionally well in practice. To support efficient k-nearest neighbor (k-NN) search over a weighted 
-                                            combination of spatial and semantic dimensions, we propose a novel indexing approach (called CSSI) that ensures correctness of results, alongside its 
-                                            approximate variant (called CSSIA) that introduces a small amount of error in exchange for improved performance. Both variants are based on a hybrid 
-                                            clustering scheme that jointly indexes the spatial and textual/semantic information, achieving high pruning percentages and improved performance and 
-                                            scalability.
-                                        </span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="program-sessions">12:20 - 12:30pm</td>
-                                    <td class="program-sessions"> <i> Ένα Πλαίσιο Διαχείρισης Δεδομένων για Συνεχή kNN Κατάταξη Φορτιστών Ηλεκτρικών Οχημάτων με Εκτιμώμενα Στοιχεία </i> 
-                                        <br> Soteris Constantinou (University of Cyprus)*; Constantinos Costa (Rinnoco Ltd); Andreas Konstantinidis (Frederick University); Mohamed Mokbel 
-                                        (University of Minnesota - Twin Cities); Demetrios Zeinalipour-Yazti (University of Cyprus) 
-                                        <br> <a class="toggle-abstract" onclick="toggleAbstract('abstract-27')">Click to display the abstract</a>
-                                        <span class="paper-abstract" id="abstract-27">
-                                            Σε αυτό το άρθρο, παρουσιάζουμε ένα πλαίσιο διαχείρισης δεδομένων του οποίου ο στόχος είναι να επιτρέψει στους οδηγούς να επαναφορτίζουν τα 
-                                            Ηλεκτρικά Οχήματά τους (ΗΟ) από τους πιο φιλικούς προς το περιβάλλον φορτιστές. Ειδικότερα, στόχος ειναι να μεγιστοποιούν οι  οι φορτιστές την 
-                                            ιδιοκατανάλωση ανανεώσιμων πηγών (π.χ., ηλιακής ενέργειας), ελαχιστοποιώντας με αυτόν τον τρόπο την παραγωγή CO2 και επίσης την ανάγκη για ακριβές 
-                                            στάσιμες μπαταρίες στο ηλεκτρικό δίκτυο για την αποθήκευση ανανεώσιμης ενέργειας. Μοντελοποιούμε το πρόβλημά μας ως ένα επερώτημα Continuous 
-                                            k-Nearest Neighbor, όπου η συνάρτηση απόστασης υπολογίζεται χρησιμοποιώντας Εκτιμώμενα Στοιχεία (Estimated Components - EC), και το ονομάζουμε 
-                                            CkNN-EC. Ένα EC ορίζει μια συνάρτηση που μπορεί να έχει ασαφή τιμή βάσει ορισμένων εκτιμήσεων. Συγκεκριμένα EC που χρησιμοποιούνται σε αυτή τη 
-                                            δουλειά είναι: (i) η (διαθέσιμη καθαρή) ενέργεια στον φορτιστή, που εξαρτάται από τις εκτιμώμενες καιρικές συνθήκες, (ii) η διαθεσιμότητα του 
-                                            φορτιστή, που εξαρτάται από τα εκτιμώμενα χρονοδιαγράμματα που δείχνουν πότε ο φορτιστής είναι κατειλημμένοι, και (iii) το κόστος παράκαμψης, 
-                                            που είναι ο χρόνος για να φτάσει κανείς στον φορτιστή ανάλογα με την εκτιμώμενη κίνηση. Δημιουργήσαμε το σύστημα EcoCharge που συνδυάζει τους 
-                                            πολλαπλούς μη-αντικρουόμενους στόχους σε μια συνάρτηση βελτιστοποίησης παράγοντας μια κατάταξη φορτιστών. Ο βασικός μας αλγόριθμος χρησιμοποιεί 
-                                            κατώτερες και ανώτερες τιμές διαστημάτων που προέρχονται από τα EC για να προτείνει τους φορτιστές με την υψηλότερη κατάταξη και να τους 
-                                            παρουσιάσει στους χρήστες μέσω μιας διεπαφής χαρτών. Η πειραματική μας αξιολόγηση με εκτενείς συνθετικά και πραγματικά δεδομένα μαζί με δεδομένα 
-                                            φορτιστών από το Plugshare δείχνει ότι το EcoCharge πληροί τους στόχους της συνάρτησης με αποτελεσματικό τρόπο, επιτρέποντας συνεχή και ακριβές 
-                                            επαναυπολογισμό στις διάφορες συσκευές.
-                                        </span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="program-sessions">12:30 - 12:40pm</td>
-                                    <td class="program-sessions"> <i> OmniSketch: Efficient Multi-Dimensional High-Velocity Stream Analytics with Arbitrary Predicates </i> 
-                                        <br> Wieger R. Punter (TU Eindhoven); Odysseas Papapetrou (TU Eindhoven)*; Minos Garofalakis (ATHENA Research Center) 
-                                        <br> <a class="toggle-abstract" onclick="toggleAbstract('abstract-28')">Click to display the abstract</a>
-                                        <span class="paper-abstract" id="abstract-28">
-                                            A key need in different disciplines is to perform analytics over fast-paced data streams, similar in nature to the traditional OLAP analytics in relational
-                                            databases i.e., with filters and aggregates. Storing unbounded streams, however, is not a realistic, or desired approach due to the high storage 
-                                            requirements, and the delays introduced when storing massive data. Accordingly, many synopses/sketches have been proposed that can summarize the stream 
-                                            in small memory (usually sufficiently small to be stored in RAM), such that aggregate queries can be efficiently approximated, without storing the full 
-                                            stream. However, past synopses predominantly focus on summarizing single-attribute streams, and cannot handle filters and constraints on arbitrary subsets 
-                                            of multiple attributes efficiently. In this work, we propose OmniSketch, the first sketch that scales to fast-paced and complex data streams 
-                                            (with many attributes), and supports aggregates with filters on multiple attributes, dynamically chosen at query time. The sketch offers probabilistic 
-                                            guarantees, a favorable space-accuracy tradeoff, and a worst-case logarithmic complexity for updating and for query execution. We demonstrate experimentally
-                                            with both real and synthetic data that the sketch outperforms the state-of-the-art, and that it can approximate complex ad-hoc queries within the 
-                                            configured accuracy guarantees, with small memory requirements.
-                                        </span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="program-sessions">12:40 - 12:50pm</td>
-                                    <td class="program-sessions"> <i> Dandelion Hashtable: Beyond Billion In-memory Requests per Second on a Commodity Server. </i> 
-                                        <br> Antonios Katsarakis (Huawei Research)*; Vasilis Gavrielatos (Huawei); Nikos Ntarmos (Edinburgh Research Center, Central Software Institute, Huawei) 
-                                        <br> <a class="toggle-abstract" onclick="toggleAbstract('abstract-29')">Click to display the abstract</a>
-                                        <span class="paper-abstract" id="abstract-29">
-                                            This paper presents DLHT, a concurrent in-memory hashtable. Despite efforts to optimize hashtables, that go as far as sacrificing core functionality, 
-                                            state-of-the-art designs still incur multiple memory accesses per request and block request processing in three cases. First, most hashtables block while waiting for 
-                                            data to be retrieved from memory. Second, open-addressing designs, which represent the current state-of-the-art, either cannot free index slots on deletes or must block 
-                                            all requests to do so. Third, index resizes block every request until all objects are copied to the new index. Defying folklore wisdom, DLHT forgoes open-addressing and adopts 
-                                            a fully-featured and memory-aware closed-addressing design based on bounded cache-line-chaining. This design offers lock-free index operations and deletes that free slots instantly, 
-                                            (2) completes most requests with a single memory access, (3) utilizes software prefetching to hide memory latencies, and (4) employs a novel non-blocking and parallel resizing. 
-                                            In a commodity server and a memory-resident workload, DLHT surpasses 1.6B requests per second and provides 3.5x (12×) the throughput of the state-of-the-art closed-addressing (open-addressing) 
-                                            resizable hashtable on Gets (Deletes).
-                                        </span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="program-sessions">12:50 - 1:00pm</td>
-                                    <td class="program-sessions"> <i> Proportionality on Spatial Data with Context </i> 
-                                        <br> Fakas, George; Kalamatianos, Georgios
-                                        <br> <a class="toggle-abstract" onclick="toggleAbstract('abstract-30')">Click to display the abstract</a>
-                                        <span class="paper-abstract" id="abstract-30">
-                                            More often than not, spatial objects are associated with some context, in the form of text, descriptive tags (e.g., points of interest, flickr photos), or linked entities in semantic graphs (e.g., Yago2, DBpedia). Hence, location-based retrieval should be extended to consider not only the locations but also the context of the objects, especially when the retrieved objects are too many and the query result is overwhelming. In this article, we study the problem of selecting a subset of the query result, which is the most representative. We argue that objects with similar context and nearby locations should proportionally be represented in the selection. Proportionality dictates the pairwise comparison of all retrieved objects and hence bears a high cost. We propose novel algorithms which greatly reduce the cost of proportional object selection in practice. In addition, we propose pre-processing, pruning, and approximate computation techniques that their combination reduces the computational cost of the algorithms even further. We theoretically analyze the approximation quality of our approaches. Extensive empirical studies on real datasets show that our algorithms are effective and efficient. A user evaluation verifies that proportional selection is more preferable than random selection and selection based on object diversification.
-                                        </span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="program-sessions">1:00 - 1:10pm</td>
-                                    <td class="program-sessions"> <i> Graph Theory for Consent Management: A New Approach for Complex Data Flows </i> 
-                                        <br> Filipczuk, Dorota; Gerding, Enrico H.; Konstantinidis, George
-                                        <br> <a class="toggle-abstract" onclick="toggleAbstract('abstract-31')">Click to display the abstract</a>
-                                        <span class="paper-abstract" id="abstract-31">
-                                            Through legislation and technical advances users gain more
-                                            control over how their data is processed, and they expect
-                                            online services to respect their privacy choices and preferences. However, data may be processed for many di↵erent
-                                            purposes by several layers of algorithms that create complex data workflows. To date, there is no existing approach
-                                            to automatically satisfy fine-grained privacy constraints of
-                                            a user in a way which optimises the service provider’s gains
-                                            from processing. In this article, we propose a solution to
-                                            this problem by modelling a data flow as a graph. User constraints and processing purposes are pairs of vertices which
-                                            need to be disconnected in this graph. We show that, in
-                                            general, this problem is NP-hard and we propose several
-                                            heuristics and algorithms. We discuss the optimality versus
-                                            eciency of our algorithms and evaluate them using synthetically generated data. On the practical side, our algorithms
-                                            can provide nearly optimal solutions for tens of constraints
-                                            and graphs of thousands of nodes, in a few seconds.
-                                        </span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="program-sessions"> 1:20-3:00pm </td>
-                                    <td class="program-sessions"> <b>Lunch break & Mentoring Event</b></td>
-                                </tr>
-                                <tr>
-                                    <td class="program-sessions">3:00 - 4:30pm</td>
-                                    <td class="program-sessions"> <b>Community Engagement</b> </td>
-                                </tr>
-                                <tr>
-                                    <td class="program-sessions">4:30 - 5:00pm</td>
-                                    <td class="program-sessions"> <b>Break</b> </td>
-                                </tr>
-                                <tr>
-                                    <td class="program-sessions">5:00 - 6:30pm</td>
-                                    <td class="program-sessions"> <b>Panel AI in Academia / Education-Research-System Design</b><br>Anastasia Ailamaki (EPFL), Yannis Ioannidis (NKUA/ATHENA Research Center), Timos Sellis (Archimedes/ATHENA Research Center)</td>
-                                </tr>
-                                <tr>
-                                    <td class="program-sessions">6:30pm</td>
-                                    <td class="program-sessions"> <b>Closing remarks</b> </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </header>
-            </div>
-        </section>
+                                <td class="program-sessions"> <b>08:30 - 10:00am</b> </td>
+                                <td class="program-session-titles"> <b> Session 1: "Graphs & Knowledge
+                                        Management" </b></td>
+                            </tr>
+                            </tr>
+                            <tr>
+                                <td class="program-sessions">08:30 - 08:48am</td>
+                                <td class="program-sessions"> <i><b>Path-based summary explanations for graph
+                                            recommenders</b></i>
+                                    <br> Danae Pla Karidi (Archimedes, Athena RC)*; Evaggelia Pitoura (University of
+                                    Ioannina and Archimedes, Athena Research Center)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="program-sessions">08:48 - 09:06am</td>
+                                <td class="program-sessions"> <i><b>Progressive Querying on Knowledge Graphs</b></i>
+                                    <br> Haridimos Kondylakis (FORTH-ICS & Computer Science Department, University of
+                                    Crete)*
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="program-sessions">09:06 - 09:24am</td>
+                                <td class="program-sessions"> <i><b>The GraphTempo Framework for Exploring the Evolution
+                                            of
+                                            a Graph through Pattern Aggregation</b></i>
+                                    <br> Evangelia Tsoukanara (University of Macedonia); Georgia Koloniari (University
+                                    of Macedonia)*; Evaggelia Pitoura (University of Ioannina); Peter Triantafillou
+                                    (University of Warwick)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="program-sessions">09:24 - 09:42am</td>
+                                <td class="program-sessions"> <i><b>Time-Related Patterns Of Schema Evolution</b></i>
+                                    <br>Panos Vassiliadis (University of Ioannina )*; Alexandros Karakasidis (University
+                                    of Macedonia)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="program-sessions">09:42 - 10:00am</td>
+                                <td class="program-sessions"> <i><b>Extreme Error-bounded Compression of Scientific Data
+                                            via Temporal Graph Autoencoders</b></i>
+                                    <br>Muhannad Alhumaidi (KAUST)*; Spiros Skiadopoulos (UOP); guozhong Li (KAUST);
+                                    Panos Kalnis (KAUST)
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="program-sessions"> <b>10:00 - 10:30am</b> </td>
+                                <td class="program-session-titles"> <b>Coffee Break</b> </td>
+                            </tr>
+                            <tr>
+                                <td class="program-sessions"> <b>10:30 - 12:00pm</b> </td>
+                                <td class="program-session-titles"> <b> Session 2: "Systems"</b></td>
+                            </tr>
+                            <tr>
+                                <td class="program-sessions">10:30 - 10:48am</td>
+                                <td class="program-sessions"> <i><b>Efficient Placement of Decomposable Aggregation
+                                            Functions for Stream Processing over Large Geo-Distributed
+                                            Topologies</b></i>
+                                    <br>Xenofon Chatziliadis (Technische Universität Berlin)*; Eleni Tzirita Zacharatou
+                                    (Hasso Plattner Institute); Alphan Eracar (Technische Universität Berlin); Steffen
+                                    Zeuch (Technische Universität Berlin); Volker Markl (Technische Universität Berlin)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="program-sessions">10:48 - 11:06am</td>
+                                <td class="program-sessions"> <i><b>Employing Streaming Machine Learning for Modeling
+                                            Workload Patterns in Multi-Tiered Data Storage Systems</b></i>
+                                    <br> Edson Ramiro Lucas Filho (Cyprus University of Technology); George Savva
+                                    (Cyprus University of Technology); Lun Yang (Huawei Technologies Co., Ltd.); Kebo Fu
+                                    (Huawei Technologies Co., Ltd.); Jianqiang Shen (Huawei Technologies Co., Ltd.);
+                                    Herodotos Herodotou (Cyprus University of Technology)*
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="program-sessions">11:06 - 11:24am</td>
+                                <td class="program-sessions"> <i><b>Fast and Scalable Data Transfer Across Data
+                                            Systems</b></i>
+                                    <br>Haralampos Gavriilidis (Technische Universität Berlin)*
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="program-sessions">11:24 - 11:42am</td>
+                                <td class="program-sessions"> <i><b>Dandelion: Smaller Clusters, Bigger
+                                            Speeds—Distributed
+                                            Transactions Redefined</b></i>
+                                    <br>Antonios Katsarakis (Huawei Research)*; Vasilis Gavrielatos (Huawei Research);
+                                    Chris Jensen (University of Cambridge); Nikos Ntarmos (Huawei Research, Edinburgh)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="program-sessions">11:42 - 12:00pm</td>
+                                <td class="program-sessions"> <i><b>Fast, Highly Available, and Recoverable Transactions
+                                            on Disaggregated Data Stores</b></i>
+                                    <br>Mahesh Dananjaya (Huawei Research, Edinburgh); Vasilis Gavrielatos (Huawei
+                                    Research, Edinburgh); Antonios Katsarakis (Huawei Research)*; Nikos Ntarmos (Huawei
+                                    Research, Edinburgh); Vijay Nagarajan (University of Utah)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="program-sessions"><b>12:00pm - 1:00pm</b></td>
+                                <td class="program-sessions-titles"><b>Keynote<i></i></b>
+                                    <br> Prof. Dr. Volker Markl (TU Berlin, Germany)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="program-sessions"> <b>1:00 - 2:00pm </b> </td>
+                                <td class="program-session-titles"> <b>Lunch Break</b> </td>
+                            </tr>
+                            <tr>
+                                <td class="program-sessions"> <b>2:00 - 3:30pm</b> </td>
+                                <td class="program-session-titles"> <b> Session 3: "Spatial, Time-series & Scientific"
+                                    </b></td>
+                            </tr>
+                            <tr>
+                                <td class="program-sessions">2:00 - 2:18pm</td>
+                                <td class="program-sessions"> <i><b>Chameleon: Adaptive and Scalable Stream Processing
+                                            Over Sensor Sources</b></i>
+
+                                    <br>Dimitrios Giouroukis (BIFOLD, TU Berlin)*; Varun Pandey (BIFOLD, TU Berlin);
+                                    Steffen Zeuch (BIFOLD, TU Berlin); Volker Markl (BIFOLD, TU Berlin)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="program-sessions">2:18 - 2:36pm</td>
+                                <td class="program-sessions"> <i><b>Updating an Adaptive Spatial Index</b></i>
+
+                                    <br>Fatemeh Zardbani (Aarhus University); Konstantinos Lampropoulos (University of
+                                    Ioannina); Nikos Mamoulis (University of Ioannina); Panagiotis Karras (University of
+                                    Copenhagen)*
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="program-sessions">2:36 - 2:54pm</td>
+                                <td class="program-sessions"> <i><b>Flexible grouping of linear segments for highly
+                                            accurate lossy compression of time series data</b></i>
+
+                                    <br>Xenophon Kitsios (Athens University of Economics and Business)*; Panagiotis
+                                    Liakos (Athens University of Economics and Business); Katia Papakonstantinopoulou
+                                    (Athens University of Economics and Business); Yannis Kotidis (Athens University of
+                                    Economics and Business)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="program-sessions">2:54 - 3:12pm</td>
+                                <td class="program-sessions"> <i><b>Efficient Distance Queries on Non-point Data</b></i>
+
+                                    <br>Achilleas Michalopoulos (University of Ioannina); Dimitrios Tsitsigkos
+                                    (Archimedes, Athena RC); Panagiotis Bouros ( Johannes Gutenberg Universitat Mainz);
+                                    Nikos Mamoulis (University of Ioannina)*; Manolis Terrovitis (IMSI, Athena RC)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="program-sessions">3:12 - 3:30pm</td>
+                                <td class="program-sessions"> <i><b>Parallel Spatial Join Processing with Adaptive
+                                            Replication</b></i>
+
+                                    <br>Nikolaos Koutroumanis (Archimedes, Athena RC)*; Christos Doulkeridis (University
+                                    of Piraeus); Akrivi Vlachou (Department of Information and Communication Systems
+                                    Engineering)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="program-sessions"> <b>3:30 - 4:00pm</b> </td>
+                                <td class="program-sessions-titles"> <b>Coffee break</b> </td>
+                            </tr>
+                            <tr>
+                                <td class="program-sessions"> <b>4:00 - 4:48pm</b> </td>
+                                <td class="program-session-titles"> <b> Session 4a: "Lightning Talks Demo,
+                                        Research Poster & Student Poster" </b></td>
+                            </tr>
+                            <tr>
+                                <td class="program-sessions">4:00 - 4:03pm</td>
+                                <td class="program-sessions"> <i><b>SPARTAN: Data-Adaptive Symbolic Time-Series
+                                            Approximation</b></i>
+                                    <br>Fan Yang (The Ohio State University); John Paparrizos (The Ohio State
+                                    University)*
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td class="program-sessions">4:03 - 4:06pm</td>
+                                <td class="program-sessions"> <i><b>A Structured Study of Multivariate Time-Series
+                                            Distance Measures</b></i>
+                                    <br>Jens d'Hondt (TU Eindhoven); Haojun Li (The Ohio State University); Fan Yang
+                                    (The Ohio State University); Odysseas Papapetrou (TU Eindhoven); John Paparrizos
+                                    (The Ohio State University)*
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="program-sessions">4:06 - 4:09pm</td>
+                                <td class="program-sessions"> <i><b>TREATS: Fairness-aware Entity Resolution over
+                                            Streaming Data</b></i>
+                                    <br>Tiago Brasileiro Araujo (Tampere University); Vasilis Efthymiou (Harokopio
+                                    University of Athens); Vassilis Christophides (ENSEA, ETIS); Evaggelia Pitoura
+                                    (University of Ioannina); Kostas Stefanidis (Tampere University)*
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td class="program-sessions">4:09 - 4:12pm</td>
+                                <td class="program-sessions"> <i><b>DataDazzle: Intelligent Data Exploration through
+                                            Natural Language</b></i>
+                                    <br>Mike Xydas (Athena Research Center)*; Anna Mitsopoulou (Athena Research Center
+                                    ); George Katsogiannis-Meimarakis (Athena Research Center ); Chris Tsapelas (Athena
+                                    Research Center ); Stavroula Eleftherakis (Athena Research Center); Αntonis
+                                    Μandamadiotis (Athena Research Center ); Georgia Koutrika (Athena Research Center)
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td class="program-sessions">4:12 - 4:15pm</td>
+                                <td class="program-sessions"> <i><b>Discovering Comprehensive Branched Declarative
+                                            Process Constraints</b></i>
+                                    <br>Christos Balaktsis (Aristotle University of Thessaloniki)*; Ioannis
+                                    Mavroudopoulos (Aristotle University of Thessaloniki); Marco Comuzzi (Ulsan National
+                                    Institute of Science and Technology); Anastasios Gounaris (Aristotle University of
+                                    Thessaloniki); Fabrizio Maggi (Free University of Bozen-Bolzano)
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="program-sessions">4:15 - 4:18pm</td>
+                                <td class="program-sessions"> <i><b>LLM-MS: Querying Open-Source LLMs through a
+                                            Multi-Model Search Engine</b></i>
+                                    <br>Konstantin Krasovitskiy (University of Cyprus); Stelios Christou (University of
+                                    Cyprus); Demetris Zeinalipour (University of Cyprus)*
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="program-sessions">4:18 - 4:21pm</td>
+                                <td class="program-sessions"> <i><b>UDFBench: A Tool for Benchmarking UDF Queries on SQL
+                                            Engines</b></i>
+                                    <br>Yannis Foufoulas (Athena Research Center)*; Theoni Palaiologou (University of
+                                    Athens); Alkis Simitsis (Athena Research Center)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="program-sessions">4:21 - 4:24pm</td>
+                                <td class="program-sessions"> <i><b>A Theoretical Framework for Distribution-Aware
+                                            Dataset Search</b></i>
+                                    <br>Aryan Esmailpour (University of Illinois Chicago); Sainyam Galhotra (Cornell
+                                    University); Rahul Raychaudhury (Duke University); Stavros Sintos (University of
+                                    Illinois Chicago)*
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="program-sessions">4:24 - 4:27pm</td>
+                                <td class="program-sessions"> <i><b>Transforming Maritime Safety: Data-driven
+                                            Applications for the Real-Time Detection and Mitigation of Maritime
+                                            Incidents</b></i>
+                                    <br>Georgios Grigoropoulos (Kpler)*; Alexandros Troupiotis - Kapeliaris (Kpler);
+                                    Ilias Chamatidis (Kpler); Evangelia Filippou (Kpler); Konstantina Bereta (Kpler)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="program-sessions">4:27 - 4:30pm</td>
+                                <td class="program-sessions"> <i><b>Storage fabric for autonomous collaborative edge
+                                            devices</b></i>
+                                    <br>Pantelis Ypsilantis (Aristotle University Of Thessaloniki); Theodoros
+                                    Toliopoulos (Aristotle University of Thessaloniki)*; Anastasios Gounaris (Aristotle
+                                    University Of Thessaloniki)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="program-sessions">4:30 - 4:33pm</td>
+                                <td class="program-sessions"> <i><b>Accelerated Migration of Enterprise Data Warehouses
+                                            Using Database Virtualization</b></i>
+                                    <br>Nikos Tsikoudis (Datometry)*
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="program-sessions">4:33 - 4:36pm</td>
+                                <td class="program-sessions"> <i><b>PROVATO: A Data-Centric Edge-AI Architecture for
+                                            Precision Livestock Monitoring Using IoT</b></i>
+                                    <br>Andreas Doumouras (University of the Peloponnese); Evangelos Mitikas (University
+                                    of West Attica); Ermis Doulos (University of the Peloponnese); Manos Schoinoplokakis
+                                    (University of the Peloponnese); Giannis Nikolentzos (University of the
+                                    Peloponnese); Christos Tryfonopoulos (University of the Peloponnese)*; Spiros
+                                    Skiadopoulos (University of the Peloponnese); Costas Vassilakis (University of the
+                                    Peloponnese); Paraskevi Raftopoulou (University of the Peloponnese)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="program-sessions">4:36 - 4:39pm</td>
+                                <td class="program-sessions"> <i><b>LIMECEP: Lazy Inconsistency-aware MultiPattern
+                                            Edge-ready CEP</b></i>
+                                    <br>Styliani Kyrama (Aristotle University of Thessaloniki)*; Anastasios Gounaris
+                                    (Aristotle University of Thessaloniki)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="program-sessions">4:39 - 4:42pm</td>
+                                <td class="program-sessions"> <i><b>Towards Efficient Perturbation-based Explanations in
+                                            RAG</b></i>
+                                    <br>George Balanos (University of Ioannina)*
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="program-sessions">4:42 - 4:45pm</td>
+                                <td class="program-sessions"> <i><b>Hecatoncheir: Scaling up and out spatial data
+                                            management</b></i>
+                                    <br>Thanasis Georgiadis (University of Ioannina)*; Achilleas Michalopoulos
+                                    (University of Ioannina); Dimitris Tsitsigkos (Archimedes, AthenaRC); Nikos Mamoulis
+                                    (University of Ioannina)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="program-sessions">4:45 - 4:48pm</td>
+                                <td class="program-sessions"> <i><b>KG2Documents: Enhancing Explainability in Medical QA
+                                            via Knowledge Graph-Aided Retrieval-Augmented Generation</b></i>
+                                    <br>EVANGELOS CHASANIS (Archimedes Unit, Athena Research Center)*
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="program-sessions"> <b>4:48 - 6:00pm</b> </td>
+                                <td class="program-session-titles"> <b> Session 4b: "Demo, Research Poster &
+                                        Student Poster Presentations" </b></td>
+                            </tr>
+                            <tr>
+                                <td class="program-sessions"><b>08:30-10:30pm</b></td>
+                                <td class="program-sessions-titles"><b> Social Dinner</b></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <br><br>
+                <div class="table-wrapper">
+                    <table class="alt program-table">
+                        <tbody>
+                            <tr>
+                                <td colspan="2" style="background-color:#015CAB; color:White;"><b>Day 2 (July 4th,
+                                        2025)</b></td>
+                            </tr>
+                            <tr>
+                                <td class="program-sessions"><b>Time</b></td>
+                                <td class="program-sessions"><b>Event</b></td>
+                            </tr>
+                            <tr>
+                                <td class="program-sessions"> <b>8:30 - 10:00am</b> </td>
+                                <td class="program-session-titles"> <b> Session 5: "Query Processing and
+                                        Language Interfaces" </b></td>
+                            </tr>
+                            </tr>
+                            <tr>
+                                <td class="program-sessions">08:30 - 08:48am</td>
+                                <td class="program-sessions"> <i><b>LLM-MS: A Multi-Model LLM Search Engine</b></i>
+                                    <br> Konstantin Krasovitskiy (University of Cyprus); Stelios Christou (University of
+                                    Cyprus); Demetris Zeinalipour (University of Cyprus)*
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="program-sessions">08:48 - 09:06am</td>
+                                <td class="program-sessions"> <i><b>OBLIVIATOR: OBLIVIous Parallel Joins and other
+                                            OperATORs in Shared Memory Environments</b></i>
+                                    <br> Apostolos Mavrogiannakis (UCSC)*; Xian Wang (HKUST); Ioannis Demertzis (UCSC);
+                                    Dimitrios Papadopoulos (HKUST); Minos Garofalakis (ATHENA Research Center)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="program-sessions">09:06 - 09:24am</td>
+                                <td class="program-sessions"> <i><b>Bag Containment of Join-On-Free Queries</b></i>
+                                    <br> George Konstantinidis (University of Southampton)*
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="program-sessions">09:24 - 09:42am</td>
+                                <td class="program-sessions"> <i><b>HAIDES: Adaptive Approximation of Inference Queries
+                                            over Unstructured Data</b></i>
+                                    <br> Christos Papadopoulos (Aalborg University)*; Alkis Simitsis (ATHENA Research
+                                    Center); Torben Bach Pedersen (Aalborg University)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="program-sessions">09:42 - 10:00am</td>
+                                <td class="program-sessions"> <i><b>Analysis of Text-to-SQL Benchmarks: Limitations,
+                                            Challenges and Opportunities</b></i>
+                                    <br> Anna Mitsopoulou (Athena Research and Innovation Center)*; Georgia Koutrika
+                                    (Athena Research Center)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="program-sessions"> <b>10:00 - 10:30am</b> </td>
+                                <td class="program-sessions-titles"> <b>Coffee Break</b> </td>
+                            </tr>
+                            <tr>
+                                <td class="program-sessions"> <b>10:30 - 12:00pm</b> </td>
+                                <td class="program-session-titles"> <b> Session 6: "Data Quality" </b></td>
+                            </tr>
+                            <tr>
+                                <td class="program-sessions">10:30 - 10:48am</td>
+                                <td class="program-sessions"> <i><b>Deduplicated Sampling On-Demand</b></i>
+                                    <br> Luca Zecchini (BIFOLD & TU Berlin); Vasilis Efthymiou (Harokopio University of
+                                    Athens)*; Felix Naumann (Hasso Plattner Institute); Giovanni Simonini (University of
+                                    Modena & Reggio Emilia)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="program-sessions">10:48 - 11:06am</td>
+                                <td class="program-sessions"> <i><b>FedeM: Federated Learning-Based Privacy-Preserving
+                                            Record Matching</b></i>
+                                    <br> Michail Zervas (University of Macedonia ); Alexandros Karakasidis (University
+                                    of Macedonia)*
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="program-sessions">11:06 - 11:24am</td>
+                                <td class="program-sessions"> <i><b>Metadata Unification in Open Data with
+                                            Gnomon</b></i>
+                                    <br> Christina Christodoulakis (University of Toronto)*; Moshe Gabel (University of
+                                    Toronto); Angela Demke Brown (University of Toronto)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="program-sessions">11:24 - 11:42am</td>
+                                <td class="program-sessions"> <i><b>Data Glitches Discovery using Influence-based Model
+                                            Explanations</b></i>
+                                    <br> Nikolaos Myrtakis (University of Crete)*; Ioannis Tsamardinos (University of
+                                    Crete); Vassilis Christophides (ENSEA)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="program-sessions">11:42 - 12:00pm</td>
+                                <td class="program-sessions"> <i><b>QueryER: A Framework for Fast Analysis-Aware
+                                            Deduplication over Dirty Data</b></i>
+                                    <br> Giorgos Alexiou (Athena Research Center)*; George Papastefanatos (Athena
+                                    Research Center); Vassilis Stamatopoulos (Athena Research Center ); Georgia Koutrika
+                                    (Athena Research Center ); Nectarios Koziris (National Technical University Athens)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="program-sessions"><b>12:00pm - 1:00pm</b></td>
+                                <td class="program-sessions-titles"><b>Keynote<i></i></b>
+                                    <br> Prof. Panagiotis Karras (University of Copenhagen, Denmark)
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="program-sessions"> <b>1:00 - 2:00pm</b> </td>
+                                <td class="program-session-titles"> <b>Lunch Break</b> </td>
+                            </tr>
+                            <tr>
+                                <td class="program-sessions"> <b>2:00 - 3:30pm</b> </td>
+                                <td class="program-session-titles"> <b> Session 7: "Data Mining" </b></td>
+                            </tr>
+                            <tr>
+                                <td class="program-sessions">2:00 - 2:18pm</td>
+                                <td class="program-sessions"> <i><b>State-transition-aware anomaly detection under
+                                            concept drifts</b></i>
+                                    <br> Emmanuel Müller (TU Dortmund)*
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="program-sessions">2:18 - 2:36pm</td>
+                                <td class="program-sessions"> <i><b>Unsupervised Features Ranking via Coalitional Game
+                                            Theory for Categorical Data</b></i>
+                                    <br> Emmanuel Müller (TU Dortmund)*
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="program-sessions">2:36 - 2:54pm</td>
+                                <td class="program-sessions"> <i><b>STracker: A framework for identifying sentiment
+                                            changes in customer feedbacks</b></i>
+                                    <br> Petri Puustinen (Tampere University); Maria Stratigi (Tampere University);
+                                    Kostas Stefanidis (Tampere University)*
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="program-sessions">2:54 - 3:12pm</td>
+                                <td class="program-sessions"> <i><b>Improved Approximation Algorithms for Relational
+                                            Clustering</b></i>
+                                    <br> Aryan Esmailpour (University of Illinois Chicago); Stavros Sintos (University
+                                    of Illinois Chicago)*
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="program-sessions"> <b>3:30 - 4:00pm</b> </td>
+                                <td class="program-sessions-titles"> <b>Coffee Break</b> </td>
+                            </tr>
+                            <tr>
+
+                                <td class="program-sessions"> <b>4:00 - 4:45pm</b></td>
+                                <td class="program-session-titles"> <b> Session 8a: "Sponsored Talks" </b></td>
+                            </tr>
+                            <tr>
+
+                                <td class="program-sessions"> <b>4:45 - 6:00pm</b></td>
+                                <td class="program-session-titles"> <b> Session 8b: "HDMS Closing" </b></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </header>
+        </div>
+    </section>
 </body>
-</html>		<footer id="footer">
+
+</html>
+<footer id="footer">
     <div class="inner">
         <div class="flex">
             <div class="copyright" style="width: 100%; text-align: center;">
-                Copyright © 2024: <a href="https://acmsigmod.gr/" style="text-decoration: underline;" target="_blank">Hellenic ACM SIGMOD Chapter</a>
+                Copyright © 2025: <a href="https://acmsigmod.gr/" style="text-decoration: underline;"
+                    target="_blank">Hellenic ACM SIGMOD Chapter</a>
             </div>
-                <!-- <ul class="icons">
+            <!-- <ul class="icons">
                 <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
                 <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
                 <li><a href="#" class="icon fa-linkedin"><span class="label">linkedIn</span></a></li>
@@ -830,7 +590,8 @@
         </div>
     </div>
 </footer>
-    <span onclick="topFunction()" id="top_button" title="Go to top"><img src="images/up-arrow.png" width="50px;" onmouseover="hover(this);" onmouseout="unhover(this);"/></span>
+<span onclick="topFunction()" id="top_button" title="Go to top"><img src="images/up-arrow.png" width="50px;"
+        onmouseover="hover(this);" onmouseout="unhover(this);" /></span>
 
 <!-- Scripts -->
 <script src="assets/js/jquery.min.js"></script>
@@ -839,10 +600,3 @@
 <script src="assets/js/main.js"></script>
 <script src="assets/js/scroll_to_top.js"></script>
 <script src="assets/js/program.js"></script>
-
-
-    
-
-    
-
-                                        
