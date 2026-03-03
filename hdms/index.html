@@ -1,1 +1,295 @@
-<meta http-equiv="refresh" content="1; URL=/hdms/2025/" />
+<!DOCTYPE html>
+<!--
+	Theory by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+  <head>
+    <title>HDMS</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-138972724-1"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="assets/css/main_newest.css" />
+
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-138972724-1");
+    </script>
+
+    <style>
+      .bold {
+        font-weight: bold;
+      }
+
+      .time {
+        position: relative;
+        float: left;
+      }
+
+      .timeline-wrapper {
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 80px;
+        min-width: 400px;
+        font-family: "Arial";
+        font-size: 14px;
+        /*border: 1px solid #CCC;*/
+      }
+
+      .StepProgress {
+        position: relative;
+        padding-left: 45px;
+        margin-left: auto;
+        margin-right: auto;
+        list-style: none;
+      }
+
+      .StepProgress::before {
+        display: inline-block;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 15px;
+        width: 10px;
+        height: 100%;
+        border-left: 2px solid white;
+      }
+
+      .StepProgress-item {
+        position: relative;
+        counter-increment: list;
+      }
+
+      .StepProgress-item:not(:last-child) {
+        padding-bottom: 20px;
+      }
+
+      .StepProgress-item::before {
+        display: inline-block;
+        content: "";
+        position: absolute;
+        left: -30px;
+        height: 100%;
+        width: 10px;
+      }
+
+      .StepProgress-item::after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: -37px;
+        width: 12px;
+        height: 12px;
+        border: 2px solid white;
+        border-radius: 50%;
+        background-color: white;
+      }
+
+      .StepProgress-item.is-done::before {
+        border-left: 2px solid white;
+      }
+
+      .StepProgress-item.is-done::after {
+        /*content: "?";*/
+        font-size: 10px;
+        color: green;
+        text-align: center;
+        border: 2px solid white;
+        background-color: white;
+      }
+
+      .StepProgress strong {
+        display: block;
+      }
+
+      h2 a:hover {
+        color: rgb(129, 197, 254) !important;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header id="header">
+      <div class="inner">
+        <nav id="nav">
+          <a href="index.html">
+            <picture>
+              <source media="(min-width: 1250px)" srcset="images/logo.png" />
+              <source
+                media="(max-width: 1250px)"
+                srcset="images/logo_mobile.png"
+                width="170px;"
+              />
+              <img
+                id="logo"
+                src="images/banner.jpg"
+                alt="HDMS"
+                style="left: 37px"
+              />
+            </picture>
+
+            <!-- <img src="images/logo.png" alt="HDMS 2024" width="70px;" style="margin-top: 10px; left: 37px;" /> -->
+          </a>
+          <div class="mobile_menu_divider">
+            <img src="images/mobile_menu_divider.png" width="70px;" />
+          </div>
+          <a href="#dbhellas"><b>DB HELLAS</b></a>
+          <a href="history.html"><b>HISTORY</b></a>
+          <a href="2026/index.html"><b>HDMS 2026</b></a>
+          <div class="mobile_menu_divider">
+            <img src="images/mobile_menu_divider.png" width="70px;" />
+          </div>
+          <a href="index_gr.html" style="position: absolute; right: 37px"></a>
+        </nav>
+        <a href="#navPanel" class="navPanelToggle">
+          <img src="images/mobile_menu_icon.png" alt="Menu" width="60px;" />
+        </a>
+      </div>
+    </header>
+
+    <section style="background-color: #015cab">
+      <!-- <img src="images/banner.jpg" width="100%"> -->
+      <picture>
+        <source
+          media="(min-width: 1250px)"
+          srcset="images/banner_new_no_dates.png"
+        />
+        <source
+          media="(max-width: 750px)"
+          srcset="images/banner_mobile3_new_no_dates.png"
+        />
+        <img
+          src="images/banner_mobile3_new_no_dates.png"
+          alt="HDMS banner"
+          width="100%"
+        />
+      </picture>
+    </section>
+
+    <section style="background-color: #015cab">
+      <div id="banner_wrapper"></div>
+    </section>
+    <section id="one" class="wrapper" style="padding-bottom: 2vh !important">
+      <div class="inner" style="text-align: justify">
+        <h1 style="font-size: 40px">HDMS 2026 - 20th anniversary</h1>
+        <div class="row 200%">
+        
+          <div class="12u 12u$(medium)" style="text-align: justify">
+            <p>
+              The Hellenic Data Management Symposium (HDMS) is the annual forum
+              for the Greek database community to present and discuss recent
+              advances in the Data Management (DM) field. The 20th HDMS will be
+              held between <b>July 2-3, 2026</b> in <b>Athens</b>, Greece.
+            </p>
+
+            <p>
+              The program will include academic and industry talks, keynotes,
+              panels, research poster sessions, demos, student poster sessions,
+              and other social activities.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <a href="2026/index.html" target="_blank" rel="noopener">
+        <div id="third_header">Learn More About HDMS 2026</div>
+    </a>
+
+    <p style="margin-bottom:100px;"></p>
+
+    <!-- </section> -->
+    <section id="dbhellas">
+      <div
+        id="comm"
+        style="background-color: #015cab; padding: 24px; margin: auto"
+      >
+        <h2 class="font_stroke align-center">DBHELLAS</h2>
+      </div>
+      <div
+        class="inner align-center"
+        style="margin-top: 10vh; margin-bottom: 10vh"
+      >
+        <p>
+          <b>dbhellas</b> is a mailing list for the members of the Greek
+          database community.
+        </p>
+
+        <p>
+          To subscribe to dbhellas you need to send a message to
+          dbhellas-request@hdms.gr.
+        </p>
+        <p>
+          To post a message, send an email to dbhellas@hdms.gr with the message
+          as the body of the email.
+        </p>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <div class="inner">
+        <div class="flex">
+          <div class="copyright" style="width: 100%; text-align: center">
+            Copyright © 2026:
+            <a
+              href="https://acmsigmod.gr/"
+              style="text-decoration: underline"
+              target="_blank"
+              >Hellenic ACM SIGMOD Chapter</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+    <span onclick="topFunction()" id="top_button" title="Go to top"
+      ><img
+        src="images/up-arrow.png"
+        width="50px;"
+        onmouseover="hover(this);"
+        onmouseout="unhover(this);"
+    /></span>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/skel.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/scroll_to_top.js"></script>
+  </body>
+</html>
+
+<script>
+  $("#myModal").on("shown.bs.modal", function () {
+    $("#myInput").trigger("focus");
+  });
+</script>

@@ -1,0 +1,13 @@
+main banner:
+banner_new_<year>.png
+font: Avenir Next
+fontsize: 25 for the number and 15 for right handside
+
+mobile banners:
+banner_mobile3_new_<year>.png
+font: Avenir Next
+fontsize: 23
+
+banner_mobile2_new_<year>.png
+font: Avenir Next
+fontsize: 23
