@@ -39,20 +39,21 @@
           <div class="mobile_menu_divider">
             <img src="images/mobile_menu_divider.png" width="70px;" />
           </div>
-          <a href="index.html"><b>HDMS 2026</b></a>
+          <a href="index.html"><b>ΗΟΜΕ</b></a>
           <!-- <a href="generic.html">News</a> -->
           <a href="index.html#topics"><b>TOPICS</b></a>
           <a href="index.html#venue"><b>VENUE</b></a>
           <a href="index.html#dates"><b>DATES</b></a>
           <!-- <a href="index.html#dbhellas"><b>DB HELLAS</b></a> -->
           <!-- <a href="index.html#tpc"><b>TECHNICAL PROGRAM COMMITTEE</b></a> -->
-          <!-- <a href="index.html#committee"><b>ORGANIZATION</b></a> -->
-          <!-- <a href="registration.html"><b>REGISTRATION</b></a> -->
+          <a href="index.html#committee"><b>ORGANIZATION</b></a>
+          <a href="registration.html"><b>REGISTRATION</b></a>
           <!-- <a href="index.html#conference-timeline"><b>SUBMISSIONS</b></a> -->
           <!-- <a href="index.html#social_event"><b>SOCIAL EVENT</b></a> -->
           <!-- <a href="index.html#student_awards"><b>STUDENT AWARDS</b></a> -->
           <!-- <a href="../history.html"><b>HISTORY</b></a> -->
           <!-- <a href="index.html#sponsors"><b>SPONSORS</b></a> -->
+          <a href="sponsorship-opportunities.html"><b>SPONSOR OPPORTUNITIES</b><a>
           <div class="mobile_menu_divider">
             <img src="images/mobile_menu_divider.png" width="70px;" />
           </div>
@@ -66,7 +67,7 @@
     </header>
     <section
       id="program"
-      class="wrapper special style1"
+      class="wrapper special style2"
       style="padding-top: 0px; padding-bottom: 0px"
     >
       <div class="inner">
@@ -75,90 +76,92 @@
         </header>
       </div>
     </section>
+    <footer id="footer">
+      <div class="inner">
+        <div class="flex">
+          <div class="copyright" style="width: 100%; text-align: center">
+            Copyright © 2025:
+            <a
+              href="https://acmsigmod.gr/"
+              style="text-decoration: underline"
+              target="_blank"
+              >Hellenic ACM SIGMOD Chapter</a
+            >
+          </div>
+          <!-- <ul class="icons">
+                    <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                    <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                    <li><a href="#" class="icon fa-linkedin"><span class="label">linkedIn</span></a></li>
+                    <li><a href="#" class="icon fa-pinterest-p"><span class="label">Pinterest</span></a></li>
+                    <li><a href="#" class="icon fa-vimeo"><span class="label">Vimeo</span></a></li>
+                </ul> -->
+        </div>
+      </div>
+    </footer>
+    <span onclick="topFunction()" id="top_button" title="Go to top"
+    ><img
+      src="images/up-arrow.png"
+      width="50px;"
+      onmouseover="hover(this);"
+      onmouseout="unhover(this);"
+  /></span>
+
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/skel.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/scroll_to_top.js"></script>
+  <script src="assets/js/program.js"></script>
+  <script>
+    function setLanguage(paperId, lang) {
+      const langs = ["en", "el"];
+
+      langs.forEach((l) => {
+        const title = document.getElementById(`paper-${paperId}-title-${l}`);
+        const authors = document.getElementById(`paper-${paperId}-authors-${l}`);
+        const abstract = document.getElementById(`abstract-${paperId}-${l}`);
+        const flag = document.getElementById(`flag-${l}-${paperId}`);
+
+        if (title) title.style.display = l === lang ? "block" : "none";
+        if (authors) authors.style.display = l === lang ? "block" : "none";
+        if (abstract) abstract.style.display = l === lang ? "block" : "none";
+
+        if (flag) {
+          if (l === lang) {
+            flag.style.opacity = "1";
+            flag.style.border = "2px solid #015cab";
+          } else {
+            flag.style.opacity = "0.4";
+            flag.style.border = "none";
+          }
+        }
+      });
+    }
+
+    function toggleAbstract(id) {
+      const abs = document.getElementById(id);
+      abs.style.display = abs.style.display === "none" ? "block" : "none";
+    }
+
+    document.addEventListener("DOMContentLoaded", function () {
+      const allPapers = document.querySelectorAll(
+        "[id^='paper-'][id$='-title-en']"
+      );
+      allPapers.forEach((titleEl) => {
+        const paperId = titleEl.id.split("-")[1];
+        const hasEl = document.getElementById(`paper-${paperId}-title-el`);
+        if (!hasEl) {
+          const flagEl = document.getElementById(`flag-el-${paperId}`);
+          if (flagEl) {
+            flagEl.style.opacity = "0.2";
+            flagEl.style.pointerEvents = "none";
+            flagEl.title = "No Greek available";
+          }
+        }
+      });
+    });
+  </script>
+
   </body>
 </html>
-<footer id="footer">
-  <div class="inner">
-    <div class="flex">
-      <div class="copyright" style="width: 100%; text-align: center">
-        Copyright © 2025:
-        <a
-          href="https://acmsigmod.gr/"
-          style="text-decoration: underline"
-          target="_blank"
-          >Hellenic ACM SIGMOD Chapter</a
-        >
-      </div>
-      <!-- <ul class="icons">
-                <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-                <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-                <li><a href="#" class="icon fa-linkedin"><span class="label">linkedIn</span></a></li>
-                <li><a href="#" class="icon fa-pinterest-p"><span class="label">Pinterest</span></a></li>
-                <li><a href="#" class="icon fa-vimeo"><span class="label">Vimeo</span></a></li>
-            </ul> -->
-    </div>
-  </div>
-</footer>
-<span onclick="topFunction()" id="top_button" title="Go to top"
-  ><img
-    src="images/up-arrow.png"
-    width="50px;"
-    onmouseover="hover(this);"
-    onmouseout="unhover(this);"
-/></span>
 
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/skel.min.js"></script>
-<script src="assets/js/util.js"></script>
-<script src="assets/js/main.js"></script>
-<script src="assets/js/scroll_to_top.js"></script>
-<script src="assets/js/program.js"></script>
-<script>
-  function setLanguage(paperId, lang) {
-    const langs = ["en", "el"];
-
-    langs.forEach((l) => {
-      const title = document.getElementById(`paper-${paperId}-title-${l}`);
-      const authors = document.getElementById(`paper-${paperId}-authors-${l}`);
-      const abstract = document.getElementById(`abstract-${paperId}-${l}`);
-      const flag = document.getElementById(`flag-${l}-${paperId}`);
-
-      if (title) title.style.display = l === lang ? "block" : "none";
-      if (authors) authors.style.display = l === lang ? "block" : "none";
-      if (abstract) abstract.style.display = l === lang ? "block" : "none";
-
-      if (flag) {
-        if (l === lang) {
-          flag.style.opacity = "1";
-          flag.style.border = "2px solid #015cab";
-        } else {
-          flag.style.opacity = "0.4";
-          flag.style.border = "none";
-        }
-      }
-    });
-  }
-
-  function toggleAbstract(id) {
-    const abs = document.getElementById(id);
-    abs.style.display = abs.style.display === "none" ? "block" : "none";
-  }
-
-  document.addEventListener("DOMContentLoaded", function () {
-    const allPapers = document.querySelectorAll(
-      "[id^='paper-'][id$='-title-en']"
-    );
-    allPapers.forEach((titleEl) => {
-      const paperId = titleEl.id.split("-")[1];
-      const hasEl = document.getElementById(`paper-${paperId}-title-el`);
-      if (!hasEl) {
-        const flagEl = document.getElementById(`flag-el-${paperId}`);
-        if (flagEl) {
-          flagEl.style.opacity = "0.2";
-          flagEl.style.pointerEvents = "none";
-          flagEl.title = "No Greek available";
-        }
-      }
-    });
-  });
-</script>
