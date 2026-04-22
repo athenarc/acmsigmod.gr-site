@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>Doctoral Dissertation Award | Hellenic ACM SIGMOD</title>
+
+    <link rel="shortcut icon" href="assets/img/favicon.png" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+
+    <style>
+        body {
+            font-family: Comfortaa, 'Inter', sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Modern Navbar */
+        .navbar {
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            background: white !important;
+            font-size: 1.2rem;
+        }
+
+        .navbar-nav .nav-link {
+            font-weight: 600;
+            transition: color 0.3s ease;
+            margin: 0 0.5rem;
+        }
+
+        .navbar-nav .nav-link:hover {
+         color: #00a3ff; /* brighter blue */
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 160px 0;
+            border-bottom: 1px solid #dee2e6;
+        }
+
+        .hero-title {
+            font-weight: 700;
+            color: #003366; /* ACM Style Blue */
+            margin-bottom: 1.5rem;
+        }
+
+        /* News Cards */
+        .news-card {
+            border: none;
+            border-radius: 12px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
+            background: #ffffff;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+        }
+
+        .news-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .date-badge {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            color: #6c757d;
+            font-weight: 600;
+        }
+
+        /* Logo Styling */
+        .partner-logo {
+            max-width: 200px;
+            filter: grayscale(100%);
+            opacity: 0.7;
+            transition: 0.3s;
+        }
+
+        .partner-logo:hover {
+            filter: grayscale(0%);
+            opacity: 1;
+        }
+
+        .p{margin-bottom: 0px !important;}
+
+        footer {
+            background: #002147;
+            color: white;
+            padding: 20px 0;
+        }
+
+        footer a {
+            color: #00a3ff;
+            text-decoration: none;
+        }
+
+        /* Modern List Styling */
+      .topic-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+          gap: 15px;
+          padding-left: 0;
+          list-style: none;
+      }
+
+      .topic-item {
+          background: #f8f9fa;
+          border: 1px solid #e9ecef;
+          border-radius: 10px;
+          padding: 15px 20px;
+          display: flex;
+          align-items: center;
+          transition: all 0.3s ease;
+          height: 100%;
+      }
+
+      .topic-item:hover {
+          background: #fff;
+          transform: translateY(-3px);
+          box-shadow: 0 10px 20px rgba(0, 51, 102, 0.08);
+          border-color: #00a3ff;
+      }
+
+      .topic-icon {
+          color: #003366; /* ACM Blue */
+          font-size: 1.25rem;
+          margin-right: 15px;
+          display: flex;
+          align-items: center;
+      }
+
+      .topic-text {
+          font-weight: 500;
+          color: #444;
+          font-size: 0.95rem;
+      }
+
+      /* Responsive adjustment for mobile */
+      @media (max-width: 768px) {
+          .topic-grid {
+              grid-template-columns: 1fr;
+          }
+      }        
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <strong>Hellenic ACM SIGMOD</strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">About</a>
+                        <ul class="dropdown-menu border-0 shadow">
+                            <li><a class="dropdown-item" href="about.html">About the Chapter</a></li>
+                            <li><a class="dropdown-item" href="officers.html">Committees</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Membership</a>
+                        <ul class="dropdown-menu border-0 shadow">
+                            <li><a class="dropdown-item" href="founding_members.html">Founding Members</a></li>
+                            <li><a class="dropdown-item" href="join.html">How to join</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Events</a>
+                        <ul class="dropdown-menu border-0 shadow">
+                            <li><a class="dropdown-item" target="_blank" href="https://acmsigmod.gr/hdms/index.html">HDMS</a></li>
+                            <li><a class="dropdown-item" target="_blank" href="https://europe.acm.org/seasonal-schools/data-science">ACM Europe Summer School</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Awards</a>
+                        <ul class="dropdown-menu border-0 shadow">
+                            <li><a class="dropdown-item" target="_blank" href="doctoral_dissertation_award.html">Hellenic ACM SIGMOD Doctoral Dissertation Award</a></li>
+                            <li><a class="dropdown-item" target="_blank" href="dda_call.html">Doctoral Dissertation Award : Call for nominations 2026 </a></li>
+                        </ul>
+                    </li>                    
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header text-center">
+        <div class="container">
+            <h1 class="hero-title mb-0">The Hellenic ACM SIGMOD Doctoral Dissertation Award</h1>
+            <p class="text-muted mt-2">Recognizing outstanding doctoral dissertations in the field of data management.</p>
+        </div>
+    </header>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col">
+                    <p>The Hellenic ACM SIGMOD Doctoral Dissertation Award is established by the Hellenic ACM SIGMOD Chapter for recognizing outstanding doctoral research conducted within the Hellenic data management community.</p>
+                    <p>This initiative is inspired by leading international distinctions such as the Jim Gray Doctoral Dissertation Award and aims to promote excellence and visibility within the Greek research ecosystem. The award will be presented annually to a doctoral dissertation that demonstrates significant contributions to the field of data management, including but not limited to database systems, data science, data analytics, and related areas.</p>
+                    <p>The award aims to highlight exceptional dissertations that demonstrate originality, depth, and impact in areas broadly related to data management, including (but not limited to):</p>
+                </div>
+            </div>
+
+            <ul class="topic-grid">
+                <li class="topic-item">
+                    <span class="topic-icon"><i class="bi bi-check-circle-fill"></i></span>
+                    <span class="topic-text">Databases and database systems</span>
+                </li>
+                <li class="topic-item">
+                    <span class="topic-icon"><i class="bi bi-check-circle-fill"></i></span>
+                    <span class="topic-text">Distributed data processing and big data systems</span>
+                </li>
+                <li class="topic-item">
+                    <span class="topic-icon"><i class="bi bi-check-circle-fill"></i></span>
+                    <span class="topic-text">Data science and analytics</span>
+                </li>
+                <li class="topic-item">
+                    <span class="topic-icon"><i class="bi bi-check-circle-fill"></i></span>
+                    <span class="topic-text">Data integration, quality, and entity resolution</span>
+                </li>
+                <li class="topic-item">
+                    <span class="topic-icon"><i class="bi bi-check-circle-fill"></i></span>
+                    <span class="topic-text">Knowledge representation and reasoning</span>
+                </li>
+                <li class="topic-item">
+                    <span class="topic-icon"><i class="bi bi-check-circle-fill"></i></span>
+                    <span class="topic-text">Graph data management and knowledge graphs</span>
+                </li>
+                <li class="topic-item">
+                    <span class="topic-icon"><i class="bi bi-check-circle-fill"></i></span>
+                    <span class="topic-text">Information retrieval and web data management</span>
+                </li>
+                <li class="topic-item">
+                    <span class="topic-icon"><i class="bi bi-check-circle-fill"></i></span>
+                    <span class="topic-text">Time series management and analytics</span>
+                </li>
+                <li class="topic-item">
+                    <span class="topic-icon"><i class="bi bi-check-circle-fill"></i></span>
+                    <span class="topic-text">High-dimensional vectors and vector databases</span>
+                </li>
+            </ul>
+        </div>
+    </section>
+        
+    <section class="py-5 bg-light border-top">
+        <div class="container text-center">
+            <p class="text-uppercase small fw-bold text-muted mb-4">Supported by</p>
+            <a target="_blank" href="https://europe.acm.org/chapters">
+                <img src="assets/img/acm-europe.png" alt="ACM Europe" class="partner-logo">
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container text-center">
+            <p class="mb-2">© 2026 Hellenic ACM SIGMOD Chapter</p>
+            <p class="small opacity-75" style="margin-bottom: 0px;">
+                <a href="mailto:info@acmsigmod.gr">info@acmsigmod.gr</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+  </body>
+</html>
