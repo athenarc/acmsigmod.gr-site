@@ -145,7 +145,35 @@
           .topic-grid {
               grid-template-columns: 1fr;
           }
-      }        
+      }
+
+    .award-callout {
+        background: linear-gradient(135deg, #e6f2ff, #f8fbff);
+        border: 1px solid #cce0ff;
+        border-left: 5px solid #003366;
+        padding: 16px 20px;
+        border-radius: 10px;
+        font-size: 1.05rem;
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        box-shadow: 0 4px 10px rgba(0, 51, 102, 0.08);
+    }
+
+    .award-callout i {
+        color: #003366;
+        font-size: 1.4rem;
+    }
+
+    .award-callout a {
+        font-weight: 600;
+        color: #007bff;
+        text-decoration: none;
+    }
+
+    .award-callout a:hover {
+        text-decoration: underline;
+    }      
     </style>
 </head>
 
@@ -253,9 +281,15 @@
             </ul>
             <div class="row mb-4" style="margin-top: 40px;">
                 <div class="col">
-                    <p>The 2026 Hellenic ACM SIGMOD Doctoral Dissertation Award is now open for <a href="call_for_nominations_doctoral_dissertation_award.html">nominations</a>. </p>
+                    <div class="award-callout">
+                        <i class="bi bi-megaphone-fill"></i>
+                        <span>
+                            The <strong>2026 Hellenic ACM SIGMOD Doctoral Dissertation Award</strong> is now open for 
+                            <a href="call_for_nominations_doctoral_dissertation_award.html">nominations</a>.
+                        </span>
+                    </div>
                 </div>
-            </div>            
+            </div> 
         </div>
     </section>
         
