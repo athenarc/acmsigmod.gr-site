@@ -34,9 +34,9 @@
             margin: 0 0.5rem;
         }
 
-        .navbar-nav .nav-link:hover {
-         color: #00a3ff; /* brighter blue */
-        }
+        .navbar-nav .nav-link:hover, .navbar-nav .nav-link.active {
+              color: #00a3ff !important;
+          }
 
         /* Hero Section */
         .hero-section {
@@ -130,7 +130,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">About</a>
                         <ul class="dropdown-menu border-0 shadow">
@@ -153,7 +153,7 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Awards</a>
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">Awards</a>
                         <ul class="dropdown-menu border-0 shadow">
                             <li><a class="dropdown-item" target="_blank" href="doctoral_dissertation_award.html">Hellenic ACM SIGMOD Doctoral Dissertation Award</a></li>
                             <li><a class="dropdown-item" target="_blank" href="call_for_nominations_doctoral_dissertation_award.html">Doctoral Dissertation Award : Call for nominations 2026 </a></li>

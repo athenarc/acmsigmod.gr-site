@@ -1,234 +1,274 @@
 <!DOCTYPE html>
-
 <html lang="en">
-  <head>
-    <!-- META -->
+<head>
     <meta charset="utf-8" />
-    <meta name="robots" content="noodp" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>Founding Members | Hellenic ACM SIGMOD Chapter</title>
 
-    <!-- PAGE TITLE -->
-    <title>Hellenic ACM SIGMOD Chapter</title>
-
-    <!-- FAVICON -->
     <link rel="shortcut icon" href="assets/img/favicon.png" />
 
-    <!-- FONTS -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&amp;subset=latin-ext"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
 
-    <!-- STYLESHEETS -->
-    <link rel="stylesheet" type="text/css" href="assets/css/plugins.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/navigation.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css" />
-    <link rel="stylesheet" type="text/css" href="assets/css/animations.css" />
-  </head>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #333;
+            line-height: 1.6;
+            background-color: #fff;
+        }
 
-  <body>
-    <div class="page-container">
-      <div class="content-wrap">
-        <div class="list-container">
-          <ul class="navigation-menu">
-            <li><a href="index.html">Home</a></li>
-            <li>
-              <a href="#">About</a>
-              <ul class="navigation-submenu">
-                <li><a href="about.html">About the Chapter</a></li>
-                <li><a href="officers.html">Committees</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#">Membership</a>
-              <ul class="navigation-submenu">
-                <li><a href="founding_members.html">Founding Members</a></li>
-                <li><a href="join.html">How to join</a></li>
-              </ul>
-            </li>
-            <li>
-              <a href="#">Events</a>
-              <ul class="navigation-submenu">
-                <li>
-                  <a
-                    target="_blank"
-                    href="https://acmsigmod.gr/hdms/index.html"
-                    >HDMS</a
-                  >
-                </li>
-                <li>
-                  <a
-                    target="_blank"
-                    href="https://europe.acm.org/seasonal-schools/data-science"
-                    >ACM Europe Summer School on Data Science</a
-                  >
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a href="#">Awards</a>
-              <ul class="navigation-submenu">
-                <li>
-                  <a
-                    target="_blank"
-                    href="doctoral_dissertation_award.html"
-                    >Hellenic ACM SIGMOD Doctoral Dissertation Award</a
-                  >
-                </li>
-                <li>
-                  <a
-                    target="_blank"
-                    href="call_for_nominations_doctoral_dissertation_award.html"
-                    >Doctoral Dissertation Award : Call for nominations 2026</a
-                  >
-                </li>
-              </ul>
-            </li>            
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
+        /* Modern Navbar */
+        .navbar {
+            padding: 1rem 2rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            background: white !important;
+            font-size: 1.2rem;
+        }
+
+        .navbar-nav .nav-link {
+            font-weight: 600;
+            transition: color 0.3s ease;
+            margin: 0 0.5rem;
+        }
+
+        .navbar-nav .nav-link:hover, .navbar-nav .nav-link.active {
+            color: #00a3ff !important;
+        }
+
+        /* Content Styling */
+        .middle-section {
+            padding: 60px 0;
+        }
+
+        .logo-main {
+            max-width: 250px;
+            margin-bottom: 2rem;
+        }
+
+        .sub-title {
+            font-size: 1.1rem;
+            color: #444;
+            margin-bottom: 1.5rem;
+        }
+
+        .text-check {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            margin-bottom: 1rem;
+            font-weight: 400;
+        }
+
+        .text-check i {
+            color: #003366;
+            font-size: 1.2rem;
+        }
+
+        /* Footer */
+        footer {
+            background: #002147;
+            color: white;
+            padding: 40px 0;
+            margin-top: 60px;
+        }
+
+        footer a {
+            color: #00a3ff;
+            text-decoration: none;
+        }
+
+        /* Preloader Fix */
+        .preloader {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: #fff;
+            display: flex; justify-content: center; align-items: center;
+            z-index: 9999;
+            transition: opacity 0.5s ease;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <strong>Hellenic ACM SIGMOD</strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">About</a>
+                        <ul class="dropdown-menu border-0 shadow">
+                            <li><a class="dropdown-item" href="about.html">About the Chapter</a></li>
+                            <li><a class="dropdown-item" href="officers.html">Committees</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">Membership</a>
+                        <ul class="dropdown-menu border-0 shadow">
+                            <li><a class="dropdown-item" href="founding_members.html">Founding Members</a></li>
+                            <li><a class="dropdown-item" href="join.html">How to join</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Events</a>
+                        <ul class="dropdown-menu border-0 shadow">
+                            <li><a class="dropdown-item" target="_blank" href="https://acmsigmod.gr/hdms/index.html">HDMS</a></li>
+                            <li><a class="dropdown-item" target="_blank" href="https://europe.acm.org/seasonal-schools/data-science">ACM Europe Summer School</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Awards</a>
+                        <ul class="dropdown-menu border-0 shadow">
+                            <li><a class="dropdown-item" href="doctoral_dissertation_award.html">Hellenic ACM SIGMOD Doctoral Dissertation Award</a></li>
+                            <li><a class="dropdown-item" href="call_for_nominations_doctoral_dissertation_award.html">Doctoral Dissertation Award : Call for nominations 2026</a></li>
+                        </ul>
+                    </li>                   
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="preloader">
-          <!-- SPINNER -->
-          <div class="spinner">
-            <div class="bounce-1"></div>
-            <div class="bounce-2"></div>
-            <div class="bounce-3"></div>
+    </nav>
+
+    <header class="page-header text-center">
+        <div class="container">
+            <h1 class="hero-title">Founding Members</h1>
+            <!-- <p class="text-muted">Learn more about our mission and activities.</p> -->
+        </div>
+    </header>
+
+    <section class="middle-section">
+      <div class="container text-left">
+        <div class="row title">
+        </div>
+        <div class="row">
+          <div class="col sub-title">
+            <b>Evaggelia Pitoura</b>, <i>University of Ioannina, Greece</i>
           </div>
-          <!-- /SPINNER -->
         </div>
-
-        <section class="middle-section">
-          <div class="container text-center">
-            <div class="row title">
-              <div class="col">
-                Hellenic ACM SIGMOD Chapter Founding Members
-              </div>
-            </div>
-            <div class="row">
-              <div class="col sub-title">
-                <b>Evaggelia Pitoura</b>, <i>University of Ioannina, Greece</i>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col sub-title">
-                <b>Dimitris Zeinalipour</b>, <i>University of Cyprus, Cyprus</i>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col sub-title">
-                <b>Yannis Ioannidis</b>,
-                <i>University of Athens & Athena RC, Greece</i>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col sub-title">
-                <b>Yannis Chronis</b>, <i>Google, USA</i>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col sub-title">
-                <b>Panos K. Chrysanthis</b>,
-                <i>University of Pittsburgh, USA</i>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col sub-title">
-                <b>Stratos Idreos</b>, <i>Harvard University, USA</i>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col sub-title">
-                <b>John Paparrizos</b>, <i>The Ohio State University, USA</i>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col sub-title">
-                <b>Theodore Dalamagas</b>, <i>Athena RC, Greece</i>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col sub-title">
-                <b>Timos Sellis</b>, <i>Athena RC, Greece</i>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col sub-title">
-                <b>Alkis Simitsis</b>, <i>Athena RC, Greece</i>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col sub-title">
-                <b>Minos Garofalakis</b>,
-                <i>Athena RC & Technical University of Crete, Greece</i>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col sub-title">
-                <b>Anastasia Ailamaki</b>, <i>EPFL, Switzerland</i>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col sub-title">
-                <b>Manos Athanassoulis</b>, <i>Boston University, USA</i>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col sub-title">
-                <b>Herodotos Herodotou</b>,
-                <i>Cyprus University of Technology, Cyprus</i>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col sub-title">
-                <b>Kostas Stefanidis</b>, <i>Tampere University, Finland </i>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col sub-title">
-                <b>Georgia Koutrika</b>, <i>Athena RC, Greece </i>
-              </div>
-            </div>
+        <div class="row">
+          <div class="col sub-title">
+            <b>Dimitris Zeinalipour</b>, <i>University of Cyprus, Cyprus</i>
           </div>
-        </section>
-      </div>
-      <div class="footer">
-        <!-- ANIMATION CONTAINER -->
-        <div
-          class="animation-container animation-fade-up"
-          data-animation-delay="1200"
-        >
-          <p>
-            © 2024 Hellenic ACM SIGMOD Chapter |
-            <a href="mailto:info@acmsigmod.gr">info@acmsigmod.gr</a> | Design by
-            <a href="https://templatefoundation.com">Template Foundation</a>
-          </p>
         </div>
-        <!-- /ANIMATION CONTAINER -->
-      </div>
-    </div>
+        <div class="row">
+          <div class="col sub-title">
+            <b>Yannis Ioannidis</b>,
+            <i>University of Athens & Athena RC, Greece</i>
+          </div>
+        </div>
 
+        <div class="row">
+          <div class="col sub-title">
+            <b>Yannis Chronis</b>, <i>Google, USA</i>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col sub-title">
+            <b>Panos K. Chrysanthis</b>,
+            <i>University of Pittsburgh, USA</i>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col sub-title">
+            <b>Stratos Idreos</b>, <i>Harvard University, USA</i>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col sub-title">
+            <b>John Paparrizos</b>, <i>The Ohio State University, USA</i>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col sub-title">
+            <b>Theodore Dalamagas</b>, <i>Athena RC, Greece</i>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col sub-title">
+            <b>Timos Sellis</b>, <i>Athena RC, Greece</i>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col sub-title">
+            <b>Alkis Simitsis</b>, <i>Athena RC, Greece</i>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col sub-title">
+            <b>Minos Garofalakis</b>,
+            <i>Athena RC & Technical University of Crete, Greece</i>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col sub-title">
+            <b>Anastasia Ailamaki</b>, <i>EPFL, Switzerland</i>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col sub-title">
+            <b>Manos Athanassoulis</b>, <i>Boston University, USA</i>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col sub-title">
+            <b>Herodotos Herodotou</b>,
+            <i>Cyprus University of Technology, Cyprus</i>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col sub-title">
+            <b>Kostas Stefanidis</b>, <i>Tampere University, Finland </i>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col sub-title">
+            <b>Georgia Koutrika</b>, <i>Athena RC, Greece </i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-5 bg-light border-top">
+        <div class="container text-center">
+            <p class="text-uppercase small fw-bold text-muted mb-4">Supported by</p>
+            <a target="_blank" href="https://europe.acm.org/chapters">
+                <img src="assets/img/acm-europe.png" alt="ACM Europe" class="partner-logo">
+            </a>
+        </div>
+    </section>
+
+    <footer style="margin-top: 0px;">
+        <div class="container text-center">
+            <p class="mb-2">© 2026 Hellenic ACM SIGMOD Chapter</p>
+            <p class="small opacity-75" style="margin-bottom: 0px;">
+                <a href="mailto:info@acmsigmod.gr">info@acmsigmod.gr</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript" src="assets/js/plugins.js"></script>
     <script type="text/javascript" src="assets/js/main.js"></script>
   </body>
