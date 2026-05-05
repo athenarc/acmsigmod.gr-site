@@ -165,19 +165,60 @@
 
     <section class="py-5 bg-white">
         <div class="container">
-            <div class="d-flex justify-content-between align-items-center mb-4">
+            <div class="mb-4">
                 <h2 class="fw-bold">Latest News</h2>
-                <a href="#" class="btn btn-outline-primary">View All</a>
             </div>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="card news-card p-4">
-                        <span class="date-badge">April 16, 2026</span>
-                        <h5 class="mt-2 fw-bold">HDMS 2026 Call for Papers</h5>
-                        <p class="text-muted">Submissions are now open for the Hellenic Data Management Symposium.</p>
-                        <a href="#" class="stretched-link mt-auto">Read More &rarr;</a>
+
+            <div id="newsCarousel" class="carousel slide">
+                <div class="carousel-inner p-3"> <div class="carousel-item active">
+                        <div class="row g-4">
+                            <div class="col-md-4">
+                                <div class="card news-card p-4 h-100 border">
+                                    <span class="date-badge">May 5, 2026</span>
+                                    <h5 class="mt-2 fw-bold">HDMS 2026: Registrations are now open</h5>
+                                    <p class="text-muted">Registrations for the Hellenic Data Management Symposium 2026 are now open.</p>
+                                    <a href="hdms/2026/registration.html" class="stretched-link mt-auto">Read More &rarr;</a>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card news-card p-4 h-100 border">
+                                    <span class="date-badge">April 24, 2026</span>
+                                    <h5 class="mt-2 fw-bold">Doctoral Dissertation Award: Open for Nominations</h5>
+                                    <p class="text-muted">The call for nominations for the Hellenic ACM SIGMOD Doctoral Dissertation Award is now open.</p>
+                                    <a href="call_for_nominations_doctoral_dissertation_award.html" class="stretched-link mt-auto">Read More &rarr;</a>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card news-card p-4 h-100 border">
+                                    <span class="date-badge">April 22, 2026</span>
+                                    <h5 class="mt-2 fw-bold">Hellenic ACM SIGMOD Doctoral Dissertation Award</h5>
+                                    <p class="text-muted">The Hellenic ACM SIGMOD Chapter is establishing the award for outstanding doctoral research.</p>
+                                    <a href="doctoral_dissertation_award.html" class="stretched-link mt-auto">Read More &rarr;</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="row g-4">
+                            <div class="col-md-4">
+                                <div class="card news-card p-4 h-100 border">
+                                    <span class="date-badge">April 16, 2026</span>
+                                    <h5 class="mt-2 fw-bold">HDMS 2026 Call for Papers</h5>
+                                    <p class="text-muted">Submissions are now open for the Hellenic Data Management Symposium.</p>
+                                    <a href="hdms/2026/index.html" class="stretched-link mt-auto">Read More &rarr;</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#newsCarousel" data-bs-slide="prev" style="width: 5%; filter: invert(1);">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#newsCarousel" data-bs-slide="next" style="width: 5%; filter: invert(1);">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </button>
             </div>
         </div>
     </section>
