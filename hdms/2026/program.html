@@ -11,6 +11,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="assets/css/main_newest.css" />
     <link rel="stylesheet" href="assets/css/program.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-138972724-1"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="assets/css/main_newest.css" />
+
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "UA-138972724-1");
+    </script>        
   </head>
 
   <body class="subpage">
@@ -44,6 +81,17 @@
           <a href="index.html#topics"><b>TOPICS</b></a>
           <a href="index.html#venue"><b>VENUE</b></a>
           <a href="index.html#dates"><b>DATES</b></a>
+          <div class="dropdown" style="display: inline-block;">
+            <a class="dropdown-toggle" href="#" role="button" id="programMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="cursor: pointer;">
+              <b>PROGRAM</b>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="programMenu">
+              <a class="dropdown-item" href="keynotes.html"><b>KEYNOTES</b></a>
+              <a class="dropdown-item" href="sessions.html#tutorial"><b>TUTORIAL</b></a>
+              <a class="dropdown-item" href="sessions.html#panel"><b>PANEL</b></a>
+              <a class="dropdown-item" href="program.html"><b>DETAILED PROGRAM</b></a>
+            </div>
+          </div>
           <!-- <a href="index.html#dbhellas"><b>DB HELLAS</b></a> -->
           <!-- <a href="index.html#tpc"><b>TECHNICAL PROGRAM COMMITTEE</b></a> -->
           <a href="index.html#committee"><b>ORGANIZATION</b></a>
@@ -71,10 +119,55 @@
       style="padding-top: 0px; padding-bottom: 0px"
     >
       <div class="inner">
-        <header class="align-center">
+        <header class="align-center" style="margin-top: 40px; margin-bottom: 0px;">
           <h2>Program</h2>
         </header>
       </div>
+      <div id="detailed-program" class="mb-5 pt-4" style="display: flex; justify-content: center; align-items: center; flex-direction: column; margin-top: 0px;">
+      <div class="alert alert-info d-flex align-items-center shadow-sm" role="alert" style="border-left: 5px solid #0dcaf0; border-radius: 8px; background-color: #f0f9ff; padding: 20px; max-width: 1000px; width: 100%;">
+        <div>
+          <h5 class="alert-heading mb-2" style="color: #0056b3;"><strong>Program To Be Announced</strong></h5>
+          <p class="mb-0 text-dark" style="line-height: 1.6; margin-bottom: 0;">The official detailed program for HDMS 2026 is currently being finalized. Please check back soon for the full schedule of accepted papers, keynotes, and presentations.</p>
+        </div>
+      </div>
+
+      <div class="card shadow-sm border-0 mt-4" style="border-radius: 10px; margin-top: 40px;">
+        <div class="card-header bg-white border-bottom-0 pt-4 pb-2 px-4">
+          <h4 class="mb-0" style="color: #333;"><strong>Tentative Schedule Overview</strong></h4>
+          <p class="text-muted small mt-1">Times and sessions are subject to change.</p>
+        </div>
+        <div class="card-body px-4 pb-4 pt-2">
+          <div class="row mt-3">
+            
+            <div class="col-md-6 mb-4 mb-md-0">
+              <h5 class="font-weight-bold mb-3" style="color: #0056b3; border-bottom: 2px solid #eee; padding-bottom: 8px;">Day 1</h5>
+              <ul class="list-unstyled text-muted" style="line-height: 2;">
+                <li><strong>08:30 - 09:00</strong> | Registration</li>
+                <li><strong>09:00 - 10:30</strong> | Welcome & Morning Sessions</li>
+                <li><strong>10:30 - 11:00</strong> | Coffee Break</li>
+                <li><strong>11:00 - 13:00</strong> | Keynote & Research Sessions</li>
+                <li><strong>13:00 - 14:00</strong> | Lunch Break</li>
+                <li><strong>14:00 - 17:00</strong> | Afternoon Sessions & Posters</li>
+                <li><strong>20:00 onwards</strong> | Social Dinner</li>
+              </ul>
+            </div>
+
+            <div class="col-md-6">
+              <h5 class="font-weight-bold mb-3" style="color: #0056b3; border-bottom: 2px solid #eee; padding-bottom: 8px;">Day 2</h5>
+              <ul class="list-unstyled text-muted" style="line-height: 2;">
+                <li><strong>08:30 - 10:00</strong> | Morning Sessions</li>
+                <li><strong>10:00 - 10:30</strong> | Coffee Break</li>
+                <li><strong>10:30 - 13:00</strong> | Research Sessions</li>
+                <li><strong>13:00 - 14:00</strong> | Lunch Break</li>
+                <li><strong>14:00 - 16:00</strong> | Panel & Sponsored Talks</li>
+                <li><strong>16:00 - 16:30</strong> | Closing Remarks</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
     </section>
     <footer id="footer">
       <div class="inner">
