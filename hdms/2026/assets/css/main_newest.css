@@ -3843,3 +3843,28 @@ overflow-x:auto;
   background-color: #0056b3; 
   color: #ffffff !important;
 }
+
+/* Desktop display rules */
+@media screen and (min-width: 1251px) {
+	.desktop-only-nav { display: inline-block !important; }
+	.mobile-only-nav { display: none !important; }
+}
+
+/* Mobile drawer display rules */
+@media screen and (max-width: 1250px) {
+/* Hide the broken desktop dropdown button on mobile viewports */
+	#header .desktop-only-nav, 
+	#navPanel .desktop-only-nav { 
+		display: none !important; 
+}
+
+/* Force display the flat links inside the mobile sidebar panel */
+	#navPanel .mobile-only-nav { 
+		display: block !important; 
+	}
+
+/* Keep them hidden on the background desktop navbar if it shrinks */
+	#header .mobile-only-nav {
+	display: none !important;
+	}
+}
